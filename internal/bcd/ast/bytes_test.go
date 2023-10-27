@@ -23,7 +23,7 @@ func TestBytes_ToMiguel(t *testing.T) {
 				Prim:  "bytes",
 				Type:  "bytes",
 				Name:  testsuite.Ptr("@bytes_1"),
-				Value: `{ Pair "ledger" "tz1b1L4P8P1ucwuqCEP1Hxs7KB68CX8prFCp" }`,
+				Value: `{ Pair "ledger" "mv1PNoMySkKGCDh4LYwrXnZ8UBx6kufz8Jdt" }`,
 			},
 		},
 	}

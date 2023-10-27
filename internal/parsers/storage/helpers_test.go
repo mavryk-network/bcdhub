@@ -22,9 +22,9 @@ func Test_GetStrings(t *testing.T) {
 			name: "test 2",
 			data: []byte(`{"prim":"Pair","args":[{"prim":"Pair","args":[{"prim":"Pair","args":[{"prim":"Some","args":[{"bytes":"0000c0ca282a775946b5ecbe02e5cf73e25f6b62b70c"}]},[]]},{"prim":"Pair","args":[{"prim":"Some","args":[{"bytes":"62616c6c732e74657a"}]},[]]}]},{"prim":"Pair","args":[{"prim":"Pair","args":[{"int":"2"},{"bytes":"0000753f63893674b6d523f925f0d787bf9270b95c33"}]},{"prim":"Some","args":[{"int":"3223"}]}]}]}`),
 			want: []string{
-				"tz1dDQc4KsTHEFe3USc66Wti2pBatZ3UDbD4",
+				"mv1RasueeEkdoXRGcmAwLLajBq3ZSwX13eX2",
 				"balls.tez",
-				"tz1WKygtstVY96oyc6Rmk945dMf33LeihgWT",
+				"mv1JhSzVCFntiNbCkQzcyxk6nNX1bj9VSR7i",
 			},
 		},
 	}
