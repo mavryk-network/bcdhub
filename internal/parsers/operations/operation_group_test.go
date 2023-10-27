@@ -1449,14 +1449,14 @@ func TestGroup_Parse(t *testing.T) {
 						Kind: types.OperationKindTransaction,
 						Hash: encoding.MustDecodeBase58("oocFt4vkkgQGfoRH54328cJUbDdWvj3x6KEs5Arm4XhqwwJmnJ8"),
 						Source: account.Account{
-							Address:         "tz1WKygtstVY96oyc6Rmk945dMf33LeihgWT",
+							Address:         "mv1JhSzVCFntiNbCkQzcyxk6nNX1bj9VSR7i",
 							Type:            types.AccountTypeTz,
 							Level:           1520888,
 							OperationsCount: 1,
 							LastAction:      timestamp,
 						},
 						Initiator: account.Account{
-							Address:         "tz1WKygtstVY96oyc6Rmk945dMf33LeihgWT",
+							Address:         "mv1JhSzVCFntiNbCkQzcyxk6nNX1bj9VSR7i",
 							Type:            types.AccountTypeTz,
 							Level:           1520888,
 							OperationsCount: 1,
@@ -1484,7 +1484,7 @@ func TestGroup_Parse(t *testing.T) {
 							OperationsCount: 1,
 							LastAction:      timestamp,
 						},
-						Parameters:      []byte(`{"entrypoint":"update_record","value":{"prim":"Pair","args":[{"bytes":"62616c6c732e74657a"},{"prim":"Pair","args":[{"prim":"Some","args":[{"string":"tz1dDQc4KsTHEFe3USc66Wti2pBatZ3UDbD4"}]},{"prim":"Pair","args":[{"string":"tz1WKygtstVY96oyc6Rmk945dMf33LeihgWT"},[]]}]}]}}`),
+						Parameters:      []byte(`{"entrypoint":"update_record","value":{"prim":"Pair","args":[{"bytes":"62616c6c732e74657a"},{"prim":"Pair","args":[{"prim":"Some","args":[{"string":"mv1RasueeEkdoXRGcmAwLLajBq3ZSwX13eX2"}]},{"prim":"Pair","args":[{"string":"mv1JhSzVCFntiNbCkQzcyxk6nNX1bj9VSR7i"},[]]}]}]}}`),
 						DeffatedStorage: []byte(`{"prim":"Pair","args":[{"prim":"Pair","args":[{"bytes":"01535d971759846a1f2be8610e36f2db40fe8ce40800"},{"int":"1268"}]},{"bytes":"01ebb657570e494e8a7bd43ac3bf7cfd0267a32a9f00"}]}`),
 					},
 					{
@@ -1503,7 +1503,7 @@ func TestGroup_Parse(t *testing.T) {
 							Valid: true,
 						},
 						Initiator: account.Account{
-							Address:         "tz1WKygtstVY96oyc6Rmk945dMf33LeihgWT",
+							Address:         "mv1JhSzVCFntiNbCkQzcyxk6nNX1bj9VSR7i",
 							Type:            types.AccountTypeTz,
 							Level:           1520888,
 							OperationsCount: 1,

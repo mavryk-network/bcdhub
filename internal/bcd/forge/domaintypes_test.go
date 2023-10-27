@@ -148,7 +148,7 @@ func TestUnforgeAddress(t *testing.T) {
 		}, {
 			name: "test 2",
 			str:  "00003a96709901319a5da2968782279dae581b9ba4",
-			want: "tz1KfEsrtDaA1sX7vdM4qmEPWuSytuqCDp5j",
+			want: "mv182iBTCasWb9JM4wuv5avQfvJxTJMdCLQG",
 		},
 	}
 	for _, tt := range tests {
