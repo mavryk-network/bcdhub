@@ -1,4 +1,4 @@
-parameter (or unit (or mutez timestamp));
+parameter (or unit (or mumav timestamp));
 storage (pair address timestamp);
 code { DUP ;
        DIP { CDR } ;

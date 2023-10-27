@@ -12,7 +12,7 @@
             "prim": "or",
             "args": [
               {
-                "prim": "mutez"
+                "prim": "mumav"
               },
               {
                 "prim": "timestamp"

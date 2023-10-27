@@ -7,7 +7,7 @@ code { { { DUP ; CAR ; DIP { CDR } } } ;
                  { COMPARE ; EQ ; IF {} { PUSH string "only owner can delete queries" ; FAILWITH } } ;
                  DIP { NONE (pair (pair (bytes :nonce) address) (pair (pair int int) timestamp)) ; DIP { DUP ; CDR } } }
                { AMOUNT ;
-                 PUSH @fee mutez 1000000 ;
+                 PUSH @fee mumav 1000000 ;
                  { COMPARE ; LE ; IF {} { PUSH string "insufficient fee" ; FAILWITH } } ;
                  DUP ;
                  { CDR ; CDR } ;

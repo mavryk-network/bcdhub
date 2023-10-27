@@ -6,7 +6,7 @@
     "contents": [
         {
             "kind": "register_global_constant",
-            "source": "tz1SMARcpWCydHsGgz4MRoK9NkbpBmmUAfNe",
+            "source": "mv1NSEvqRxRGV3xBpZp4uFteHxVXMBJAFEwR",
             "fee": "377",
             "counter": "1",
             "gas_limit": "1333",
@@ -16,7 +16,7 @@
                 "balance_updates": [
                     {
                         "kind": "contract",
-                        "contract": "tz1SMARcpWCydHsGgz4MRoK9NkbpBmmUAfNe",
+                        "contract": "mv1NSEvqRxRGV3xBpZp4uFteHxVXMBJAFEwR",
                         "change": "-377",
                         "origin": "block"
                     },
@@ -34,7 +34,7 @@
                     "balance_updates": [
                         {
                             "kind": "contract",
-                            "contract": "tz1SMARcpWCydHsGgz4MRoK9NkbpBmmUAfNe",
+                            "contract": "mv1NSEvqRxRGV3xBpZp4uFteHxVXMBJAFEwR",
                             "change": "-20000",
                             "origin": "block"
                         }

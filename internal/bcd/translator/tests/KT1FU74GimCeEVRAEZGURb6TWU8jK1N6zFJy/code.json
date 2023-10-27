@@ -162,7 +162,7 @@
                                         "prim": "pair",
                                         "args": [
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%value"
                                             ]
@@ -270,7 +270,7 @@
                       "prim": "pair",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "prim": "address"
@@ -306,7 +306,7 @@
                     "prim": "pair",
                     "args": [
                       {
-                        "prim": "mutez"
+                        "prim": "mumav"
                       },
                       {
                         "prim": "address"
@@ -566,7 +566,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%value"
                                                                         ]
@@ -759,7 +759,7 @@
                                                                   "prim": "pair",
                                                                   "args": [
                                                                     {
-                                                                      "prim": "mutez",
+                                                                      "prim": "mumav",
                                                                       "annots": [
                                                                         "%value"
                                                                       ]
@@ -949,7 +949,7 @@
                                                                 "prim": "pair",
                                                                 "args": [
                                                                   {
-                                                                    "prim": "mutez",
+                                                                    "prim": "mumav",
                                                                     "annots": [
                                                                       "%value"
                                                                     ]
@@ -1571,7 +1571,7 @@
                                                                             "prim": "pair",
                                                                             "args": [
                                                                               {
-                                                                                "prim": "mutez",
+                                                                                "prim": "mumav",
                                                                                 "annots": [
                                                                                   "%value"
                                                                                 ]
@@ -1750,7 +1750,7 @@
                                                                 "prim": "pair",
                                                                 "args": [
                                                                   {
-                                                                    "prim": "mutez",
+                                                                    "prim": "mumav",
                                                                     "annots": [
                                                                       "%value"
                                                                     ]
@@ -1960,7 +1960,7 @@
                                                                                         "prim": "pair",
                                                                                         "args": [
                                                                                           {
-                                                                                            "prim": "mutez",
+                                                                                            "prim": "mumav",
                                                                                             "annots": [
                                                                                               "%value"
                                                                                             ]
@@ -2143,7 +2143,7 @@
                                                                 "prim": "pair",
                                                                 "args": [
                                                                   {
-                                                                    "prim": "mutez",
+                                                                    "prim": "mumav",
                                                                     "annots": [
                                                                       "%value"
                                                                     ]
@@ -2357,7 +2357,7 @@
                                                                                 "prim": "pair",
                                                                                 "args": [
                                                                                   {
-                                                                                    "prim": "mutez",
+                                                                                    "prim": "mumav",
                                                                                     "annots": [
                                                                                       "%value"
                                                                                     ]
@@ -2563,7 +2563,7 @@
                                                               "prim": "pair",
                                                               "args": [
                                                                 {
-                                                                  "prim": "mutez",
+                                                                  "prim": "mumav",
                                                                   "annots": [
                                                                     "%value"
                                                                   ]
@@ -2773,7 +2773,7 @@
                                                                                       "prim": "pair",
                                                                                       "args": [
                                                                                         {
-                                                                                          "prim": "mutez",
+                                                                                          "prim": "mumav",
                                                                                           "annots": [
                                                                                             "%value"
                                                                                           ]
@@ -2956,7 +2956,7 @@
                                                               "prim": "pair",
                                                               "args": [
                                                                 {
-                                                                  "prim": "mutez",
+                                                                  "prim": "mumav",
                                                                   "annots": [
                                                                     "%value"
                                                                   ]
@@ -4513,7 +4513,7 @@
                                                                           "prim": "pair",
                                                                           "args": [
                                                                             {
-                                                                              "prim": "mutez",
+                                                                              "prim": "mumav",
                                                                               "annots": [
                                                                                 "%value"
                                                                               ]
@@ -4706,7 +4706,7 @@
                                                                         "prim": "pair",
                                                                         "args": [
                                                                           {
-                                                                            "prim": "mutez",
+                                                                            "prim": "mumav",
                                                                             "annots": [
                                                                               "%value"
                                                                             ]
@@ -4896,7 +4896,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%value"
                                                                           ]
@@ -5532,7 +5532,7 @@
                                                                                       "prim": "pair",
                                                                                       "args": [
                                                                                         {
-                                                                                          "prim": "mutez",
+                                                                                          "prim": "mumav",
                                                                                           "annots": [
                                                                                             "%value"
                                                                                           ]
@@ -5644,7 +5644,7 @@
                                               "prim": "pair",
                                               "args": [
                                                 {
-                                                  "prim": "mutez"
+                                                  "prim": "mumav"
                                                 },
                                                 {
                                                   "prim": "address"
@@ -5753,7 +5753,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%value"
                                                                           ]
@@ -5921,7 +5921,7 @@
                                                                                               "prim": "pair",
                                                                                               "args": [
                                                                                                 {
-                                                                                                  "prim": "mutez",
+                                                                                                  "prim": "mumav",
                                                                                                   "annots": [
                                                                                                     "%value"
                                                                                                   ]
@@ -6056,7 +6056,7 @@
                                                           "prim": "pair",
                                                           "args": [
                                                             {
-                                                              "prim": "mutez"
+                                                              "prim": "mumav"
                                                             },
                                                             {
                                                               "prim": "address"
@@ -6169,7 +6169,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%value"
                                                                           ]
@@ -6341,7 +6341,7 @@
                                                                                       "prim": "pair",
                                                                                       "args": [
                                                                                         {
-                                                                                          "prim": "mutez",
+                                                                                          "prim": "mumav",
                                                                                           "annots": [
                                                                                             "%value"
                                                                                           ]
@@ -6476,7 +6476,7 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez"
+                                                      "prim": "mumav"
                                                     },
                                                     {
                                                       "prim": "address"
@@ -6646,7 +6646,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%value"
                                                                         ]
@@ -6814,7 +6814,7 @@
                                                                                             "prim": "pair",
                                                                                             "args": [
                                                                                               {
-                                                                                                "prim": "mutez",
+                                                                                                "prim": "mumav",
                                                                                                 "annots": [
                                                                                                   "%value"
                                                                                                 ]
@@ -6949,7 +6949,7 @@
                                                         "prim": "pair",
                                                         "args": [
                                                           {
-                                                            "prim": "mutez"
+                                                            "prim": "mumav"
                                                           },
                                                           {
                                                             "prim": "address"
@@ -7062,7 +7062,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%value"
                                                                         ]
@@ -8771,7 +8771,7 @@
                                                                   "prim": "pair",
                                                                   "args": [
                                                                     {
-                                                                      "prim": "mutez",
+                                                                      "prim": "mumav",
                                                                       "annots": [
                                                                         "%value"
                                                                       ]
@@ -8924,7 +8924,7 @@
                                                                 "prim": "pair",
                                                                 "args": [
                                                                   {
-                                                                    "prim": "mutez",
+                                                                    "prim": "mumav",
                                                                     "annots": [
                                                                       "%value"
                                                                     ]
@@ -9327,7 +9327,7 @@
                                                                               "prim": "pair",
                                                                               "args": [
                                                                                 {
-                                                                                  "prim": "mutez",
+                                                                                  "prim": "mumav",
                                                                                   "annots": [
                                                                                     "%value"
                                                                                   ]
@@ -9416,7 +9416,7 @@
                                               "prim": "pair",
                                               "args": [
                                                 {
-                                                  "prim": "mutez"
+                                                  "prim": "mumav"
                                                 },
                                                 {
                                                   "prim": "address"
@@ -9525,7 +9525,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%value"
                                                                           ]
@@ -9682,7 +9682,7 @@
                                                                                           "prim": "pair",
                                                                                           "args": [
                                                                                             {
-                                                                                              "prim": "mutez",
+                                                                                              "prim": "mumav",
                                                                                               "annots": [
                                                                                                 "%value"
                                                                                               ]
@@ -9771,7 +9771,7 @@
                                                           "prim": "pair",
                                                           "args": [
                                                             {
-                                                              "prim": "mutez"
+                                                              "prim": "mumav"
                                                             },
                                                             {
                                                               "prim": "address"
@@ -9884,7 +9884,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%value"
                                                                           ]
@@ -10045,7 +10045,7 @@
                                                                                   "prim": "pair",
                                                                                   "args": [
                                                                                     {
-                                                                                      "prim": "mutez",
+                                                                                      "prim": "mumav",
                                                                                       "annots": [
                                                                                         "%value"
                                                                                       ]
@@ -10134,7 +10134,7 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez"
+                                                      "prim": "mumav"
                                                     },
                                                     {
                                                       "prim": "address"
@@ -10304,7 +10304,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%value"
                                                                         ]
@@ -10461,7 +10461,7 @@
                                                                                         "prim": "pair",
                                                                                         "args": [
                                                                                           {
-                                                                                            "prim": "mutez",
+                                                                                            "prim": "mumav",
                                                                                             "annots": [
                                                                                               "%value"
                                                                                             ]
@@ -10550,7 +10550,7 @@
                                                         "prim": "pair",
                                                         "args": [
                                                           {
-                                                            "prim": "mutez"
+                                                            "prim": "mumav"
                                                           },
                                                           {
                                                             "prim": "address"
@@ -10663,7 +10663,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%value"
                                                                         ]

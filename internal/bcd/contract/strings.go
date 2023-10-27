@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	regAddress = regexp.MustCompile("(tz|KT)[0-9A-Za-z]{34}")
+	regAddress = regexp.MustCompile("(mv|KT)[0-9A-Za-z]{34}")
 )
 
 // ComputeHash -

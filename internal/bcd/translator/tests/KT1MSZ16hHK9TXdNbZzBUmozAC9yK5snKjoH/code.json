@@ -18,7 +18,7 @@
                 "prim": "pair",
                 "args": [
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   },
                   {
                     "prim": "address"
@@ -71,7 +71,7 @@
                         "prim": "pair",
                         "args": [
                           {
-                            "prim": "mutez",
+                            "prim": "mumav",
                             "annots": [
                               "%minimum"
                             ]

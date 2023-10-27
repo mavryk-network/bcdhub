@@ -28,7 +28,7 @@ func IsContractLazy(str string) bool {
 
 // IsAddressLazy -
 func IsAddressLazy(address string) bool {
-	return (len(address) == 36 && (strings.HasPrefix(address, "KT") || strings.HasPrefix(address, "tz"))) ||
+	return (len(address) == 36 && (strings.HasPrefix(address, "KT") || strings.HasPrefix(address, "mv"))) ||
 		(len(address) == 37 && strings.HasPrefix(address, "txr"))
 }
 
@@ -43,7 +43,7 @@ func IsSmartRollupAddressLazy(address string) bool {
 }
 
 var (
-	addressRegex     = regexp.MustCompile("(tz|KT|txr|sr)[0-9A-Za-z]{34}")
+	addressRegex     = regexp.MustCompile("(mv|KT|txr|sr)[0-9A-Za-z]{34}")
 	contractRegex    = regexp.MustCompile("(KT1)[0-9A-Za-z]{33}")
 	bakerHashRegex   = regexp.MustCompile("(SG1)[0-9A-Za-z]{33}")
 	operationRegex   = regexp.MustCompile("^o[1-9A-HJ-NP-Za-km-z]{50}$")
