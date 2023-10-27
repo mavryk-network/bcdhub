@@ -27,7 +27,7 @@
                     "prim": "pair",
                     "args": [
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%bounty"
                         ]
@@ -103,7 +103,7 @@
                     "prim": "pair",
                     "args": [
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%bounty"
                         ]
@@ -1255,7 +1255,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"

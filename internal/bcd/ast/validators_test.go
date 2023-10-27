@@ -26,7 +26,7 @@ func TestAddressValidator(t *testing.T) {
 			wantErr: false,
 		}, {
 			name:    "test 4",
-			value:   "tz1KfEsrtDaA1sX7vdM4qmEPWuSytuqCDp5",
+			value:   "mv1KfEsrtDaA1sX7vdM4qmEPWuSytuqCDp5",
 			wantErr: true,
 		}, {
 			name:    "test 5",

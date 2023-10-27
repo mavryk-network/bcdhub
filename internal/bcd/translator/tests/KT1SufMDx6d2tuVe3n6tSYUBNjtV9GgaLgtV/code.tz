@@ -1,9 +1,9 @@
-parameter (or :parameter (pair :initiate %Initiate (bytes %iHashedSecret) (pair (nat %iRefundTime) (pair (address %iParticipant) (mutez %iPayoff)))) (or (bytes %Add) (or (pair :redeem %Redeem (bytes %rHashedSecret) (bytes %rSecret)) (bytes %Refund))));
-storage (pair :storage (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mutez %value) (pair (mutez %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded)))))))))))) unit);
+parameter (or :parameter (pair :initiate %Initiate (bytes %iHashedSecret) (pair (nat %iRefundTime) (pair (address %iParticipant) (mumav %iPayoff)))) (or (bytes %Add) (or (pair :redeem %Redeem (bytes %rHashedSecret) (bytes %rSecret)) (bytes %Refund))));
+storage (pair :storage (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mumav %value) (pair (mumav %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded)))))))))))) unit);
 code { DUP ;
        DIP { CDR @storage_slash_1 } ;
        CAR @parameter_slash_2 ;
-       LAMBDA @isRefundable (pair bytes (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mutez %value) (pair (mutez %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded))))))))))))) bool { RENAME @hashedSecret_swaps_slash_3 ; DUP @hashedSecret_swaps ; CDR @swaps ; { DIP { DUP @hashedSecret_swaps } ; SWAP } ; CAR @hashedSecret ; GET ; IF_NONE { PUSH bool False }
+       LAMBDA @isRefundable (pair bytes (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mumav %value) (pair (mumav %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded))))))))))))) bool { RENAME @hashedSecret_swaps_slash_3 ; DUP @hashedSecret_swaps ; CDR @swaps ; { DIP { DUP @hashedSecret_swaps } ; SWAP } ; CAR @hashedSecret ; GET ; IF_NONE { PUSH bool False }
                { DUP @swap ;
                  { CDR ; CDR ; CDR ; CAR %refundTimestamp } ;
                  NOW ;
@@ -12,7 +12,7 @@ code { DUP ;
                  IF { PUSH bool False }
                     { PUSH bool True } ;
                  DIP { DROP } } ; DIP { DROP } } ;
-       LAMBDA @isInitiated (pair bytes (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mutez %value) (pair (mutez %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded))))))))))))) bool { RENAME @hashedSecret_swaps_slash_14 ; DUP @hashedSecret_swaps ; CDR @swaps ; { DIP { DUP @hashedSecret_swaps } ; SWAP } ; CAR @hashedSecret ; GET ; IF_NONE { PUSH bool False }
+       LAMBDA @isInitiated (pair bytes (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mumav %value) (pair (mumav %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded))))))))))))) bool { RENAME @hashedSecret_swaps_slash_14 ; DUP @hashedSecret_swaps ; CDR @swaps ; { DIP { DUP @hashedSecret_swaps } ; SWAP } ; CAR @hashedSecret ; GET ; IF_NONE { PUSH bool False }
                { DUP @swap ;
                  { CDR ; CDR ; CDR ; CDR ; CDR ; CDR ; CDR ; CDR %state } ;
                  IF_LEFT { DROP ;
@@ -24,7 +24,7 @@ code { DUP ;
                                      PUSH string "swap for this hash is already refunded" ;
                                      FAILWITH } } ;
                  DIP { DROP } } ; DIP { DROP } } ;
-       LAMBDA @transfer (pair address mutez) (list operation) { RENAME @address_amount_slash_19 ; DUP @address_amount ; CDR @amount ; PUSH mutez 0 ; { DIP { DUP @amount } ; SWAP } ; COMPARE ; GT ; IF { { DIP { DUP @address_amount } ; SWAP } ;
+       LAMBDA @transfer (pair address mumav) (list operation) { RENAME @address_amount_slash_19 ; DUP @address_amount ; CDR @amount ; PUSH mumav 0 ; { DIP { DUP @amount } ; SWAP } ; COMPARE ; GT ; IF { { DIP { DUP @address_amount } ; SWAP } ;
             CAR @address ;
             CONTRACT unit ;
             IF_NONE { NIL operation }
@@ -208,7 +208,7 @@ code { DUP ;
                            DIP { DROP ; DROP ; DROP ; DROP } }
                          { IF_LEFT { RENAME @redeem_slash_70 ;
                                      { DIP { DUP @transfer } ; SWAP } ;
-                                     LAMBDA @isRedeemable (pair bytes (pair bytes (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mutez %value) (pair (mutez %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded)))))))))))))) bool { RENAME @hashedSecret_secret_swaps_slash_8 ; DUP @hashedSecret_secret_swaps ; CAR @hashedSecret ; { DIP { DUP @hashedSecret_secret_swaps } ; SWAP } ; { CDR ; CAR @secret } ; { DIP { { DIP { DUP @hashedSecret_secret_swaps } ; SWAP } } ; SWAP } ; { CDR ; CDR @swaps } ; { DIP { { DIP { DUP @hashedSecret } ; SWAP } } ; SWAP } ; GET ; IF_NONE { PUSH bool False }
+                                     LAMBDA @isRedeemable (pair bytes (pair bytes (big_map bytes (pair :swap (bytes %hashedSecret) (pair (option %secret bytes) (pair (timestamp %initTimestamp) (pair (timestamp %refundTimestamp) (pair (address %initiator) (pair (address %participant) (pair (mumav %value) (pair (mumav %payoff) (or :state %state (unit %Initiated) (or (unit %Redeemed) (unit %Refunded)))))))))))))) bool { RENAME @hashedSecret_secret_swaps_slash_8 ; DUP @hashedSecret_secret_swaps ; CAR @hashedSecret ; { DIP { DUP @hashedSecret_secret_swaps } ; SWAP } ; { CDR ; CAR @secret } ; { DIP { { DIP { DUP @hashedSecret_secret_swaps } ; SWAP } } ; SWAP } ; { CDR ; CDR @swaps } ; { DIP { { DIP { DUP @hashedSecret } ; SWAP } } ; SWAP } ; GET ; IF_NONE { PUSH bool False }
                                              { PUSH nat 32 ;
                                                { DIP { { DIP { DUP @secret } ; SWAP } } ; SWAP } ;
                                                SIZE ;

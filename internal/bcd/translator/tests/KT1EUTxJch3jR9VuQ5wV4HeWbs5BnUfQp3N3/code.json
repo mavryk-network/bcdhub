@@ -33,7 +33,7 @@
                         ]
                       },
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%iPayoff"
                         ]
@@ -173,7 +173,7 @@
                                         "prim": "pair",
                                         "args": [
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%value"
                                             ]
@@ -182,7 +182,7 @@
                                             "prim": "pair",
                                             "args": [
                                               {
-                                                "prim": "mutez",
+                                                "prim": "mumav",
                                                 "annots": [
                                                   "%payoff"
                                                 ]
@@ -354,7 +354,7 @@
                                               "prim": "pair",
                                               "args": [
                                                 {
-                                                  "prim": "mutez",
+                                                  "prim": "mumav",
                                                   "annots": [
                                                     "%value"
                                                   ]
@@ -363,7 +363,7 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%payoff"
                                                       ]
@@ -659,7 +659,7 @@
                                               "prim": "pair",
                                               "args": [
                                                 {
-                                                  "prim": "mutez",
+                                                  "prim": "mumav",
                                                   "annots": [
                                                     "%value"
                                                   ]
@@ -668,7 +668,7 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%payoff"
                                                       ]
@@ -934,7 +934,7 @@
                   "prim": "address"
                 },
                 {
-                  "prim": "mutez"
+                  "prim": "mumav"
                 }
               ]
             },
@@ -3367,7 +3367,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%value"
                                                                         ]
@@ -3376,7 +3376,7 @@
                                                                         "prim": "pair",
                                                                         "args": [
                                                                           {
-                                                                            "prim": "mutez",
+                                                                            "prim": "mumav",
                                                                             "annots": [
                                                                               "%payoff"
                                                                             ]

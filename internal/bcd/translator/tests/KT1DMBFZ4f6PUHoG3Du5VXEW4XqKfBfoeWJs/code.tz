@@ -9,7 +9,7 @@ code { DUP ;
                  DUP @storage ;
                  CAR @accounts %accounts ;
                  PUSH nat 1000 ;
-                 PUSH mutez 1000000 ;
+                 PUSH mumav 1000000 ;
                  AMOUNT ;
                  EDIV ;
                  IF_NONE { PUSH string "division by 0 impossible" ;

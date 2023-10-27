@@ -14,23 +14,23 @@ func TestDecodeBase58String(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name: "tz1",
-			data: "tz1LFEVYR7YRCxT6Nm3Zfjdnfj77xZqhbR5U",
+			name: "mv1",
+			data: "mv18cho8jUqmnEEKX5cQuZKopjy6WxQ37w8s",
 			want: "06a868bd80219eb1f6a25108d1bdaa98ae27b2d9",
 		},
 		{
-			name: "tz1",
-			data: "tz1RugzxKA8NwuymbGcy2wkSTvfRJpckfmDF",
+			name: "mv1",
+			data: "mv1EHAJYdXRjXBkzjbBpGmSTcwXPsD5cmfkP",
 			want: "44c6f8bc6088cd3b64f0bca87f812634c3f0ed30",
 		},
 		{
-			name: "tz1",
-			data: "tz1a5fMLLY5WCarCzH7RKTJHX9mJFN8eaaWG",
+			name: "mv1",
+			data: "mv1NT8eveuNrmrdS8bgGZGzJgAdGokb6bUuh",
 			want: "9e6ac2e529a49aedbcdd0ac9542d5c0f4ce76f77",
 		},
 		{
-			name: "tz3",
-			data: "tz3RDC3Jdn4j15J7bBHZd29EUee9gVB1CxD9",
+			name: "mv3",
+			data: "mv3DafLtx9N5aM5LjVrQrqqFdfW8EsbUjxaK",
 			want: "358cbffa97149631cfb999fa47f0035fb1ea8636",
 		},
 		{
@@ -79,28 +79,28 @@ func TestEncodeBase58String(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name:   "tz1",
+			name:   "mv1",
 			data:   "06a868bd80219eb1f6a25108d1bdaa98ae27b2d9",
-			prefix: "tz1",
-			want:   "tz1LFEVYR7YRCxT6Nm3Zfjdnfj77xZqhbR5U",
+			prefix: "mv1",
+			want:   "mv18cho8jUqmnEEKX5cQuZKopjy6WxQ37w8s",
 		},
 		{
-			name:   "tz1",
+			name:   "mv1",
 			data:   "44c6f8bc6088cd3b64f0bca87f812634c3f0ed30",
-			prefix: "tz1",
-			want:   "tz1RugzxKA8NwuymbGcy2wkSTvfRJpckfmDF",
+			prefix: "mv1",
+			want:   "mv1EHAJYdXRjXBkzjbBpGmSTcwXPsD5cmfkP",
 		},
 		{
-			name:   "tz1",
+			name:   "mv1",
 			data:   "9e6ac2e529a49aedbcdd0ac9542d5c0f4ce76f77",
-			prefix: "tz1",
-			want:   "tz1a5fMLLY5WCarCzH7RKTJHX9mJFN8eaaWG",
+			prefix: "mv1",
+			want:   "mv1NT8eveuNrmrdS8bgGZGzJgAdGokb6bUuh",
 		},
 		{
-			name:   "tz3",
+			name:   "mv3",
 			data:   "358cbffa97149631cfb999fa47f0035fb1ea8636",
-			prefix: "tz3",
-			want:   "tz3RDC3Jdn4j15J7bBHZd29EUee9gVB1CxD9",
+			prefix: "mv3",
+			want:   "mv3DafLtx9N5aM5LjVrQrqqFdfW8EsbUjxaK",
 		},
 		{
 			name:   "KT",

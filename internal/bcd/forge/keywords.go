@@ -107,7 +107,7 @@ var primKeywords = []string{
 	"signature",
 	"string",
 	"bytes",
-	"mutez",
+	"mumav",
 	"timestamp",
 	"unit",
 	"operation",

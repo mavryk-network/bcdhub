@@ -32,7 +32,7 @@ func TestAddress_Compare(t *testing.T) {
 			want:       -1,
 		}, {
 			name:       "equal",
-			first:      "tz1eLWfccL46VAUjtyz9kEKgzuKnwyZH4rTA",
+			first:      "mv1ShyyCvhMT4SFy3JYzz41i9vBmWN4sfob7",
 			firstType:  valueKindString,
 			second:     "0000cd1a410ffd5315ded34337f5f76edff48a13999a",
 			secondType: valueKindBytes,
@@ -41,14 +41,14 @@ func TestAddress_Compare(t *testing.T) {
 			name:       "equal",
 			first:      "0000cd1a410ffd5315ded34337f5f76edff48a13999a",
 			firstType:  valueKindBytes,
-			second:     "tz1eLWfccL46VAUjtyz9kEKgzuKnwyZH4rTA",
+			second:     "mv1ShyyCvhMT4SFy3JYzz41i9vBmWN4sfob7",
 			secondType: valueKindString,
 			want:       0,
 		}, {
 			name:       "equal",
 			first:      "0000cd1a410ffd5315ded34337f5f76edff48a13999a",
 			firstType:  valueKindBytes,
-			second:     "tz1eLWfccL46VAUjtyz9kEKgzuKnwyZH4rTA",
+			second:     "mv1ShyyCvhMT4SFy3JYzz41i9vBmWN4sfob7",
 			secondType: valueKindString,
 			want:       0,
 		}, {
@@ -60,7 +60,7 @@ func TestAddress_Compare(t *testing.T) {
 			want:       -1,
 		}, {
 			name:       "unequal",
-			first:      "tz1eLWfccL46VAUjtyz9kEKgzuKnwyZH4rTA",
+			first:      "mv1ShyyCvhMT4SFy3JYzz41i9vBmWN4sfob7",
 			firstType:  valueKindString,
 			second:     "KT1DEkR3cErDAn6oH4jK8Z7n9a4oCXRZZwYa",
 			secondType: valueKindString,
@@ -69,7 +69,7 @@ func TestAddress_Compare(t *testing.T) {
 			name:       "unequal",
 			first:      "KT1DEkR3cErDAn6oH4jK8Z7n9a4oCXRZZwYa",
 			firstType:  valueKindString,
-			second:     "tz1eLWfccL46VAUjtyz9kEKgzuKnwyZH4rTA",
+			second:     "mv1ShyyCvhMT4SFy3JYzz41i9vBmWN4sfob7",
 			secondType: valueKindString,
 			want:       1,
 		},

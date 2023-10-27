@@ -56,7 +56,7 @@
                 "prim": "string"
               },
               {
-                "prim": "mutez"
+                "prim": "mumav"
               }
             ],
             "annots": [
@@ -155,7 +155,7 @@
                 "prim": "PUSH",
                 "args": [
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   },
                   {
                     "int": "0"
@@ -1165,7 +1165,7 @@
                                         "prim": "NONE",
                                         "args": [
                                           {
-                                            "prim": "mutez"
+                                            "prim": "mumav"
                                           }
                                         ]
                                       }

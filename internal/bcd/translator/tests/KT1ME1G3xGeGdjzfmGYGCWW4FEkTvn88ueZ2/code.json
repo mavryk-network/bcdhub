@@ -84,7 +84,7 @@
                     ]
                   },
                   {
-                    "prim": "mutez",
+                    "prim": "mumav",
                     "annots": [
                       "%premiumBalance"
                     ]
@@ -203,7 +203,7 @@
                 "prim": "PUSH",
                 "args": [
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   },
                   {
                     "int": "5000000"
@@ -1038,7 +1038,7 @@
                                               ]
                                             },
                                             {
-                                              "prim": "mutez",
+                                              "prim": "mumav",
                                               "annots": [
                                                 "%premiumBalance"
                                               ]

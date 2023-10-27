@@ -9,7 +9,7 @@ code { NIL operation ;
        DIP { UNPAIR 3 } ;
        IF_LEFT
          { IF_LEFT
-             { PUSH mutez 1000000 ;
+             { PUSH mumav 1000000 ;
                AMOUNT ;
                COMPARE ;
                GE ;
@@ -113,7 +113,7 @@ code { NIL operation ;
                SENDER ;
                CONTRACT unit ;
                IF_NONE { PUSH string "EntryNotFound" ; FAILWITH } {} ;
-               PUSH mutez 350000 ;
+               PUSH mumav 350000 ;
                UNIT ;
                TRANSFER_TOKENS ;
                CONS ;
