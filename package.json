@@ -10,9 +10,9 @@
   "dependencies": {
     "@baking-bad/vjsf": "^1.20.11",
     "@braintree/sanitize-url": "^6.0.0",
-    "@mavrykdynamics/beacon-sdk": "^4.0.12",
-    "@mavrykdynamics/taquito": "^17.3.2",
-    "@mavrykdynamics/taquito-beacon-wallet": "^17.3.2",
+    "@mavrykdynamics/beacon-sdk": "3.3.2",
+    "@mavrykdynamics/taquito": "17.3.2",
+    "@mavrykdynamics/taquito-beacon-wallet": "17.3.2",
     "@sentry/tracing": "^6.19.2",
     "@sentry/vue": "^6.19.2",
     "async-wait-until": "^2.0.12",

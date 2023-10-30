@@ -25,14 +25,14 @@ BCD uses the same `X.Y.Z` scheme as BCDHub (see https://github.com/baking-bad/bc
 
 ## Run locally
 ```
-npm i
-npm run serve
+yarn install
+yarn serve
 ```
 
 ## Build for production
 ```
-npm i
-npm run build
+yarn install 
+yarn build
 ```
 
 ## Publications
