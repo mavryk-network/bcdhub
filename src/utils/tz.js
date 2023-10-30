@@ -35,7 +35,7 @@ export function shortcut(value, tail = 4) {
     if (!value) return '';
 
     let head = 0;
-    if (value.startsWith('tz') || value.startsWith('KT') || value.startsWith('sr1')) {
+    if (value.startsWith('mv') || value.startsWith('KT') || value.startsWith('sr1')) {
         head = 3
     } else if (value.startsWith('o')) {
         head = 1;
@@ -54,7 +54,7 @@ export function shortcutOnly(value, tail = 4) {
     if (!value) return '';
 
     let head = 0;
-    if (value.startsWith('tz') || value.startsWith('KT') || value.startsWith('sr1')) {
+    if (value.startsWith('mv') || value.startsWith('KT') || value.startsWith('sr1')) {
         head = 7;
     } else if (value.startsWith('o')) {
         head = 1;
@@ -89,7 +89,7 @@ export function plural(count, noun, suffix = 's') {
 }
 
 export function urlExtractBase58(url) {
-    const matches = url.match(/\b(tz|KT|o|expr)[1-9A-HJ-NP-Za-km-z]{34,}\b/);
+    const matches = url.match(/\b(mv|KT|o|expr)[1-9A-HJ-NP-Za-km-z]{34,}\b/);
     if (matches && matches.length > 0) {
         return matches[0];
     }
@@ -122,7 +122,7 @@ export function isKT1Address(val) {
 }
 
 export function isTzAddress(val) {
-    return /^(tz)[1-9A-HJ-NP-Za-km-z]{34}$/.test(val);
+    return /^(mv)[1-9A-HJ-NP-Za-km-z]{34}$/.test(val);
 }
 
 export function isSrAddress(val) {
@@ -169,7 +169,7 @@ export let validationRules = {
 }
 
 export function matchAddress(text) {
-    let matches = text.match(/(tz|KT|sr)[1-9A-HJ-NP-Za-km-z]{34}/);
+    let matches = text.match(/(mv|KT|sr)[1-9A-HJ-NP-Za-km-z]{34}/);
     if (!matches) {
         return '';
     }

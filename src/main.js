@@ -43,6 +43,9 @@ import {roundDownSignificantDigits, SIFormatter} from "./utils/number";
 import {isKT1Address, isOperationHash, isTzAddress} from "./utils/tz";
 import {isOldBigMapRoute} from "./utils/url";
 
+import * as buffer from "buffer";
+window.Buffer = buffer.Buffer;
+
 Vue.component('draggable', draggable);
 Vue.component('VJsf', VJsf)
 
@@ -91,7 +94,7 @@ Vue.filter('fromNow', function (value) {
 
 Vue.filter('uxtz', function (value) {
   let xtz = (value / 1000000).toLocaleString(undefined, { maximumFractionDigits: 6 });
-  return `${xtz} \uA729`;
+  return `${xtz} \uA773`;
 })
 
 

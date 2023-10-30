@@ -1,4 +1,4 @@
-import {DAppClient, ColorMode, NetworkType} from "@airgap/beacon-sdk";
+import {DAppClient, ColorMode, NetworkType} from "@mavrykdynamics/beacon-sdk";
 import TZKTBlockExplorer from "@/utils/tzkt";
 
 const CORRECT_NETWORK_TYPES = {

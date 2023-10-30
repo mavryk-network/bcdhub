@@ -120,13 +120,13 @@ export default {
       return res;
     },
     hasAddress(s) {
-      if (s !== undefined && /(tz|KT)[1-9A-HJ-NP-Za-km-z]{34}/.test(s)) {
+      if (s !== undefined && /(mv|KT)[1-9A-HJ-NP-Za-km-z]{34}/.test(s)) {
         return true;
       }
       return false;
     },
     handleAddress(s) {
-      const address = s.match(/(tz|KT)[1-9A-HJ-NP-Za-km-z]{34}/)[0];
+      const address = s.match(/(mv|KT)[1-9A-HJ-NP-Za-km-z]{34}/)[0];
       let routeData = this.$router.resolve({
         path: `/${this.network}/${address}`,
       });

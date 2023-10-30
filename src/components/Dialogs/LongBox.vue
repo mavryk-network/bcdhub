@@ -26,7 +26,7 @@
             <v-card-text class="pt-7">
                 <v-row no-gutters>
                     <v-col cols="12">
-                        <HexView v-if="hex" v-model="text"/>
+                        <HexView v-if="hex"/>
                         <ValueInspector
                             v-else
                             prim="string"
