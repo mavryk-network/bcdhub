@@ -1,32 +1,38 @@
 rpc:
-  mainnet:
-    uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
-    timeout: 20
-    requests_per_second: 10
-  ghostnet:
-    uri: https://rpc.tzkt.io/ghostnet
-    timeout: 20
-    requests_per_second: 10
-  nairobinet:
-    uri: https://rpc.tzkt.io/nairobinet
-    timeout: 20
-    requests_per_second: 10
+  # mainnet:
+  #   uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
+  #   timeout: 20
+  #   requests_per_second: 10
+  # ghostnet:
+  #   uri: https://rpc.tzkt.io/ghostnet
+  #   timeout: 20
+  #   requests_per_second: 10
+  # nairobinet:
+  #   uri: https://rpc.tzkt.io/nairobinet
+  #   timeout: 20
+  #   requests_per_second: 10
   # oxfordnet:
   #   uri: https://rpc.tzkt.io/oxfordnet
   #   timeout: 20
   #   requests_per_second: 20
+  basenet:
+    uri: https://basenet-baking-node.mavryk.network
+    timeout: 20
+    requests_per_second: 20
 
 log_level: ${LOG_LEVEL:-info}
   
 services:
-  mainnet:
-    mempool: https://mempool.dipdup.net/v1/graphql
-  ghostnet:
-    mempool: https://mempool.test.dipdup.net/v1/graphql
-  nairobinet:
-    mempool: https://mempool.test.dipdup.net/v1/graphql
+  # mainnet:
+  #   mempool: https://mempool.dipdup.net/v1/graphql
+  # ghostnet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
+  # nairobinet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
   # oxfordnet:
   #   mempool: https://mempool.test.dipdup.net/v1/graphql
+  basenet:
+    mempool: https://mempool.test.dipdup.net/v1/graphql
 
 storage:
   pg: 
@@ -64,28 +70,31 @@ api:
     mempool_enabled: true
     sandbox_mode: false
     rpc:
-      mainnet: https://rpc.tzkt.io/mainnet
-      ghostnet: https://rpc.tzkt.io/ghostnet
-      nairobinet: https://rpc.tzkt.io/nairobinet
+      # mainnet: https://rpc.tzkt.io/mainnet
+      # ghostnet: https://rpc.tzkt.io/ghostnet
+      # nairobinet: https://rpc.tzkt.io/nairobinet
       # oxfordnet: https://rpc.tzkt.io/oxfordnet
+      basenet: https://basenet-baking-node.mavryk.network
   networks:
-    - mainnet
-    - ghostnet
-    - nairobinet
+    # - mainnet
+    # - ghostnet
+    # - nairobinet
     # - oxfordnet
 
 indexer:
   project_name: indexer
   sentry_enabled: true
   networks:
-    mainnet:
-      receiver_threads: ${MAINNET_THREADS:-10}
-    ghostnet:
-      receiver_threads: ${TESTNET_THREADS:-10}
-    nairobinet:
-      receiver_threads: ${TESTNET_THREADS:-10}
+    # mainnet:
+    #   receiver_threads: ${MAINNET_THREADS:-10}
+    # ghostnet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
+    # nairobinet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
     # oxfordnet:
     #   receiver_threads: ${TESTNET_THREADS:-10}
+    basenet:
+      receiver_threads: ${TESTNET_THREADS:-10}
 
 scripts:
   aws:
@@ -94,7 +103,8 @@ scripts:
     access_key_id: ${AWS_ACCESS_KEY_ID}
     secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   networks:
-    - mainnet
-    - ghostnet
-    - nairobinet
+    # - mainnet
+    # - ghostnet
+    # - nairobinet
     # - oxfordnet
+    - basenet
