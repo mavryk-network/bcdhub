@@ -1,44 +1,42 @@
 rpc:
   # mainnet:
-  #   uri: https://rpc.tzkt.io/archive
+  #   uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
   #   timeout: 20
-  #   requests_per_second: 15
+  #   requests_per_second: 10
   # ghostnet:
   #   uri: https://rpc.tzkt.io/ghostnet
   #   timeout: 20
-<<<<<<< HEAD
   #   requests_per_second: 10
-  atlasnet:
-    uri: https://rpc.mavryk.network/atlasnet
-=======
-  #   requests_per_second: 15
   # nairobinet:
   #   uri: https://rpc.tzkt.io/nairobinet
   #   timeout: 20
-  #   requests_per_second: 15
+  #   requests_per_second: 10
   # oxfordnet:
   #   uri: https://rpc.tzkt.io/oxfordnet
   #   timeout: 20
   #   requests_per_second: 20
   basenet:
     uri: https://basenet-baking-node.mavryk.network
->>>>>>> 59b337fa (configuration updated)
     timeout: 20
     requests_per_second: 20
 
 log_level: ${LOG_LEVEL:-info}
-
+  
 services:
-  mainnet:
+  # mainnet:
   #   mempool: https://mempool.dipdup.net/v1/graphql
   # ghostnet:
   #   mempool: https://mempool.test.dipdup.net/v1/graphql
-  oxfordnet:
+  # nairobinet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
+  # oxfordnet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
+  basenet:
     mempool: https://mempool.test.dipdup.net/v1/graphql
 
 storage:
   pg: 
-    host: ${DB_HOSTNAME:-127.0.0.1}
+    host: ${DB_HOSTNAME:-db}
     port: 5432
     user: ${POSTGRES_USER}
     dbname: ${POSTGRES_DB:-bcd}
@@ -48,34 +46,40 @@ storage:
   log_queries: ${POSTGRES_LOG_QUERIES:-false}
 
 sentry:
-  environment: development
+  environment: production
   uri: ${SENTRY_DSN}
   front_uri: ${SENTRY_DSN_FRONT}
-  debug: true
+  debug: false
 
 share_path: /etc/bcd
 
-base_url: http://localhost:8080
+base_url: https://better-call.dev
+
+profiler:
+  server: ${PROFILER_SERVER_ADDRESS:-http://127.0.0.1:4040}
 
 api:
   project_name: api
-  bind: "127.0.0.1:14000"
-  cors_enabled: true
-  sentry_enabled: false
+  bind: ":14000"
+  cors_enabled: false
+  sentry_enabled: true
   seed_enabled: false
   page_size: ${PAGE_SIZE:-10}
   frontend:
-    ga_enabled: false
+    ga_enabled: true
     mempool_enabled: true
     sandbox_mode: false
     rpc:
       # mainnet: https://rpc.tzkt.io/mainnet
       # ghostnet: https://rpc.tzkt.io/ghostnet
-      atlasnet: https://rpc.mavryk.network/atlasnet
+      # nairobinet: https://rpc.tzkt.io/nairobinet
+      # oxfordnet: https://rpc.tzkt.io/oxfordnet
+      basenet: https://basenet-baking-node.mavryk.network
   networks:
     # - mainnet
     # - ghostnet
-    - atlasnet
+    # - nairobinet
+    # - oxfordnet
 
 indexer:
   project_name: indexer
@@ -85,7 +89,11 @@ indexer:
     #   receiver_threads: ${MAINNET_THREADS:-10}
     # ghostnet:
     #   receiver_threads: ${TESTNET_THREADS:-10}
-    atlasnet:
+    # nairobinet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
+    # oxfordnet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
+    basenet:
       receiver_threads: ${TESTNET_THREADS:-10}
 
 scripts:
@@ -97,4 +105,6 @@ scripts:
   networks:
     # - mainnet
     # - ghostnet
-    - atlasnet
+    # - nairobinet
+    # - oxfordnet
+    - basenet
