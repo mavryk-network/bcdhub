@@ -1,16 +1,16 @@
 rpc:
   # mainnet:
-  #   uri: https://rpc.tzkt.io/archive
+  #   uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
   #   timeout: 20
-  #   requests_per_second: 15
+  #   requests_per_second: 10
   # ghostnet:
   #   uri: https://rpc.tzkt.io/ghostnet
   #   timeout: 20
-  #   requests_per_second: 15
+  #   requests_per_second: 10
   # nairobinet:
   #   uri: https://rpc.tzkt.io/nairobinet
   #   timeout: 20
-  #   requests_per_second: 15
+  #   requests_per_second: 10
   # oxfordnet:
   #   uri: https://rpc.tzkt.io/oxfordnet
   #   timeout: 20
@@ -21,7 +21,7 @@ rpc:
     requests_per_second: 20
 
 log_level: ${LOG_LEVEL:-info}
-
+  
 services:
   # mainnet:
   #   mempool: https://mempool.dipdup.net/v1/graphql
@@ -36,7 +36,7 @@ services:
 
 storage:
   pg: 
-    host: ${DB_HOSTNAME:-127.0.0.1}
+    host: ${DB_HOSTNAME:-db}
     port: 5432
     user: ${POSTGRES_USER}
     dbname: ${POSTGRES_DB:-bcd}
@@ -46,24 +46,27 @@ storage:
   log_queries: ${POSTGRES_LOG_QUERIES:-false}
 
 sentry:
-  environment: development
+  environment: production
   uri: ${SENTRY_DSN}
   front_uri: ${SENTRY_DSN_FRONT}
-  debug: true
+  debug: false
 
 share_path: /etc/bcd
 
-base_url: http://localhost:8080
+base_url: https://better-call.dev
+
+profiler:
+  server: ${PROFILER_SERVER_ADDRESS:-http://127.0.0.1:4040}
 
 api:
   project_name: api
-  bind: "127.0.0.1:14000"
-  cors_enabled: true
-  sentry_enabled: false
+  bind: ":14000"
+  cors_enabled: false
+  sentry_enabled: true
   seed_enabled: false
   page_size: ${PAGE_SIZE:-10}
   frontend:
-    ga_enabled: false
+    ga_enabled: true
     mempool_enabled: true
     sandbox_mode: false
     rpc:
@@ -71,30 +74,34 @@ api:
       # ghostnet: https://rpc.tzkt.io/ghostnet
       # nairobinet: https://rpc.tzkt.io/nairobinet
       # oxfordnet: https://rpc.tzkt.io/oxfordnet
-      basenet: https://basenet-baking-node.mavryk.network    
+      basenet: https://basenet-baking-node.mavryk.network
   networks:
     # - mainnet
     # - ghostnet
     # - nairobinet
     # - oxfordnet
-    - basenet
 
 indexer:
   project_name: indexer
-  sentry_enabled: false
+  sentry_enabled: true
   networks:
     # mainnet:
-    #   receiver_threads: 5
+    #   receiver_threads: ${MAINNET_THREADS:-10}
     # ghostnet:
-    #   receiver_threads: 5
+    #   receiver_threads: ${TESTNET_THREADS:-10}
     # nairobinet:
-    #   receiver_threads: 15
+    #   receiver_threads: ${TESTNET_THREADS:-10}
     # oxfordnet:
-    #   receiver_threads: 10
+    #   receiver_threads: ${TESTNET_THREADS:-10}
     basenet:
-      receiver_threads: 10
+      receiver_threads: ${TESTNET_THREADS:-10}
 
 scripts:
+  aws:
+    bucket_name: bcd-elastic-snapshots
+    region: eu-central-1
+    access_key_id: ${AWS_ACCESS_KEY_ID}
+    secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   networks:
     # - mainnet
     # - ghostnet
