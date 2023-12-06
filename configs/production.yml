@@ -1,14 +1,14 @@
 rpc:
-  mainnet:
-    uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
-    timeout: 20
-    requests_per_second: 10
-  ghostnet:
-    uri: https://rpc.tzkt.io/ghostnet
-    timeout: 20
-    requests_per_second: 10
-  oxfordnet:
-    uri: https://rpc.tzkt.io/oxfordnet
+  # mainnet:
+  #   uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
+  #   timeout: 20
+  #   requests_per_second: 10
+  # ghostnet:
+  #   uri: https://rpc.tzkt.io/ghostnet
+  #   timeout: 20
+  #   requests_per_second: 10
+  atlasnet:
+    uri: https://rpc.mavryk.network/atlasnet
     timeout: 20
     requests_per_second: 20
 
@@ -16,9 +16,9 @@ log_level: ${LOG_LEVEL:-info}
   
 services:
   mainnet:
-    mempool: https://mempool.dipdup.net/v1/graphql
-  ghostnet:
-    mempool: https://mempool.test.dipdup.net/v1/graphql
+  #   mempool: https://mempool.dipdup.net/v1/graphql
+  # ghostnet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
   oxfordnet:
     mempool: https://mempool.test.dipdup.net/v1/graphql
 
@@ -58,23 +58,23 @@ api:
     mempool_enabled: true
     sandbox_mode: false
     rpc:
-      mainnet: https://rpc.tzkt.io/mainnet
-      ghostnet: https://rpc.tzkt.io/ghostnet
-      oxfordnet: https://rpc.tzkt.io/oxfordnet
+      # mainnet: https://rpc.tzkt.io/mainnet
+      # ghostnet: https://rpc.tzkt.io/ghostnet
+      atlasnet: https://rpc.mavryk.network/atlasnet
   networks:
-    - mainnet
-    - ghostnet
-    - oxfordnet
+    # - mainnet
+    # - ghostnet
+    - atlasnet
 
 indexer:
   project_name: indexer
   sentry_enabled: true
   networks:
-    mainnet:
-      receiver_threads: ${MAINNET_THREADS:-10}
-    ghostnet:
-      receiver_threads: ${TESTNET_THREADS:-10}
-    oxfordnet:
+    # mainnet:
+    #   receiver_threads: ${MAINNET_THREADS:-10}
+    # ghostnet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
+    atlasnet:
       receiver_threads: ${TESTNET_THREADS:-10}
 
 scripts:
@@ -84,6 +84,6 @@ scripts:
     access_key_id: ${AWS_ACCESS_KEY_ID}
     secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   networks:
-    - mainnet
-    - ghostnet
-    - oxfordnet
+    # - mainnet
+    # - ghostnet
+    - atlasnet
