@@ -1,7 +1,7 @@
 FROM node:16 AS build
 
 ARG TAG
-RUN git clone --depth=1 --branch ${TAG} https://github.com/baking-bad/bcd.git /bcd
+RUN git clone --depth=1 --branch ${TAG} https://github.com/mavryk-network/bcd.git /bcd
 
 WORKDIR /bcd
 RUN npm i
