@@ -39,7 +39,7 @@ jobs:
           context: .
           file: build/sandbox/Dockerfile
           build-args: |
-            TAG=4.6.3
+            TAG=4.5.2
           push: true
           cache-from: type=gha
           cache-to: type=gha,mode=max
