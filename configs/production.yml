@@ -6,23 +6,9 @@ rpc:
   # ghostnet:
   #   uri: https://rpc.tzkt.io/ghostnet
   #   timeout: 20
-<<<<<<< HEAD
   #   requests_per_second: 10
   atlasnet:
     uri: https://rpc.mavryk.network/atlasnet
-=======
-  #   requests_per_second: 15
-  # nairobinet:
-  #   uri: https://rpc.tzkt.io/nairobinet
-  #   timeout: 20
-  #   requests_per_second: 15
-  # oxfordnet:
-  #   uri: https://rpc.tzkt.io/oxfordnet
-  #   timeout: 20
-  #   requests_per_second: 20
-  basenet:
-    uri: https://basenet-baking-node.mavryk.network
->>>>>>> 59b337fa (configuration updated)
     timeout: 20
     requests_per_second: 20
 
@@ -33,7 +19,7 @@ services:
   #   mempool: https://mempool.dipdup.net/v1/graphql
   # ghostnet:
   #   mempool: https://mempool.test.dipdup.net/v1/graphql
-  oxfordnet:
+  atlasnet:
     mempool: https://mempool.test.dipdup.net/v1/graphql
 
 storage:

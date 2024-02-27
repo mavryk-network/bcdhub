@@ -24,7 +24,7 @@ services:
       - GIN_MODE=debug
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - SANDBOX_NODE_URI=https://basenet-baking-node.mavryk.network
+      - SANDBOX_NODE_URI=https://rpc.mavryk.network/atlasnet
       - SANDBOX_IPFS_GATEWAY=https://cloudflare-ipfs.com
     depends_on:
       - db
@@ -41,7 +41,7 @@ services:
       - BCD_ENV=sandbox
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - SANDBOX_NODE_URI=https://basenet-baking-node.mavryk.network
+      - SANDBOX_NODE_URI=https://rpc.mavryk.network/atlasnet
       - SANDBOX_IPFS_GATEWAY=https://cloudflare-ipfs.com
     depends_on:
       - db
