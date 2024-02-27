@@ -6,13 +6,13 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/baking-bad/bcdhub/cmd/indexer/indexer"
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/helpers"
-	"github.com/baking-bad/bcdhub/internal/logger"
-	"github.com/baking-bad/bcdhub/internal/profiler"
 	"github.com/dipdup-io/workerpool"
 	"github.com/grafana/pyroscope-go"
+	"github.com/mavryk-network/bcdhub/cmd/indexer/indexer"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/helpers"
+	"github.com/mavryk-network/bcdhub/internal/logger"
+	"github.com/mavryk-network/bcdhub/internal/profiler"
 	"github.com/rs/zerolog/log"
 )
 

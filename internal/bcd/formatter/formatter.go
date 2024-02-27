@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 
-	"github.com/baking-bad/bcdhub/internal/helpers"
+	"github.com/mavryk-network/bcdhub/internal/helpers"
 )
 
 // DefLineSize -

@@ -12,8 +12,8 @@ import (
 	context "context"
 	reflect "reflect"
 
-	contract "github.com/baking-bad/bcdhub/internal/models/contract"
-	domains "github.com/baking-bad/bcdhub/internal/models/domains"
+	contract "github.com/mavryk-network/bcdhub/internal/models/contract"
+	domains "github.com/mavryk-network/bcdhub/internal/models/domains"
 	gomock "go.uber.org/mock/gomock"
 )
 

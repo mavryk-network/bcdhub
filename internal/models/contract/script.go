@@ -3,8 +3,8 @@ package contract
 import (
 	"bytes"
 
-	"github.com/baking-bad/bcdhub/internal/models/types"
 	"github.com/lib/pq"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 	"github.com/uptrace/bun"
 )
 

@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/types"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/types"
 	"github.com/rs/zerolog/log"
 )
 

@@ -5,8 +5,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 	"github.com/rs/zerolog/log"
 )
 

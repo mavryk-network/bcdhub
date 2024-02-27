@@ -1,10 +1,10 @@
 package protocols
 
 import (
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/parsers/contract"
-	"github.com/baking-bad/bcdhub/internal/parsers/migrations"
-	"github.com/baking-bad/bcdhub/internal/parsers/storage"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/parsers/contract"
+	"github.com/mavryk-network/bcdhub/internal/parsers/migrations"
+	"github.com/mavryk-network/bcdhub/internal/parsers/storage"
 	"github.com/pkg/errors"
 )
 

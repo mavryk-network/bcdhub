@@ -3,12 +3,12 @@ package contract
 import (
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/contract/trees"
-	"github.com/baking-bad/bcdhub/internal/bcd/forge"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/contract/trees"
+	"github.com/mavryk-network/bcdhub/internal/bcd/forge"
 )
 
 func isDelegatorContract(code []byte, storage ast.UntypedAST) bool {

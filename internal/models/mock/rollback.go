@@ -12,14 +12,14 @@ import (
 	context "context"
 	reflect "reflect"
 
-	models "github.com/baking-bad/bcdhub/internal/models"
-	account "github.com/baking-bad/bcdhub/internal/models/account"
-	bigmapdiff "github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
-	contract "github.com/baking-bad/bcdhub/internal/models/contract"
-	migration "github.com/baking-bad/bcdhub/internal/models/migration"
-	operation "github.com/baking-bad/bcdhub/internal/models/operation"
-	stats "github.com/baking-bad/bcdhub/internal/models/stats"
-	ticket "github.com/baking-bad/bcdhub/internal/models/ticket"
+	models "github.com/mavryk-network/bcdhub/internal/models"
+	account "github.com/mavryk-network/bcdhub/internal/models/account"
+	bigmapdiff "github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
+	contract "github.com/mavryk-network/bcdhub/internal/models/contract"
+	migration "github.com/mavryk-network/bcdhub/internal/models/migration"
+	operation "github.com/mavryk-network/bcdhub/internal/models/operation"
+	stats "github.com/mavryk-network/bcdhub/internal/models/stats"
+	ticket "github.com/mavryk-network/bcdhub/internal/models/ticket"
 	gomock "go.uber.org/mock/gomock"
 )
 

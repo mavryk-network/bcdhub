@@ -3,7 +3,7 @@ package ast
 import (
 	"testing"
 
-	"github.com/baking-bad/bcdhub/internal/testsuite"
+	"github.com/mavryk-network/bcdhub/internal/testsuite"
 	"github.com/stretchr/testify/require"
 )
 

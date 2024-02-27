@@ -3,7 +3,7 @@ package rollback
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
 	"github.com/rs/zerolog/log"
 )
 

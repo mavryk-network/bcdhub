@@ -3,9 +3,9 @@ package ticket
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/ticket"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 	"github.com/uptrace/bun"
 )
 

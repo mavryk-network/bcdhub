@@ -3,8 +3,8 @@ package interfaces
 import (
 	stdJSON "encoding/json"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
 	"github.com/pkg/errors"
 )
 

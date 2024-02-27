@@ -3,9 +3,9 @@ package rollback
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models"
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/stats"
+	"github.com/mavryk-network/bcdhub/internal/models"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/stats"
 )
 
 type rollbackContext struct {

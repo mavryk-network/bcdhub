@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
