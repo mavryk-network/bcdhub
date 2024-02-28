@@ -94,7 +94,7 @@ Vue.filter('fromNow', function (value) {
 
 Vue.filter('uxtz', function (value) {
   let xtz = (value / 1000000).toLocaleString(undefined, { maximumFractionDigits: 6 });
-  return `${xtz} \uA773`;
+  return `${xtz} \u1E41`;
 })
 
 
