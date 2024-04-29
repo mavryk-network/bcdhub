@@ -107,7 +107,7 @@ func TestCollectStrings(t *testing.T) {
 			name:      "simple bytes",
 			tree:      `{"bytes":"74657a6f732d73746f726167653a636f6e74656e74"}`,
 			tryUnpack: true,
-			want:      []string{"tezos-storage:content"},
+			want:      []string{"mavryk-storage:content"},
 		}, {
 			name:      "ipfs test",
 			tree:      `{"bytes":"050100000035697066733a2f2f516d585a4846695a5a35566747794c634b514c4d6b5032314e733855394e47316d6f707945777348446663575835"}`,
