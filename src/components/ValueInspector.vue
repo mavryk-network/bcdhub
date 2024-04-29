@@ -73,7 +73,7 @@
     </v-btn>
 
     <v-btn
-      v-if="isTezosStorage"
+      v-if="isMavrykStorage"
       text
       small
       link
@@ -120,9 +120,9 @@ export default {
     isIpfsURI() {
       return this.hasProtocol(this.value, "ipfs:");
     },
-    isTezosStorage() {
-      return this.hasProtocol(this.value, "tezos-storage:") &&
-          checkAddress(this.value.slice("tezos-storage://".length));
+    isMavrykStorage() {
+      return this.hasProtocol(this.value, "mavryk-storage:") &&
+          checkAddress(this.value.slice("mavryk-storage://".length));
     },
     isAddress() {
       return (this.prim === "address" || this.prim === "contract");
