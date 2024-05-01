@@ -8,7 +8,7 @@ rpc:
   #   timeout: 20
   #   requests_per_second: 10
   atlasnet:
-    uri: https://rpc.mavryk.network/atlasnet
+    uri: https://atlasnet.rpc.mavryk.network
     timeout: 20
     requests_per_second: 20
 
@@ -57,7 +57,7 @@ api:
     rpc:
       # mainnet: https://rpc.tzkt.io/mainnet
       # ghostnet: https://rpc.tzkt.io/ghostnet
-      atlasnet: https://rpc.mavryk.network/atlasnet
+      atlasnet: https://atlasnet.rpc.mavryk.network
   networks:
     # - mainnet
     # - ghostnet
