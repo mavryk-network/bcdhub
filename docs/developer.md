@@ -11,7 +11,7 @@ Those microservices are sharing access to databases and communicating via databa
 * `PostgreSQL` database for storing compilations and user data.
 
 ### Third-party services
-BCDHub also depends on several API endpoints exposed by [TzKT](https://github.com/baking-bad/tzkt) although they are optional:
+BCDHub also depends on several API endpoints exposed by [TzKT](https://github.com/mavryk-network/tzkt) although they are optional:
 
 * List of blocks containing smart contract operations, used for boosting the indexing process (allows to skip blocks with no contract calls)
 * Mempool operations
@@ -26,7 +26,7 @@ BCD uses `X.Y.Z` version format where:
 * `Z` bumped for every stable release candidate or hotfix
 
 ### Syncing with frontend
-BCD web interface developed at https://github.com/baking-bad/bcd uses the same version scheme.  
+BCD web interface developed at https://github.com/mavryk-network/bcd uses the same version scheme.  
 `X.Y.*` versions of backend and frontent MUST BE compatible which means that for every change in API responses `Y` has to be increased.
 
 ### Publishing releases
@@ -72,7 +72,7 @@ You will also need several ports to be not busy:
 ### Get ready
 1. Clone this repo
 ```bash
-git clone https://github.com/baking-bad/bcdhub.git
+git clone https://github.com/mavryk-network/bcdhub.git
 cd bcdhub
 ```
 

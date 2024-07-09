@@ -5,8 +5,8 @@ import (
 	stdJSON "encoding/json"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 	"github.com/uptrace/bun"
 )
 

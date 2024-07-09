@@ -1,8 +1,8 @@
 package storage
 
 import (
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
 	"github.com/pkg/errors"
 )
 

@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
 	"github.com/pkg/errors"
 )
 

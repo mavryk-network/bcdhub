@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/teztnets"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/teztnets"
 	"github.com/robfig/cron/v3"
 	"github.com/rs/zerolog/log"
 )

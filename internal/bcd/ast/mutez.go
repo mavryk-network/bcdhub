@@ -1,31 +1,31 @@
 package ast
 
-import "github.com/baking-bad/bcdhub/internal/bcd/consts"
+import "github.com/mavryk-network/bcdhub/internal/bcd/consts"
 
 //
-//  MUTEZ
+//  MUMAV
 //
 
-// Mutez -
-type Mutez struct {
+// Mumav -
+type Mumav struct {
 	Default
 }
 
-// NewMutez -
-func NewMutez(depth int) *Mutez {
-	return &Mutez{
-		Default: NewDefault(consts.MUTEZ, 0, depth),
+// NewMumav -
+func NewMumav(depth int) *Mumav {
+	return &Mumav{
+		Default: NewDefault(consts.MUMAV, 0, depth),
 	}
 }
 
 // ToJSONSchema -
-func (m *Mutez) ToJSONSchema() (*JSONSchema, error) {
+func (m *Mumav) ToJSONSchema() (*JSONSchema, error) {
 	return getIntJSONSchema(m.Default), nil
 }
 
 // Compare -
-func (m *Mutez) Compare(second Comparable) (int, error) {
-	secondItem, ok := second.(*Mutez)
+func (m *Mumav) Compare(second Comparable) (int, error) {
+	secondItem, ok := second.(*Mumav)
 	if !ok {
 		return 0, consts.ErrTypeIsNotComparable
 	}
@@ -33,8 +33,8 @@ func (m *Mutez) Compare(second Comparable) (int, error) {
 }
 
 // Distinguish -
-func (m *Mutez) Distinguish(x Distinguishable) (*MiguelNode, error) {
-	second, ok := x.(*Mutez)
+func (m *Mumav) Distinguish(x Distinguishable) (*MiguelNode, error) {
+	second, ok := x.(*Mumav)
 	if !ok {
 		return nil, nil
 	}
@@ -42,13 +42,13 @@ func (m *Mutez) Distinguish(x Distinguishable) (*MiguelNode, error) {
 }
 
 // FromJSONSchema -
-func (m *Mutez) FromJSONSchema(data map[string]interface{}) error {
+func (m *Mumav) FromJSONSchema(data map[string]interface{}) error {
 	setIntJSONSchema(&m.Default, data)
 	return nil
 }
 
 // FindByName -
-func (m *Mutez) FindByName(name string, isEntrypoint bool) Node {
+func (m *Mumav) FindByName(name string, isEntrypoint bool) Node {
 	if m.GetName() == name {
 		return m
 	}

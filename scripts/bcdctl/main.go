@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/config"
 	"github.com/jessevdk/go-flags"
+	"github.com/mavryk-network/bcdhub/internal/config"
 	"github.com/rs/zerolog/log"
 )
 

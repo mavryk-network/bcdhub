@@ -3,7 +3,7 @@ package bigmapdiff
 import (
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 	"github.com/uptrace/bun"
 )
 

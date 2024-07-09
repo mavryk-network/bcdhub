@@ -5,8 +5,8 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/baking-bad/bcdhub/internal/periodic"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/periodic"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 	"gopkg.in/yaml.v3"
 )
 

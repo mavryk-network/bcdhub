@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/types"
 	"github.com/pkg/errors"
 )
 
@@ -133,7 +133,7 @@ func (list *List) ToJSONSchema() (*JSONSchema, error) {
 	}
 
 	switch list.Type.(type) {
-	case *Address, *Nat, *Mutez, *Int, *BakerHash, *BLS12381fr, *BLS12381g1, *BLS12381g2, *Bytes, *Key, *KeyHash, *ChainID, *Lambda, *Signature, *String, *List, *Map:
+	case *Address, *Nat, *Mumav, *Int, *BakerHash, *BLS12381fr, *BLS12381g1, *BLS12381g2, *Bytes, *Key, *KeyHash, *ChainID, *Lambda, *Signature, *String, *List, *Map:
 		s.Items.Properties = child.Properties
 	default:
 		s.Items.Properties[list.Type.GetName()] = child

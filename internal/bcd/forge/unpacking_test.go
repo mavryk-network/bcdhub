@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/testsuite"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/testsuite"
 	"github.com/stretchr/testify/require"
 )
 
@@ -27,8 +27,8 @@ func TestCollectStrings(t *testing.T) {
 			tree:      `{"args":[{"bytes": "00000c9b9e93efaac92e71f2c1ec48bb35848efeba70"},{"bytes": "0000b240dadc291b4fd6f1328f60ed463264c0d17e97"}],"prim": "Pair"}`,
 			tryUnpack: true,
 			want: []string{
-				"tz1LnhE3qb44rE9vBYLwPxcRoJVTpCNxqSGy",
-				"tz1btYfTs5YhJZSfXB1pTf3L4SHfi3Ks1zeh",
+				"mv19AAXe9xMRRVw9KrundnJSxKMSNas4cisy",
+				"mv1QG1y4BSr3sqDtfVafhUjMDT9eGRrZMHwd",
 			},
 		}, {
 			name:      "bytes with unpack",
@@ -80,14 +80,14 @@ func TestCollectStrings(t *testing.T) {
 			tree:      `{"bytes": "00012ffebbf1560632ca767bc960ccdb84669d284c2c"}`,
 			tryUnpack: true,
 			want: []string{
-				"tz2Ch1abG7FNiibmV26Uzgdsnfni9XGrk5wD",
+				"mv2QQ5sHsmFuksCRmRgkZpp2DUHBxrZkQzcZ",
 			},
 		}, {
 			name:      "tz3",
 			tree:      `{"bytes": "000247d8c0238fc2f5a3b6c2e16b19a2283323dfdbba"}`,
 			tryUnpack: true,
 			want: []string{
-				"tz3SswFNdm14VehWk2kL6LxeQxgJib67syej",
+				"mv3FFQYxx8JR4vUjtMKBLAefZyYHGycEazFF",
 			},
 		}, {
 			name:      "KT1",
@@ -107,7 +107,7 @@ func TestCollectStrings(t *testing.T) {
 			name:      "simple bytes",
 			tree:      `{"bytes":"74657a6f732d73746f726167653a636f6e74656e74"}`,
 			tryUnpack: true,
-			want:      []string{"tezos-storage:content"},
+			want:      []string{"mavryk-storage:content"},
 		}, {
 			name:      "ipfs test",
 			tree:      `{"bytes":"050100000035697066733a2f2f516d585a4846695a5a35566747794c634b514c4d6b5032314e733855394e47316d6f707945777348446663575835"}`,

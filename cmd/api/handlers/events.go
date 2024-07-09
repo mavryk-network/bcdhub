@@ -3,8 +3,8 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/baking-bad/bcdhub/internal/config"
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/bcdhub/internal/config"
 )
 
 // ListEvents -

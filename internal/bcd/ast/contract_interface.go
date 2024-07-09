@@ -1,8 +1,8 @@
 package ast
 
 import (
-	"github.com/baking-bad/bcdhub/internal/bcd/ast/interfaces"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast/interfaces"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
 )
 
 // contract tags

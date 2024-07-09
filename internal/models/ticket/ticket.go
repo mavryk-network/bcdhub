@@ -4,7 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
 	"github.com/uptrace/bun"
 )
 

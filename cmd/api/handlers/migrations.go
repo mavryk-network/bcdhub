@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/encoding"
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/migration"
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/migration"
 )
 
 // GetContractMigrations godoc

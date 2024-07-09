@@ -18,7 +18,7 @@ func TestUntypedAST_GetStrings(t *testing.T) {
 			name:      "test 1",
 			tree:      `{"bytes":"74657a6f732d73746f726167653a6d65746164617461"}`,
 			tryUnpack: true,
-			want:      []string{"tezos-storage:metadata"},
+			want:      []string{"mavryk-storage:metadata"},
 		},
 	}
 	for _, tt := range tests {

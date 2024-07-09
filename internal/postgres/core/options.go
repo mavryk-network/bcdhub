@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/baking-bad/bcdhub/internal/postgres/consts"
+	"github.com/mavryk-network/bcdhub/internal/postgres/consts"
 )
 
 // PostgresOption -

@@ -1,6 +1,6 @@
 package types
 
-import "github.com/baking-bad/bcdhub/internal/bcd/consts"
+import "github.com/mavryk-network/bcdhub/internal/bcd/consts"
 
 // OperationKind -
 type OperationKind int

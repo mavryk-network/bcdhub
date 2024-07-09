@@ -4,9 +4,9 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
-	"github.com/baking-bad/bcdhub/internal/postgres/consts"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/postgres/consts"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 	"github.com/pkg/errors"
 	"github.com/uptrace/bun"
 )

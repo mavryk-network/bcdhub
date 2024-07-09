@@ -6,7 +6,7 @@ code { DUP ;
        { DIP { DUP @s } ; SWAP } ;
        CDR %ppl ;
        IMPLICIT_ACCOUNT ;
-       PUSH mutez 1000000 ;
+       PUSH mumav 1000000 ;
        UNIT ;
        TRANSFER_TOKENS @op ;
        { DIP { DIP { DUP @s } ; SWAP } ; SWAP } ;

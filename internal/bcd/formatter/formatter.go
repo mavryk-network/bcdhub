@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 
-	"github.com/baking-bad/bcdhub/internal/helpers"
+	"github.com/mavryk-network/bcdhub/internal/helpers"
 )
 
 // DefLineSize -
@@ -24,7 +24,7 @@ func IsFramed(n gjson.Result) bool {
 		return true
 	} else if helpers.StringInArray(prim, []string{
 		"key", "unit", "signature", "operation",
-		"int", "nat", "string", "bytes", "mutez", "bool", "key_hash", "timestamp", "address",
+		"int", "nat", "string", "bytes", "mumav", "bool", "key_hash", "timestamp", "address",
 		"bls12_381_g1", "bls12_381_g2", "bls12_381_fr", "chain_id", "never",
 		"chest", "chest_key", "tx_rollup_l2_address",
 	}) {

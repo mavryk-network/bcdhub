@@ -5,11 +5,11 @@ import (
 	"errors"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
-	"github.com/baking-bad/bcdhub/internal/periodic"
 	"github.com/dipdup-io/workerpool"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/periodic"
 	"github.com/rs/zerolog/log"
 )
 

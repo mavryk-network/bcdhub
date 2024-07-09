@@ -4,14 +4,14 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
 )
 
 // IsLiteral -
 func IsLiteral(prim string) bool {
 	for _, s := range []string{
 		consts.CONTRACT, consts.BYTES, consts.ADDRESS, consts.KEYHASH,
-		consts.KEY, consts.TIMESTAMP, consts.BOOL, consts.MUTEZ,
+		consts.KEY, consts.TIMESTAMP, consts.BOOL, consts.MUMAV,
 		consts.NAT, consts.STRING, consts.INT, consts.SIGNATURE,
 	} {
 		if prim == s {
@@ -29,7 +29,7 @@ func IsContractLazy(str string) bool {
 // IsAddressLazy -
 func IsAddressLazy(address string) bool {
 	return (len(address) == 36 && (strings.HasPrefix(address, "KT") ||
-		strings.HasPrefix(address, "tz") ||
+		strings.HasPrefix(address, "mv") ||
 		strings.HasPrefix(address, "sr1"))) ||
 		(len(address) == 37 && strings.HasPrefix(address, "txr"))
 }
@@ -45,7 +45,7 @@ func IsSmartRollupAddressLazy(address string) bool {
 }
 
 var (
-	addressRegex     = regexp.MustCompile("(tz|KT|txr|sr)[0-9A-Za-z]{34}")
+	addressRegex     = regexp.MustCompile("(mv|KT|txr|sr)[0-9A-Za-z]{34}")
 	contractRegex    = regexp.MustCompile("(KT1)[0-9A-Za-z]{33}")
 	bakerHashRegex   = regexp.MustCompile("(SG1)[0-9A-Za-z]{33}")
 	operationRegex   = regexp.MustCompile("^o[1-9A-HJ-NP-Za-km-z]{50}$")

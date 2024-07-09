@@ -5,9 +5,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
 )
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary

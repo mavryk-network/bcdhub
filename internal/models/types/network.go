@@ -13,77 +13,38 @@ type Network int64
 const (
 	Empty Network = iota
 	Mainnet
-	Carthagenet
-	Delphinet
-	Edo2net
-	Florencenet
-	Granadanet
 	Sandboxnet
-	Hangzhounet
-	Hangzhou2net
-	Ithacanet
-	Jakartanet
-	Ghostnet
-	Kathmandunet
-	Limanet
+	Basenet
 	Mondaynet
 	Dailynet
-	Mumbainet
 	Rollupnet
-	Nairobinet
-	Oxfordnet
+	Atlasnet
 	Weeklynet
-	Parisnet
+	Boreasnet
 )
 
 var networkNames = map[Network]string{
-	Mainnet:      "mainnet",
-	Carthagenet:  "carthagenet",
-	Delphinet:    "delphinet",
-	Edo2net:      "edo2net",
-	Florencenet:  "florencenet",
-	Granadanet:   "granadanet",
-	Sandboxnet:   "sandboxnet",
-	Hangzhounet:  "hangzhounet",
-	Hangzhou2net: "hangzhou2net",
-	Ithacanet:    "ithacanet",
-	Jakartanet:   "jakartanet",
-	Ghostnet:     "ghostnet",
-	Kathmandunet: "kathmandunet",
-	Limanet:      "limanet",
-	Mondaynet:    "mondaynet",
-	Weeklynet:    "weeklynet",
-	Dailynet:     "dailynet",
-	Mumbainet:    "mumbainet",
-	Rollupnet:    "rollupnet",
-	Nairobinet:   "nairobinet",
-	Oxfordnet:    "oxfordnet",
-	Parisnet:     "parisnet",
+	Mainnet:    "mainnet",
+	Sandboxnet: "sandboxnet",
+	Basenet:    "basenet",
+	Mondaynet:  "mondaynet",
+	Weeklynet:  "weeklynet",
+	Dailynet:   "dailynet",
+	Rollupnet:  "rollupnet",
+	Atlasnet:   "atlasnet",
+	Boreasnet:  "boreasnet",
 }
 
 var namesToNetwork = map[string]Network{
-	"mainnet":      Mainnet,
-	"carthagenet":  Carthagenet,
-	"delphinet":    Delphinet,
-	"edo2net":      Edo2net,
-	"florencenet":  Florencenet,
-	"granadanet":   Granadanet,
-	"sandboxnet":   Sandboxnet,
-	"hangzhounet":  Hangzhounet,
-	"hangzhou2net": Hangzhou2net,
-	"ithacanet":    Ithacanet,
-	"jakartanet":   Jakartanet,
-	"ghostnet":     Ghostnet,
-	"kathmandunet": Kathmandunet,
-	"limanet":      Limanet,
-	"mondaynet":    Mondaynet,
-	"dailynet":     Dailynet,
-	"mumbainet":    Mumbainet,
-	"rollupnet":    Rollupnet,
-	"nairobinet":   Nairobinet,
-	"oxfordnet":    Oxfordnet,
-	"weeklynet":    Weeklynet,
-	"parisnet":     Parisnet,
+	"mainnet":    Mainnet,
+	"sandboxnet": Sandboxnet,
+	"basenet":    Basenet,
+	"mondaynet":  Mondaynet,
+	"dailynet":   Dailynet,
+	"rollupnet":  Rollupnet,
+	"atlasnet":   Atlasnet,
+	"weeklynet":  Weeklynet,
+	"boreasnet":  Boreasnet,
 }
 
 // String - convert enum to string for printing

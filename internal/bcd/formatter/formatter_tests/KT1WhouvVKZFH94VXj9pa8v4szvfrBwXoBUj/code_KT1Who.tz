@@ -1,5 +1,5 @@
-parameter (or (or %fund (pair %initiate (address %participant) (pair %settings (pair (bytes %hashed_secret) (timestamp %refund_time)) (mutez %payoff))) (bytes %hashed_secret)) (or %redeem_refund (bytes %secret) (bytes %hashed_secret)));
-storage (pair (big_map bytes (pair (pair %recipients (address %initiator) (address %participant)) (pair %settings (pair (mutez %amount) (timestamp %refund_time)) (mutez %payoff)))) unit);
+parameter (or (or %fund (pair %initiate (address %participant) (pair %settings (pair (bytes %hashed_secret) (timestamp %refund_time)) (mumav %payoff))) (bytes %hashed_secret)) (or %redeem_refund (bytes %secret) (bytes %hashed_secret)));
+storage (pair (big_map bytes (pair (pair %recipients (address %initiator) (address %participant)) (pair %settings (pair (mumav %amount) (timestamp %refund_time)) (mumav %payoff)))) unit);
 code { NIL @operations operation ;
        SWAP ;
        { { DUP ; CAR @% ; DIP { CDR } } ; DIP { { DUP ; CAR @% ; DIP { CDR @% } } } } ;
@@ -35,7 +35,7 @@ code { NIL @operations operation ;
                            SHA256 @hash ;
                            DUP ;
                            DIP { SWAP } ;
-                           { DIP { DIP { GET ; { IF_NONE { PUSH string "no swap for such secret" ; FAILWITH } {} } ; DUP ; { { DUP ; CAR @% ; DIP { CDR @% } } } ; CDR @% ; CONTRACT @participant unit ; { IF_NONE { PUSH string "recipient does not exist" ; FAILWITH } {} } ; SWAP ; { CAR ; CAR @% } ; { DIP { DIP { SENDER ; CONTRACT @sender unit ; { IF_NONE { PUSH string "wrong sender address" ; FAILWITH } {} } ; SWAP ; CDR @% ; { { DUP ; CAR ; DIP { CDR @% } } ; { DUP ; CAR @% ; DIP { CDR @% } } } ; DROP ; NOW ; { COMPARE ; LT ; IF {} { PUSH string "refund_time has already come" ; FAILWITH } } ; DUP ; PUSH mutez 0 ; { COMPARE ; LT ; IF { UNIT ;
+                           { DIP { DIP { GET ; { IF_NONE { PUSH string "no swap for such secret" ; FAILWITH } {} } ; DUP ; { { DUP ; CAR @% ; DIP { CDR @% } } } ; CDR @% ; CONTRACT @participant unit ; { IF_NONE { PUSH string "recipient does not exist" ; FAILWITH } {} } ; SWAP ; { CAR ; CAR @% } ; { DIP { DIP { SENDER ; CONTRACT @sender unit ; { IF_NONE { PUSH string "wrong sender address" ; FAILWITH } {} } ; SWAP ; CDR @% ; { { DUP ; CAR ; DIP { CDR @% } } ; { DUP ; CAR @% ; DIP { CDR @% } } } ; DROP ; NOW ; { COMPARE ; LT ; IF {} { PUSH string "refund_time has already come" ; FAILWITH } } ; DUP ; PUSH mumav 0 ; { COMPARE ; LT ; IF { UNIT ;
                                 TRANSFER_TOKENS ;
                                 DIP { SWAP } ;
                                 CONS }
@@ -44,7 +44,7 @@ code { NIL @operations operation ;
                                 SWAP } } } } } ; UNIT ; TRANSFER_TOKENS } } } }
                          { DUP ;
                            DIP { GET ; { IF_NONE { PUSH string "no swap for such hash" ; FAILWITH } {} } ; DUP ; { CAR ; CAR @% } ; CONTRACT @initiator unit ; { IF_NONE { PUSH string "recipient does not exist" ; FAILWITH } {} } ; SWAP ; CDR ; { { DUP ; CAR ; DIP { CDR @% } } ; { DUP ; CAR @% ; DIP { CDR @% } } } ; SWAP ; NOW ; { COMPARE ; GE ; IF {} { PUSH string "refund_time has not come" ; FAILWITH } } ; ADD ; UNIT ; TRANSFER_TOKENS ; SWAP ; { DIP { DIP { SWAP } } } } } ;
-                 NONE @none (pair (pair address address) (pair (pair mutez timestamp) mutez)) ;
+                 NONE @none (pair (pair address address) (pair (pair mumav timestamp) mumav)) ;
                  SWAP ;
                  UPDATE @cleared_map ;
                  SWAP ;

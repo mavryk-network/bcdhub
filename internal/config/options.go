@@ -3,25 +3,25 @@ package config
 import (
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/tezerrors"
-	"github.com/baking-bad/bcdhub/internal/postgres/account"
-	"github.com/baking-bad/bcdhub/internal/postgres/bigmapdiff"
-	"github.com/baking-bad/bcdhub/internal/postgres/contract"
-	"github.com/baking-bad/bcdhub/internal/postgres/domains"
-	"github.com/baking-bad/bcdhub/internal/postgres/global_constant"
-	"github.com/baking-bad/bcdhub/internal/postgres/migration"
-	"github.com/baking-bad/bcdhub/internal/postgres/operation"
-	"github.com/baking-bad/bcdhub/internal/postgres/protocol"
-	smartrollup "github.com/baking-bad/bcdhub/internal/postgres/smart_rollup"
-	"github.com/baking-bad/bcdhub/internal/postgres/stats"
-	"github.com/baking-bad/bcdhub/internal/postgres/ticket"
-	"github.com/baking-bad/bcdhub/internal/services/mempool"
+	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/bcdhub/internal/postgres/account"
+	"github.com/mavryk-network/bcdhub/internal/postgres/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/postgres/contract"
+	"github.com/mavryk-network/bcdhub/internal/postgres/domains"
+	"github.com/mavryk-network/bcdhub/internal/postgres/global_constant"
+	"github.com/mavryk-network/bcdhub/internal/postgres/migration"
+	"github.com/mavryk-network/bcdhub/internal/postgres/operation"
+	"github.com/mavryk-network/bcdhub/internal/postgres/protocol"
+	smartrollup "github.com/mavryk-network/bcdhub/internal/postgres/smart_rollup"
+	"github.com/mavryk-network/bcdhub/internal/postgres/stats"
+	"github.com/mavryk-network/bcdhub/internal/postgres/ticket"
+	"github.com/mavryk-network/bcdhub/internal/services/mempool"
 
-	"github.com/baking-bad/bcdhub/internal/postgres/bigmapaction"
-	"github.com/baking-bad/bcdhub/internal/postgres/block"
-	pgCore "github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/postgres/bigmapaction"
+	"github.com/mavryk-network/bcdhub/internal/postgres/block"
+	pgCore "github.com/mavryk-network/bcdhub/internal/postgres/core"
 
-	"github.com/baking-bad/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
 )
 
 // ContextOption -

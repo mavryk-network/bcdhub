@@ -38,7 +38,7 @@
                         ]
                       },
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%payoff"
                         ]
@@ -130,7 +130,7 @@
                         "prim": "pair",
                         "args": [
                           {
-                            "prim": "mutez",
+                            "prim": "mumav",
                             "annots": [
                               "%amount"
                             ]
@@ -144,7 +144,7 @@
                         ]
                       },
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%payoff"
                         ]
@@ -1127,7 +1127,7 @@
                                                   "prim": "PUSH",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez"
+                                                      "prim": "mumav"
                                                     },
                                                     {
                                                       "int": "0"
@@ -1434,7 +1434,7 @@
                             "prim": "pair",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "prim": "timestamp"
@@ -1442,7 +1442,7 @@
                             ]
                           },
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           }
                         ]
                       }
