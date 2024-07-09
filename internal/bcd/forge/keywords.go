@@ -148,7 +148,7 @@ var primKeywords = []string{
 	"VIEW",
 	"view",
 	"constant",
-	"SUB_MUTEZ",
+	"SUB_MUMAV",
 	"tx_rollup_l2_address",
 	"MIN_BLOCK_TIME",
 	"sapling_transaction",

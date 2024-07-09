@@ -28,7 +28,7 @@ services:
 
   api:
     restart: always
-    image: ghcr.io/baking-bad/bcdhub-api:${TAG:-master}
+    image: ghcr.io/mavryk-network/bcdhub-api:${TAG:-master}
     build:
       context: .
       dockerfile: build/api/Dockerfile
@@ -44,7 +44,7 @@ services:
 
   indexer:
     restart: always
-    image: ghcr.io/baking-bad/bcdhub-indexer:${TAG:-master}
+    image: ghcr.io/mavryk-network/bcdhub-indexer:${TAG:-master}
     build:
       context: .
       dockerfile: build/indexer/Dockerfile

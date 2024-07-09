@@ -164,8 +164,8 @@ func typeNode(node *base.Node, depth int, id *int) (Node, error) {
 		ast = NewInt(depth + 1)
 	case consts.NAT:
 		ast = NewNat(depth + 1)
-	case consts.MUTEZ:
-		ast = NewMutez(depth + 1)
+	case consts.MUMAV:
+		ast = NewMumav(depth + 1)
 	case consts.BOOL:
 		ast = NewBool(depth + 1)
 	case consts.TIMESTAMP:

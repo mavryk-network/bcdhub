@@ -18,7 +18,7 @@ services:
 
   api:
     restart: always
-    image: ghcr.io/baking-bad/bcdhub-api:${TAG}
+    image: ghcr.io/mavryk-network/bcdhub-api:${TAG}
     environment:
       - BCD_ENV=sandbox
       - GIN_MODE=debug
@@ -38,7 +38,7 @@ services:
 
   indexer:
     restart: always
-    image: ghcr.io/baking-bad/bcdhub-indexer:${TAG}
+    image: ghcr.io/mavryk-network/bcdhub-indexer:${TAG}
     environment:
       - BCD_ENV=sandbox
       - POSTGRES_USER=root
@@ -69,7 +69,7 @@ services:
   gui:
     container_name: sandbox-gui
     restart: always
-    image: ghcr.io/baking-bad/bcdhub-gui:${TAG}
+    image: ghcr.io/mavryk-network/bcdhub-gui:${TAG}
     depends_on:
       - api
     ports:

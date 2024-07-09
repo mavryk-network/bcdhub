@@ -11,7 +11,7 @@ import (
 func IsLiteral(prim string) bool {
 	for _, s := range []string{
 		consts.CONTRACT, consts.BYTES, consts.ADDRESS, consts.KEYHASH,
-		consts.KEY, consts.TIMESTAMP, consts.BOOL, consts.MUTEZ,
+		consts.KEY, consts.TIMESTAMP, consts.BOOL, consts.MUMAV,
 		consts.NAT, consts.STRING, consts.INT, consts.SIGNATURE,
 	} {
 		if prim == s {

@@ -18,7 +18,7 @@ var simpleTypes = []string{
 	consts.BYTES,
 	consts.BOOL,
 	consts.NAT,
-	consts.MUTEZ,
+	consts.MUMAV,
 	consts.TIMESTAMP,
 	consts.ADDRESS,
 	consts.KEYHASH,

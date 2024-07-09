@@ -132,7 +132,7 @@ func (set *Set) ToJSONSchema() (*JSONSchema, error) {
 	}
 
 	switch set.Type.(type) {
-	case *Address, *Nat, *Mutez, *Int, *BakerHash, *BLS12381fr, *BLS12381g1, *BLS12381g2, *Bytes, *Key, *KeyHash, *ChainID, *Lambda, *Signature, *String:
+	case *Address, *Nat, *Mumav, *Int, *BakerHash, *BLS12381fr, *BLS12381g1, *BLS12381g2, *Bytes, *Key, *KeyHash, *ChainID, *Lambda, *Signature, *String:
 		s.Items.Properties = child.Properties
 	default:
 		s.Items.Properties[set.Type.GetName()] = child

@@ -32,7 +32,7 @@ const (
 	OPERATION          = "operation"
 	INT                = "int"
 	BYTES              = "bytes"
-	MUTEZ              = "mumav"
+	MUMAV              = "mumav"
 	BOOL               = "bool"
 	KEYHASH            = "key_hash"
 	TIMESTAMP          = "timestamp"
