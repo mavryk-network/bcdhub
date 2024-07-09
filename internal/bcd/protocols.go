@@ -12,6 +12,7 @@ var symLinks = map[string]string{
 	"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp": SymLinkAlpha,
 	"Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P": SymLinkAlpha,
 	"PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp": SymLinkJakarta, // Atlas
+	"PsParisCZo7KAh1Z1smVd9ZMZ1HHn5gkzbM94V3PLCpknFWhUAi": SymLinkJakarta, // Boreas
 }
 
 // GetProtoSymLink -
@@ -24,7 +25,7 @@ func GetProtoSymLink(protocol string) (string, error) {
 
 // GetCurrentProtocol - returns last supported protocol
 func GetCurrentProtocol() string {
-	return "PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp"
+	return "PsParisCZo7KAh1Z1smVd9ZMZ1HHn5gkzbM94V3PLCpknFWhUAi"
 }
 
 // SymLink - returns last sym link
@@ -41,6 +42,6 @@ const (
 
 var ChainID = map[string]string{
 	"NetXdQprcVkpaWU": "mainnet",
-	"NetXnHfVqm9iesp": "basenet",
 	"NetXvyTAafh8goH": "atlasnet",
+	"NetXR64bNAYkP4S": "boreasnet",
 }
