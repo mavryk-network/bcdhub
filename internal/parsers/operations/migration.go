@@ -35,7 +35,7 @@ func (m Migration) Parse(ctx context.Context, data noderpc.Operation, operation 
 	case
 		"ProtoALphaALphaALphaALphaALphaALphaALphaALphaDdp3zK",
 		"PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp",
-		"PsParisCZo7KAh1Z1smVd9ZMZ1HHn5gkzbM94V3PLCpknFWhUAi":
+		"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT":
 		return m.fromLazyStorageDiff(ctx, data, operation, store)
 	default:
 		return errors.Errorf("unknown protocol for migration parser: %s", protocol)
