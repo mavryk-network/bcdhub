@@ -42,6 +42,6 @@ const (
 
 var ChainID = map[string]string{
 	"NetXdQprcVkpaWU": "mainnet",
-	"NetXvyTAafh8goH": "atlasnet",
+	"NetXUrNc8uioxP8": "atlasnet",
 	"NetXR64bNAYkP4S": "boreasnet",
 }
