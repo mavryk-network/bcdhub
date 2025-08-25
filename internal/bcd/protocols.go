@@ -36,6 +36,7 @@ func SymLink() (string, error) {
 // Symbolic links
 const (
 	SymLinkAlpha = "alpha"
+	SymLinkBabylon = "babylon"
 	SymLinkAtlas = "atlas"
 )
 

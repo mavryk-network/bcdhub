@@ -150,7 +150,7 @@ func TestChainIDValidator(t *testing.T) {
 	}{
 		{
 			name:    "test 1",
-			value:   "7a06a770",
+			value:   "54a49562",
 			wantErr: false,
 		}, {
 			name:    "test 2",
