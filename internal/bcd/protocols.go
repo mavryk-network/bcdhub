@@ -35,9 +35,9 @@ func SymLink() (string, error) {
 
 // Symbolic links
 const (
-	SymLinkAlpha = "alpha"
+	SymLinkAlpha   = "alpha"
 	SymLinkBabylon = "babylon"
-	SymLinkAtlas = "atlas"
+	SymLinkAtlas   = "atlas"
 )
 
 var ChainID = map[string]string{
