@@ -30,11 +30,11 @@ func (m Migration) Parse(ctx context.Context, data noderpc.Operation, operation 
 	case
 		"ProtoGenesisGenesisGenesisGenesisGenesisGenesk612im",
 		"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp",
-		"Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P":
+		"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP":
 		return m.fromBigMapDiffs(ctx, data, operation, store)
 	case
 		"ProtoALphaALphaALphaALphaALphaALphaALphaALphaDdp3zK",
-		"PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp",
+		"PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu",
 		"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT":
 		return m.fromLazyStorageDiff(ctx, data, operation, store)
 	default:

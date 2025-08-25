@@ -71,7 +71,7 @@ func TestEncodeFromHex(t *testing.T) {
 			name:   "chainID/main",
 			input:  "7a06a770",
 			prefix: []byte{87, 82, 0},
-			res:    "NetXdQprcVkpaWU",
+			res:    "NetXXAAR1wWQhhe",
 		},
 		{
 			name:   "chainID/babylon",

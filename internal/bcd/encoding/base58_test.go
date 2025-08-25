@@ -136,7 +136,7 @@ func TestEncodeBase58String(t *testing.T) {
 			name:   "chainID/main",
 			data:   "7a06a770",
 			prefix: "Net",
-			want:   "NetXdQprcVkpaWU",
+			want:   "NetXXAAR1wWQhhe",
 		},
 		{
 			name:   "chainID/babylon",

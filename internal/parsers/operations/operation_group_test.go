@@ -266,7 +266,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf",
-	// 		SymLink: bcd.SymLinkJakarta,
+	// 		SymLink: bcd.SymLinkAtlas,
 	// 		ID:      7,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -345,7 +345,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(7)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf",
-	// 		SymLink: bcd.SymLinkJakarta,
+	// 		SymLink: bcd.SymLinkAtlas,
 	// 		ID:      7,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -402,7 +402,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			Timestamp: timestamp,
 		// 			Protocol:  "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
 		// 			Level:     1068669,
-		// 			ChainID:   "NetXdQprcVkpaWU",
+		// 			ChainID:   "NetXXAAR1wWQhhe",
 		// 		}),
 		// 		WithProtocol(&protocol.Protocol{
 		// 			Constants: &protocol.Constants{
@@ -1295,7 +1295,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			Timestamp: timestamp,
 		// 			Protocol:  "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
 		// 			Level:     1516349,
-		// 			ChainID:   "NetXdQprcVkpaWU",
+		// 			ChainID:   "NetXXAAR1wWQhhe",
 		// 		}),
 		// 		WithProtocol(&protocol.Protocol{
 		// 			Constants: &protocol.Constants{
@@ -1400,7 +1400,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			Timestamp: timestamp,
 		// 			Protocol:  "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
 		// 			Level:     1520888,
-		// 			ChainID:   "NetXdQprcVkpaWU",
+		// 			ChainID:   "NetXXAAR1wWQhhe",
 		// 		}),
 		// 		WithProtocol(&protocol.Protocol{
 		// 			Constants: &protocol.Constants{
@@ -2276,7 +2276,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			Timestamp: timestamp,
 		// 			Protocol:  "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
 		// 			Level:     707452,
-		// 			ChainID:   "NetXdQprcVkpaWU",
+		// 			ChainID:   "NetXXAAR1wWQhhe",
 		// 		}),
 		// 		WithProtocol(&protocol.Protocol{
 		// 			Constants: &protocol.Constants{
@@ -2406,7 +2406,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf",
 		// 			ID:      7,
-		// 			SymLink: bcd.SymLinkJakarta,
+		// 			SymLink: bcd.SymLinkAtlas,
 		// 		}),
 		// 	},
 		// 	storage:  map[string]int64{},

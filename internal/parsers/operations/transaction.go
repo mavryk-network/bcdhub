@@ -132,7 +132,7 @@ func (p Transaction) parseContractParams(ctx context.Context, data noderpc.Opera
 					if err != nil {
 						return err
 					}
-				case bcd.SymLinkJakarta:
+				case bcd.SymLinkAtlas:
 					tx.Script, err = contracts[i].Jakarta.Full()
 					if err != nil {
 						return err

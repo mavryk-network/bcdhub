@@ -204,7 +204,7 @@ func (s *StorageTestSuite) TestProtocols() {
 	err = s.storage.DB.NewSelect().Model(&proto).Order("id desc").Limit(1).Scan(ctx)
 	s.Require().NoError(err)
 	s.Require().EqualValues(0, proto.EndLevel)
-	s.Require().EqualValues("Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P", proto.Hash)
+	s.Require().EqualValues("PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP", proto.Hash)
 }
 
 func (s *StorageTestSuite) TestRollbackUpdateStats() {

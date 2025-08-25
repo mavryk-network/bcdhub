@@ -21,7 +21,7 @@ func Get(ctx *config.Context, protocol string) (*Specific, error) {
 	switch protocol {
 	case "ProtoGenesisGenesisGenesisGenesisGenesisGenesk612im",
 		"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp",
-		"Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P":
+		"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP":
 		return &Specific{
 			StorageParser:         storage.NewAlpha(),
 			ContractParser:        contract.NewAlpha(ctx),
@@ -29,7 +29,7 @@ func Get(ctx *config.Context, protocol string) (*Specific, error) {
 			NeedReceiveRawStorage: false,
 		}, nil
 	case "ProtoALphaALphaALphaALphaALphaALphaALphaALphaDdp3zK",
-		"PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp",
+		"PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu",
 		"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT":
 		return &Specific{
 			StorageParser:         storage.NewLazyBabylon(ctx.BigMapDiffs, ctx.Operations, ctx.Accounts),
@@ -49,10 +49,10 @@ func NeedImplicitParsing(protocol string) bool {
 	switch protocol {
 	case "ProtoGenesisGenesisGenesisGenesisGenesisGenesk612im",
 		"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp",
-		"Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P":
+		"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP":
 		return false
 	case "ProtoALphaALphaALphaALphaALphaALphaALphaALphaDdp3zK",
-		"PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp",
+		"PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu",
 		"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT":
 		return true
 	}

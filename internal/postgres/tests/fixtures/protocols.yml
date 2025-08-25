@@ -1,9 +1,9 @@
 - id: 1
-  hash: Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P
+  hash: PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP
   start_level: 1
   end_level: 1
   sym_link: alpha
-  alias: Ps9mPmXa
+  alias: PsUCFkqU
   chain_id: NetXnHfVqm9iesp
   cost_per_byte: 250
   hard_gas_limit_per_operation: 1040000

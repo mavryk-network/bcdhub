@@ -159,7 +159,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 	}
 
 	for i := range contracts {
-		if !specific.MigrationParser.IsMigratable(contracts[i].Account.Address) && newProtocol.SymLink == bcd.SymLinkJakarta {
+		if !specific.MigrationParser.IsMigratable(contracts[i].Account.Address) && newProtocol.SymLink == bcd.SymLinkAtlas {
 			if err := tx.JakartaVesting(ctx, &contracts[i]); err != nil {
 				return errors.Wrap(err, "jakarta vesting migration error")
 			}
@@ -181,7 +181,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 		switch newProtocol.SymLink {
 		case bcd.SymLinkBabylon:
 			err = tx.BabylonUpdateNonDelegator(ctx, &contracts[i])
-		case bcd.SymLinkJakarta:
+		case bcd.SymLinkAtlas:
 			err = tx.JakartaUpdateNonDelegator(ctx, &contracts[i])
 		}
 
@@ -195,7 +195,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 	switch newProtocol.SymLink {
 	case bcd.SymLinkBabylon:
 		err = tx.ToBabylon(ctx)
-	case bcd.SymLinkJakarta:
+	case bcd.SymLinkAtlas:
 		err = tx.ToJakarta(ctx)
 	}
 	return err

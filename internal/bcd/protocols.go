@@ -10,9 +10,9 @@ import (
 var symLinks = map[string]string{
 	"ProtoGenesisGenesisGenesisGenesisGenesisGenesk612im": SymLinkAlpha,
 	"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp": SymLinkAlpha,
-	"Ps9mPmXaRzmzk35gbAYNCAw6UXdE2qoABTHbN2oEEc1qM7CwT9P": SymLinkAlpha,
-	"PtAtLasomUEW99aVhVTrqjCHjJSpFUa8uHNEAEamx9v2SNeTaNp": SymLinkJakarta, // Atlas
-	"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT": SymLinkJakarta, // Boreas
+	"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP": SymLinkAlpha,
+	"PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu": SymLinkAtlas, // Atlas
+	"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT": SymLinkAtlas, // Boreas
 }
 
 // GetProtoSymLink -
@@ -25,7 +25,7 @@ func GetProtoSymLink(protocol string) (string, error) {
 
 // GetCurrentProtocol - returns last supported protocol
 func GetCurrentProtocol() string {
-	return "PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT"
+	return "PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu"
 }
 
 // SymLink - returns last sym link
@@ -35,13 +35,12 @@ func SymLink() (string, error) {
 
 // Symbolic links
 const (
-	SymLinkAlpha   = "alpha"
-	SymLinkBabylon = "babylon"
-	SymLinkJakarta = "jakarta"
+	SymLinkAlpha = "alpha"
+	SymLinkAtlas = "atlas"
 )
 
 var ChainID = map[string]string{
-	"NetXdQprcVkpaWU": "mainnet",
+	"NetXXAAR1wWQhhe": "mainnet",
 	"NetXUrNc8uioxP8": "atlasnet",
 	"NetXR64bNAYkP4S": "boreasnet",
 }

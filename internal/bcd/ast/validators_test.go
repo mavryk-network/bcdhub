@@ -154,7 +154,7 @@ func TestChainIDValidator(t *testing.T) {
 			wantErr: false,
 		}, {
 			name:    "test 2",
-			value:   "NetXdQprcVkpaWU",
+			value:   "NetXXAAR1wWQhhe",
 			wantErr: false,
 		}, {
 			name:    "test 3",
