@@ -11,7 +11,7 @@ var symLinks = map[string]string{
 	"ProtoGenesisGenesisGenesisGenesisGenesisGenesk612im": SymLinkAlpha,
 	"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp": SymLinkAlpha,
 	"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP": SymLinkAlpha,
-	"PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu": SymLinkAtlas, // Atlas
+	"PtAtLasdzXg4XxeVNtWheo13nG4wHXP22qYMqFcT3fyBpWkFero": SymLinkAtlas, // Atlas
 	"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT": SymLinkAtlas, // Boreas
 }
 
@@ -25,7 +25,7 @@ func GetProtoSymLink(protocol string) (string, error) {
 
 // GetCurrentProtocol - returns last supported protocol
 func GetCurrentProtocol() string {
-	return "PtAtLasVEKaifqTNpsx9GtJ8DT27rVzZR4RhKsvNShPjeijEDwu"
+	return "PtAtLasdzXg4XxeVNtWheo13nG4wHXP22qYMqFcT3fyBpWkFero"
 }
 
 // SymLink - returns last sym link
