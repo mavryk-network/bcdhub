@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 )
 
 func (s *StorageTestSuite) TestContractGet() {

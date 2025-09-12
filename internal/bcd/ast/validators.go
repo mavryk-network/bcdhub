@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/bcd/encoding"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
 	"github.com/pkg/errors"
 )
 

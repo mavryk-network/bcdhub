@@ -3,7 +3,7 @@ package ticket
 import (
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
 	"github.com/shopspring/decimal"
 	"github.com/uptrace/bun"
 )

@@ -1,4 +1,4 @@
-module github.com/baking-bad/bcdhub
+module github.com/mavryk-network/bcdhub
 
 go 1.22.4
 

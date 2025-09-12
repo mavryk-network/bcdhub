@@ -135,7 +135,7 @@
                                     "prim": "pair",
                                     "args": [
                                       {
-                                        "prim": "mutez",
+                                        "prim": "mumav",
                                         "annots": [
                                           "%sRgNameFee"
                                         ]
@@ -144,13 +144,13 @@
                                         "prim": "pair",
                                         "args": [
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%sPrNameFee"
                                             ]
                                           },
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%sRtNameFee"
                                             ]
@@ -304,7 +304,7 @@
                                     "prim": "pair",
                                     "args": [
                                       {
-                                        "prim": "mutez",
+                                        "prim": "mumav",
                                         "annots": [
                                           "%sRgNameFee"
                                         ]
@@ -313,13 +313,13 @@
                                         "prim": "pair",
                                         "args": [
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%sPrNameFee"
                                             ]
                                           },
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%sRtNameFee"
                                             ]
@@ -844,7 +844,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%sRgNameFee"
                                                                           ]
@@ -853,13 +853,13 @@
                                                                           "prim": "pair",
                                                                           "args": [
                                                                             {
-                                                                              "prim": "mutez",
+                                                                              "prim": "mumav",
                                                                               "annots": [
                                                                                 "%sPrNameFee"
                                                                               ]
                                                                             },
                                                                             {
-                                                                              "prim": "mutez",
+                                                                              "prim": "mumav",
                                                                               "annots": [
                                                                                 "%sRtNameFee"
                                                                               ]
@@ -1181,7 +1181,7 @@
                                                                     "prim": "pair",
                                                                     "args": [
                                                                       {
-                                                                        "prim": "mutez",
+                                                                        "prim": "mumav",
                                                                         "annots": [
                                                                           "%sRgNameFee"
                                                                         ]
@@ -1190,13 +1190,13 @@
                                                                         "prim": "pair",
                                                                         "args": [
                                                                           {
-                                                                            "prim": "mutez",
+                                                                            "prim": "mumav",
                                                                             "annots": [
                                                                               "%sPrNameFee"
                                                                             ]
                                                                           },
                                                                           {
-                                                                            "prim": "mutez",
+                                                                            "prim": "mumav",
                                                                             "annots": [
                                                                               "%sRtNameFee"
                                                                             ]
@@ -1506,7 +1506,7 @@
                                                                       "prim": "pair",
                                                                       "args": [
                                                                         {
-                                                                          "prim": "mutez",
+                                                                          "prim": "mumav",
                                                                           "annots": [
                                                                             "%sRgNameFee"
                                                                           ]
@@ -1515,13 +1515,13 @@
                                                                           "prim": "pair",
                                                                           "args": [
                                                                             {
-                                                                              "prim": "mutez",
+                                                                              "prim": "mumav",
                                                                               "annots": [
                                                                                 "%sPrNameFee"
                                                                               ]
                                                                             },
                                                                             {
-                                                                              "prim": "mutez",
+                                                                              "prim": "mumav",
                                                                               "annots": [
                                                                                 "%sRtNameFee"
                                                                               ]
@@ -1950,7 +1950,7 @@
                 "prim": "PUSH",
                 "args": [
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   },
                   {
                     "int": "0"
@@ -2257,7 +2257,7 @@
                                                 "prim": "pair",
                                                 "args": [
                                                   {
-                                                    "prim": "mutez",
+                                                    "prim": "mumav",
                                                     "annots": [
                                                       "%sRgNameFee"
                                                     ]
@@ -2266,13 +2266,13 @@
                                                     "prim": "pair",
                                                     "args": [
                                                       {
-                                                        "prim": "mutez",
+                                                        "prim": "mumav",
                                                         "annots": [
                                                           "%sPrNameFee"
                                                         ]
                                                       },
                                                       {
-                                                        "prim": "mutez",
+                                                        "prim": "mumav",
                                                         "annots": [
                                                           "%sRtNameFee"
                                                         ]
@@ -2423,7 +2423,7 @@
                                             "prim": "pair",
                                             "args": [
                                               {
-                                                "prim": "mutez",
+                                                "prim": "mumav",
                                                 "annots": [
                                                   "%sRgNameFee"
                                                 ]
@@ -2432,13 +2432,13 @@
                                                 "prim": "pair",
                                                 "args": [
                                                   {
-                                                    "prim": "mutez",
+                                                    "prim": "mumav",
                                                     "annots": [
                                                       "%sPrNameFee"
                                                     ]
                                                   },
                                                   {
-                                                    "prim": "mutez",
+                                                    "prim": "mumav",
                                                     "annots": [
                                                       "%sRtNameFee"
                                                     ]
@@ -3196,7 +3196,7 @@
                                         "prim": "pair",
                                         "args": [
                                           {
-                                            "prim": "mutez",
+                                            "prim": "mumav",
                                             "annots": [
                                               "%sRgNameFee"
                                             ]
@@ -3205,13 +3205,13 @@
                                             "prim": "pair",
                                             "args": [
                                               {
-                                                "prim": "mutez",
+                                                "prim": "mumav",
                                                 "annots": [
                                                   "%sPrNameFee"
                                                 ]
                                               },
                                               {
-                                                "prim": "mutez",
+                                                "prim": "mumav",
                                                 "annots": [
                                                   "%sRtNameFee"
                                                 ]
@@ -3962,7 +3962,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -4349,7 +4349,7 @@
                                                       "prim": "pair",
                                                       "args": [
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%sRgNameFee"
                                                           ]
@@ -4358,13 +4358,13 @@
                                                           "prim": "pair",
                                                           "args": [
                                                             {
-                                                              "prim": "mutez",
+                                                              "prim": "mumav",
                                                               "annots": [
                                                                 "%sPrNameFee"
                                                               ]
                                                             },
                                                             {
-                                                              "prim": "mutez",
+                                                              "prim": "mumav",
                                                               "annots": [
                                                                 "%sRtNameFee"
                                                               ]
@@ -4515,7 +4515,7 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%sRgNameFee"
                                                       ]
@@ -4524,13 +4524,13 @@
                                                       "prim": "pair",
                                                       "args": [
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%sPrNameFee"
                                                           ]
                                                         },
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%sRtNameFee"
                                                           ]
@@ -5159,7 +5159,7 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%sRgNameFee"
                                                       ]
@@ -5168,13 +5168,13 @@
                                                       "prim": "pair",
                                                       "args": [
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%sPrNameFee"
                                                           ]
                                                         },
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%sRtNameFee"
                                                           ]
@@ -5430,7 +5430,7 @@
                                               "prim": "pair",
                                               "args": [
                                                 {
-                                                  "prim": "mutez",
+                                                  "prim": "mumav",
                                                   "annots": [
                                                     "%sRgNameFee"
                                                   ]
@@ -5439,13 +5439,13 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%sPrNameFee"
                                                       ]
                                                     },
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%sRtNameFee"
                                                       ]
@@ -5517,7 +5517,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"

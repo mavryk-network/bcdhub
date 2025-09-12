@@ -5,19 +5,19 @@ import (
 	stdJSON "encoding/json"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/bcd/encoding"
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
-	"github.com/baking-bad/bcdhub/internal/bcd/tezerrors"
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/block"
-	"github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
-	smartrollup "github.com/baking-bad/bcdhub/internal/models/smart_rollup"
-	"github.com/baking-bad/bcdhub/internal/models/stats"
-	"github.com/baking-bad/bcdhub/internal/models/ticket"
-	"github.com/baking-bad/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/block"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
+	smartrollup "github.com/mavryk-network/bcdhub/internal/models/smart_rollup"
+	"github.com/mavryk-network/bcdhub/internal/models/stats"
+	"github.com/mavryk-network/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 )
 
 // Error -
@@ -356,9 +356,9 @@ type Block struct {
 	Hash                         string    `example:"BLyAEwaXShJuZasvUezHUfLqzZ48V8XrPvXF2wRaH15tmzEpsHT" json:"hash"`
 	Level                        int64     `example:"100"                                                 json:"level"`
 	Predecessor                  string    `example:"BMWVEwEYw9m5iaHzqxDfkPzZTV4rhkSouRh3DkVMVGkxZ3EVaNs" json:"predecessor"`
-	ChainID                      string    `example:"NetXdQprcVkpaWU"                                     json:"chain_id"`
-	Timestamp                    time.Time `example:"2018-06-30T18:05:27Z"                                json:"timestamp"`
-	Protocol                     string    `example:"PtCJ7pwoxe8JasnHY8YonnLYjcVHmhiARPJvqcC6VfHT5s8k8sY" json:"protocol"`
+	ChainID                      string    `example:"NetXXAAR1wWQhhe"                                     json:"chain_id"`
+	Timestamp                    time.Time `example:"2025-08-14T11:18:23Z"                                json:"timestamp"`
+	Protocol                     string    `example:"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP" json:"protocol"`
 	CostPerByte                  int64     `example:"250"                                                 json:"cost_per_byte"`
 	HardGasLimitPerOperation     int64     `example:"1040000"                                             json:"hard_gas_limit_per_operation"`
 	HardStorageLimitPerOperation int64     `example:"60000"                                               json:"hard_storage_limit_per_operation"`

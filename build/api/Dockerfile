@@ -10,22 +10,22 @@ ENV GOOS=linux
 RUN apk --no-cache add ca-certificates
 RUN apk add --update git
 
-RUN mkdir -p $GOPATH/src/github.com/baking-bad/bcdhub/
+RUN mkdir -p $GOPATH/src/github.com/mavryk-network/bcdhub/
 
-COPY ./go.* $GOPATH/src/github.com/baking-bad/bcdhub/
-WORKDIR $GOPATH/src/github.com/baking-bad/bcdhub
+COPY ./go.* $GOPATH/src/github.com/mavryk-network/bcdhub/
+WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub
 RUN go mod download
 
 COPY cmd/api cmd/api
 COPY internal internal
 
-WORKDIR $GOPATH/src/github.com/baking-bad/bcdhub/cmd/api/
+WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub/cmd/api/
 RUN go build -tags=jsoniter -a -installsuffix cgo -o /go/bin/api .
 
-WORKDIR $GOPATH/src/github.com/baking-bad/bcdhub
+WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub
 COPY scripts scripts
 
-WORKDIR $GOPATH/src/github.com/baking-bad/bcdhub/scripts/
+WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub/scripts/
 RUN cd bcdctl && go build -a -installsuffix cgo -o /go/bin/bcdctl .
 RUN cd migration && go build -a -installsuffix cgo -o /go/bin/migration .
 RUN cd nginx && go build -a -installsuffix cgo -o /go/bin/seo .

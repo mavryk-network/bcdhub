@@ -6,7 +6,7 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/baking-bad/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
 	"github.com/pkg/errors"
 )
 

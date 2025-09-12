@@ -3,7 +3,7 @@ package block
 import (
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
 	"github.com/uptrace/bun"
 )
 

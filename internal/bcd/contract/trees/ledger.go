@@ -1,6 +1,6 @@
 package trees
 
-import "github.com/baking-bad/bcdhub/internal/bcd/ast"
+import "github.com/mavryk-network/bcdhub/internal/bcd/ast"
 
 var (
 	NewNftLedgerSingleAsset, _ = ast.NewTypedAstFromString(`{"prim":"big_map","args":[{"prim":"address"},{"prim":"nat"}]}`)

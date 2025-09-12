@@ -3,10 +3,10 @@ package ast
 import (
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/forge"
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/forge"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
 	"github.com/pkg/errors"
 )
 
@@ -164,8 +164,8 @@ func typeNode(node *base.Node, depth int, id *int) (Node, error) {
 		ast = NewInt(depth + 1)
 	case consts.NAT:
 		ast = NewNat(depth + 1)
-	case consts.MUTEZ:
-		ast = NewMutez(depth + 1)
+	case consts.MUMAV:
+		ast = NewMumav(depth + 1)
 	case consts.BOOL:
 		ast = NewBool(depth + 1)
 	case consts.TIMESTAMP:

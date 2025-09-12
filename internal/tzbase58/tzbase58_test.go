@@ -14,25 +14,25 @@ func TestEncodeFromHex(t *testing.T) {
 		res    string
 	}{
 		{
-			name:   "tz1",
+			name:   "mv1",
 			input:  "06a868bd80219eb1f6a25108d1bdaa98ae27b2d9",
 			prefix: []byte{6, 161, 159},
 			res:    "tz1LFEVYR7YRCxT6Nm3Zfjdnfj77xZqhbR5U",
 		},
 		{
-			name:   "tz1",
+			name:   "mv1",
 			input:  "44c6f8bc6088cd3b64f0bca87f812634c3f0ed30",
 			prefix: []byte{6, 161, 159},
 			res:    "tz1RugzxKA8NwuymbGcy2wkSTvfRJpckfmDF",
 		},
 		{
-			name:   "tz1",
+			name:   "mv1",
 			input:  "9e6ac2e529a49aedbcdd0ac9542d5c0f4ce76f77",
 			prefix: []byte{6, 161, 159},
 			res:    "tz1a5fMLLY5WCarCzH7RKTJHX9mJFN8eaaWG",
 		},
 		{
-			name:   "tz3",
+			name:   "mv3",
 			input:  "358cbffa97149631cfb999fa47f0035fb1ea8636",
 			prefix: []byte{6, 161, 164},
 			res:    "tz3RDC3Jdn4j15J7bBHZd29EUee9gVB1CxD9",
@@ -69,9 +69,9 @@ func TestEncodeFromHex(t *testing.T) {
 		},
 		{
 			name:   "chainID/main",
-			input:  "7a06a770",
+			input:  "54a49562",
 			prefix: []byte{87, 82, 0},
-			res:    "NetXdQprcVkpaWU",
+			res:    "NetXXAAR1wWQhhe",
 		},
 		{
 			name:   "chainID/babylon",

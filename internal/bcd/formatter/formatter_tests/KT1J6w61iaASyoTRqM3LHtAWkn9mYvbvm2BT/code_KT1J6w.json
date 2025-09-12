@@ -314,7 +314,7 @@
                 "prim": "PUSH",
                 "args": [
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   },
                   {
                     "int": "1000000"

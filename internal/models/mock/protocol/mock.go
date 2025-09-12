@@ -12,7 +12,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	protocol "github.com/baking-bad/bcdhub/internal/models/protocol"
+	protocol "github.com/mavryk-network/bcdhub/internal/models/protocol"
 	gomock "go.uber.org/mock/gomock"
 )
 

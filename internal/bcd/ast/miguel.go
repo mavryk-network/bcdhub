@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
 )
 
 // MiguelNode -

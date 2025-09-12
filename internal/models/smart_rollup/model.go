@@ -3,7 +3,7 @@ package smartrollup
 import (
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
 	"github.com/uptrace/bun"
 )
 

@@ -1,9 +1,9 @@
 package operations
 
 import (
-	"github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
 )
 
 // GlobalConstant -

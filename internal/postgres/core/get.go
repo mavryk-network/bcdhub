@@ -3,7 +3,7 @@ package core
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models"
+	"github.com/mavryk-network/bcdhub/internal/models"
 )
 
 // GetByID -

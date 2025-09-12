@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
-	"github.com/baking-bad/bcdhub/internal/config"
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/bcdhub/internal/config"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 )

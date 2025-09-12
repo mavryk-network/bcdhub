@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	smartrollup "github.com/baking-bad/bcdhub/internal/models/smart_rollup"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	smartrollup "github.com/mavryk-network/bcdhub/internal/models/smart_rollup"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 	"github.com/uptrace/bun"
 )
 

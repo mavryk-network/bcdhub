@@ -5,10 +5,10 @@ import (
 
 	stdJSON "encoding/json"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/types"
 )
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary

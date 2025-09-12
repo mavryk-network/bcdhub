@@ -12,7 +12,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	migration "github.com/baking-bad/bcdhub/internal/models/migration"
+	migration "github.com/mavryk-network/bcdhub/internal/models/migration"
 	gomock "go.uber.org/mock/gomock"
 )
 

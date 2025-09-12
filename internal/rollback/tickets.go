@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/baking-bad/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/bcdhub/internal/models/ticket"
 )
 
 func (rm Manager) rollbackTicketUpdates(ctx context.Context, level int64) error {

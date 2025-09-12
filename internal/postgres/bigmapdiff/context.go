@@ -1,7 +1,7 @@
 package bigmapdiff
 
 import (
-	"github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
 	"github.com/uptrace/bun"
 )
 

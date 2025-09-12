@@ -25,10 +25,10 @@ const (
 	PrefixOperationListListHash       = "LLo"
 	PrefixProtocolHash                = "P"
 	PrefixContextHash                 = "Co"
-	PrefixPublicKeyTZ1                = "tz1"
-	PrefixPublicKeyTZ2                = "tz2"
-	PrefixPublicKeyTZ3                = "tz3"
-	PrefixPublicKeyTZ4                = "tz4"
+	PrefixPublicKeyTZ1                = "mv1"
+	PrefixPublicKeyTZ2                = "mv2"
+	PrefixPublicKeyTZ3                = "mv3"
+	PrefixPublicKeyTZ4                = "mv4"
 	PrefixPublicKeyKT1                = "KT1"
 	PrefixPublicKeyTxr1               = "txr1"
 	PrefixOriginatedSmartRollup       = "sr1"
@@ -72,10 +72,10 @@ var base58Encodings = []base58Encoding{
 	{[]byte(PrefixProtocolHash), 51, []byte{2, 170}, 32, "protocol hash"},
 	{[]byte(PrefixContextHash), 52, []byte{79, 199}, 32, "context hash"},
 
-	{[]byte(PrefixPublicKeyTZ1), 36, []byte{6, 161, 159}, 20, "ed25519 public key hash"},
-	{[]byte(PrefixPublicKeyTZ2), 36, []byte{6, 161, 161}, 20, "secp256k1 public key hash"},
-	{[]byte(PrefixPublicKeyTZ3), 36, []byte{6, 161, 164}, 20, "p256 public key hash"},
-	{[]byte(PrefixPublicKeyTZ4), 36, []byte{6, 161, 166}, 20, "BLS-MinPk"},
+	{[]byte(PrefixPublicKeyTZ1), 36, []byte{5, 186, 196}, 20, "ed25519 public key hash"},
+	{[]byte(PrefixPublicKeyTZ2), 36, []byte{5, 186, 199}, 20, "secp256k1 public key hash"},
+	{[]byte(PrefixPublicKeyTZ3), 36, []byte{5, 186, 201}, 20, "p256 public key hash"},
+	{[]byte(PrefixPublicKeyTZ4), 36, []byte{5, 186, 204}, 20, "BLS-MinPk"},
 	{[]byte(PrefixPublicKeyKT1), 36, []byte{2, 90, 121}, 20, "Originated address"},
 
 	{[]byte(PrefixPublicKeyTxr1), 37, []byte{1, 128, 120, 31}, 20, "Rollup address"},

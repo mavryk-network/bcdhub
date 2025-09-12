@@ -1,5 +1,5 @@
-parameter (or :_entries (unit %_Liq_entry_main) (or (nat %_Liq_entry_sellOut) (or (mutez %_Liq_entry_withdraw) (or (unit %_Liq_entry_deposit) (pair :priceUpdate %_Liq_entry_updatePrices (mutez %sellP) (pair (mutez %buyP) (mutez %extraBalance)))))));
-storage (pair :storage (map %balances address nat) (pair (string %name) (pair (string %symbol) (pair (nat %decimals) (pair (nat %totalSupply) (pair (mutez %inBaker) (pair (address %owner) (pair (mutez %buyPrice) (mutez %sellPrice)))))))));
+parameter (or :_entries (unit %_Liq_entry_main) (or (nat %_Liq_entry_sellOut) (or (mumav %_Liq_entry_withdraw) (or (unit %_Liq_entry_deposit) (pair :priceUpdate %_Liq_entry_updatePrices (mumav %sellP) (pair (mumav %buyP) (mumav %extraBalance)))))));
+storage (pair :storage (map %balances address nat) (pair (string %name) (pair (string %symbol) (pair (nat %decimals) (pair (nat %totalSupply) (pair (mumav %inBaker) (pair (address %owner) (pair (mumav %buyPrice) (mumav %sellPrice)))))))));
 code { DUP ;
        DIP { CDR @storage_slash_1 } ;
        CAR @parameter_slash_2 ;
@@ -74,15 +74,15 @@ code { DUP ;
                  DIP { DROP ; DROP } }
                { IF_LEFT { RENAME @amount_slash_13 ;
                            { DIP { { DIP { DUP @storage } ; SWAP } } ; SWAP } ;
-                           PUSH mutez 1000000000000 ;
-                           PUSH mutez 1000000 ;
+                           PUSH mumav 1000000000000 ;
+                           PUSH mumav 1000000 ;
                            { DIP { { DIP { { DIP { DUP @amount } ; SWAP } } ; SWAP } } ; SWAP } ;
                            MUL @zamt ;
                            EDIV ;
                            IF_NONE { PUSH string "bad amount" ;
                                      FAILWITH }
                                    { SENDER @addr96 ;
-                                     PUSH mutez 0 ;
+                                     PUSH mumav 0 ;
                                      AMOUNT @txAmount ;
                                      COMPARE ;
                                      NEQ ;

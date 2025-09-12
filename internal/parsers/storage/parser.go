@@ -3,10 +3,10 @@ package storage
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
-	"github.com/baking-bad/bcdhub/internal/parsers"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/parsers"
 )
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary

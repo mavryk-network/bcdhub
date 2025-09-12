@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models"
-	modelsContract "github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/models"
+	modelsContract "github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
 )
 
 // Parser -

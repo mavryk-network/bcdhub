@@ -58,7 +58,7 @@
                             "prim": "pair",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "prim": "key"
@@ -142,13 +142,13 @@
                             "prim": "pair",
                             "args": [
                               {
-                                "prim": "mutez",
+                                "prim": "mumav",
                                 "annots": [
                                   ":payout"
                                 ]
                               },
                               {
-                                "prim": "mutez",
+                                "prim": "mumav",
                                 "annots": [
                                   ":price"
                                 ]
@@ -220,7 +220,7 @@
                         ]
                       },
                       {
-                        "prim": "mutez"
+                        "prim": "mumav"
                       }
                     ]
                   },
@@ -401,13 +401,13 @@
                             "prim": "pair",
                             "args": [
                               {
-                                "prim": "mutez",
+                                "prim": "mumav",
                                 "annots": [
                                   ":payout"
                                 ]
                               },
                               {
-                                "prim": "mutez",
+                                "prim": "mumav",
                                 "annots": [
                                   ":price"
                                 ]
@@ -1459,10 +1459,10 @@
                                                                 "prim": "pair",
                                                                 "args": [
                                                                   {
-                                                                    "prim": "mutez"
+                                                                    "prim": "mumav"
                                                                   },
                                                                   {
-                                                                    "prim": "mutez"
+                                                                    "prim": "mumav"
                                                                   }
                                                                 ],
                                                                 "annots": [
@@ -1659,7 +1659,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -2177,7 +2177,7 @@
                                   "prim": "PUSH",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     },
                                     {
                                       "int": "1000000"

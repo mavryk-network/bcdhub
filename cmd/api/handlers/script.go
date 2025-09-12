@@ -3,11 +3,11 @@ package handlers
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/cache"
-	"github.com/baking-bad/bcdhub/internal/models/block"
-	"github.com/baking-bad/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/cache"
+	"github.com/mavryk-network/bcdhub/internal/models/block"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
 )
 
 func getScript(ctx context.Context, cache *cache.Cache, address, symLink string) (*ast.Script, error) {

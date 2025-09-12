@@ -5,7 +5,7 @@ code { DUP ;
        CAR @_addr_ages_names_slash_2 ;
        DUP ;
        CAR @addr ;
-       PUSH mutez 0 ;
+       PUSH mumav 0 ;
        { DIP { { DIP { DUP } ; SWAP } } ; SWAP } ;
        { CDR ; CDR @names } ;
        { DIP { { DIP { { DIP { DUP } ; SWAP } } ; SWAP } } ; SWAP } ;

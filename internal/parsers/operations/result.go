@@ -1,13 +1,13 @@
 package operations
 
 import (
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/tezerrors"
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
-	"github.com/baking-bad/bcdhub/internal/parsers"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/parsers"
 )
 
 func parseOperationResult(data noderpc.Operation, tx *operation.Operation, store parsers.Store) {

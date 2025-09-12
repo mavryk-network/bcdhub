@@ -1,6 +1,6 @@
 package migrations
 
-import "github.com/baking-bad/bcdhub/internal/config"
+import "github.com/mavryk-network/bcdhub/internal/config"
 
 // Migration - intreface need to realize for migrate
 type Migration interface {

@@ -1,6 +1,6 @@
 package ast
 
-import "github.com/baking-bad/bcdhub/internal/bcd/forge"
+import "github.com/mavryk-network/bcdhub/internal/bcd/forge"
 
 // Forge -
 func Forge(node Base, optimized bool) (string, error) {

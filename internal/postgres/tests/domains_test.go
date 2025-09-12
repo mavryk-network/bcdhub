@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
 )
 
 func (s *StorageTestSuite) TestSame() {

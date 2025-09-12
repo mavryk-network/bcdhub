@@ -85,7 +85,7 @@
                                     "prim": "pair",
                                     "args": [
                                       {
-                                        "prim": "mutez"
+                                        "prim": "mumav"
                                       },
                                       {
                                         "prim": "key"
@@ -163,10 +163,10 @@
                                     "prim": "pair",
                                     "args": [
                                       {
-                                        "prim": "mutez"
+                                        "prim": "mumav"
                                       },
                                       {
-                                        "prim": "mutez"
+                                        "prim": "mumav"
                                       }
                                     ],
                                     "annots": [
@@ -276,7 +276,7 @@
           "prim": "PUSH",
           "args": [
             {
-              "prim": "mutez"
+              "prim": "mumav"
             },
             {
               "int": "0"
@@ -336,7 +336,7 @@
                           "prim": "pair",
                           "args": [
                             {
-                              "prim": "mutez"
+                              "prim": "mumav"
                             },
                             {
                               "prim": "key"
@@ -417,10 +417,10 @@
                               "prim": "pair",
                               "args": [
                                 {
-                                  "prim": "mutez"
+                                  "prim": "mumav"
                                 },
                                 {
-                                  "prim": "mutez"
+                                  "prim": "mumav"
                                 }
                               ],
                               "annots": [

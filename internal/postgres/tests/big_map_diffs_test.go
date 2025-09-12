@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
-	"github.com/baking-bad/bcdhub/internal/testsuite"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/testsuite"
 )
 
 func (s *StorageTestSuite) TestBigMapDiffsCurrent() {

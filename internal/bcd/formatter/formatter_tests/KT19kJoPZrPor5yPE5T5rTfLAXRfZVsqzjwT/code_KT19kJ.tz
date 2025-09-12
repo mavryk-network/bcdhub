@@ -11,7 +11,7 @@ code { DUP ;
             NIL operation ;
             PAIR }
           { SELF ;
-            PUSH mutez 0 ;
+            PUSH mumav 0 ;
             PUSH int 1 ;
             { DIP { { DIP { { DIP { DUP @n } ; SWAP } } ; SWAP } } ; SWAP } ;
             SUB ;

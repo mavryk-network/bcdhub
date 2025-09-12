@@ -21,7 +21,7 @@
                     "prim": "key_hash"
                   },
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   }
                 ],
                 "annots": [
@@ -59,7 +59,7 @@
             "prim": "pair",
             "args": [
               {
-                "prim": "mutez",
+                "prim": "mumav",
                 "annots": [
                   "%totalAmount"
                 ]
@@ -71,7 +71,7 @@
                     "prim": "key_hash"
                   },
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   }
                 ],
                 "annots": [
@@ -194,7 +194,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "5000000"
@@ -461,7 +461,7 @@
                                   "prim": "PUSH",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     },
                                     {
                                       "int": "0"
@@ -1385,7 +1385,7 @@
                                   "prim": "NONE",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     }
                                   ]
                                 }

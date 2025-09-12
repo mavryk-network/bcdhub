@@ -4,15 +4,15 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/bcd/encoding"
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
-	"github.com/baking-bad/bcdhub/internal/bcd/types"
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	modelTypes "github.com/baking-bad/bcdhub/internal/models/types"
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	modelTypes "github.com/mavryk-network/bcdhub/internal/models/types"
 	"github.com/pkg/errors"
 )
 

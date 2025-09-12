@@ -3,15 +3,15 @@ package migrations
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/migration"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
-	"github.com/baking-bad/bcdhub/internal/parsers"
-	"github.com/baking-bad/bcdhub/internal/parsers/contract"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/migration"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/bcdhub/internal/parsers/contract"
 )
 
 // VestingParser -

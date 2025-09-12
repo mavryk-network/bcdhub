@@ -5,7 +5,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 )

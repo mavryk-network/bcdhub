@@ -1,4 +1,4 @@
-parameter (or :_entries (pair %_Liq_entry_main mutez (pair nat nat)) (or (nat %_Liq_entry_updateValue) (address %_Liq_entry_setAdder)));
+parameter (or :_entries (pair %_Liq_entry_main mumav (pair nat nat)) (or (nat %_Liq_entry_updateValue) (address %_Liq_entry_setAdder)));
 storage (pair :storage (address %adder) (nat %value));
 code { DUP ;
        DIP { CDR @storage_slash_1 } ;

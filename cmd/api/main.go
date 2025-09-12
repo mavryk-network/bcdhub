@@ -7,13 +7,6 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/baking-bad/bcdhub/cmd/api/handlers"
-	"github.com/baking-bad/bcdhub/cmd/api/validations"
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/helpers"
-	"github.com/baking-bad/bcdhub/internal/logger"
-	"github.com/baking-bad/bcdhub/internal/periodic"
-	"github.com/baking-bad/bcdhub/internal/profiler"
 	sentrygin "github.com/getsentry/sentry-go/gin"
 	"github.com/gin-contrib/cache"
 	"github.com/gin-contrib/cache/persistence"
@@ -24,6 +17,13 @@ import (
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
 	"github.com/grafana/pyroscope-go"
+	"github.com/mavryk-network/bcdhub/cmd/api/handlers"
+	"github.com/mavryk-network/bcdhub/cmd/api/validations"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/helpers"
+	"github.com/mavryk-network/bcdhub/internal/logger"
+	"github.com/mavryk-network/bcdhub/internal/periodic"
+	"github.com/mavryk-network/bcdhub/internal/profiler"
 	"github.com/rs/zerolog/log"
 )
 

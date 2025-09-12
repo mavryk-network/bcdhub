@@ -17,8 +17,8 @@ func TestIsContract(t *testing.T) {
 			address: "KT1HBy1L43tiLe5MVJZ5RoxGy53Kx8kMgyoU",
 			want:    true,
 		}, {
-			name:    "tz1dMH7tW7RhdvVMR4wKVFF1Ke8m8ZDvrTTE",
-			address: "tz1dMH7tW7RhdvVMR4wKVFF1Ke8m8ZDvrTTE",
+			name:    "mv1CjxUBZGvKdUuh7nhxyUrV6Q1A8e7A1WnX",
+			address: "mv1CjxUBZGvKdUuh7nhxyUrV6Q1A8e7A1WnX",
 			want:    false,
 		}, {
 			name:    "KT1Ap287P1NzsnToSJdA4aqSNjPomRaHBZSr",
@@ -53,8 +53,8 @@ func TestIsAddress(t *testing.T) {
 			address: "txr1YNMEtkj5Vkqsbdmt7xaxBTMRZjzS96UAi",
 			want:    true,
 		}, {
-			name:    "tz1dMH7tW7RhdvVMR4wKVFF1Ke8m8ZDvrTTE",
-			address: "tz1dMH7tW7RhdvVMR4wKVFF1Ke8m8ZDvrTTE",
+			name:    "mv1CjxUBZGvKdUuh7nhxyUrV6Q1A8e7A1WnX",
+			address: "mv1CjxUBZGvKdUuh7nhxyUrV6Q1A8e7A1WnX",
 			want:    true,
 		}, {
 			name:    "txr1YNMEtkj5Vkqsbdmt7xaxBTMRZjzS96UA",

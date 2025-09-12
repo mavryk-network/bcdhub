@@ -9,7 +9,7 @@
             "prim": "pair",
             "args": [
               {
-                "prim": "mutez"
+                "prim": "mumav"
               },
               {
                 "prim": "key_hash"
@@ -94,7 +94,7 @@
                     "prim": "address"
                   },
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   }
                 ],
                 "annots": [
@@ -114,13 +114,13 @@
                     "prim": "pair",
                     "args": [
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%ppkw"
                         ]
                       },
                       {
-                        "prim": "mutez",
+                        "prim": "mumav",
                         "annots": [
                           "%withdraw_threshold"
                         ]
@@ -1411,7 +1411,7 @@
                                       "prim": "address"
                                     },
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     }
                                   ],
                                   "annots": [
@@ -1431,13 +1431,13 @@
                                       "prim": "pair",
                                       "args": [
                                         {
-                                          "prim": "mutez",
+                                          "prim": "mumav",
                                           "annots": [
                                             "%ppkw"
                                           ]
                                         },
                                         {
-                                          "prim": "mutez",
+                                          "prim": "mumav",
                                           "annots": [
                                             "%withdraw_threshold"
                                           ]
@@ -2831,7 +2831,7 @@
                                                   "prim": "address"
                                                 },
                                                 {
-                                                  "prim": "mutez"
+                                                  "prim": "mumav"
                                                 }
                                               ],
                                               "annots": [
@@ -2851,13 +2851,13 @@
                                                   "prim": "pair",
                                                   "args": [
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%ppkw"
                                                       ]
                                                     },
                                                     {
-                                                      "prim": "mutez",
+                                                      "prim": "mumav",
                                                       "annots": [
                                                         "%withdraw_threshold"
                                                       ]
@@ -2955,7 +2955,7 @@
                                                       "prim": "address"
                                                     },
                                                     {
-                                                      "prim": "mutez"
+                                                      "prim": "mumav"
                                                     }
                                                   ],
                                                   "annots": [
@@ -2975,13 +2975,13 @@
                                                       "prim": "pair",
                                                       "args": [
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%ppkw"
                                                           ]
                                                         },
                                                         {
-                                                          "prim": "mutez",
+                                                          "prim": "mumav",
                                                           "annots": [
                                                             "%withdraw_threshold"
                                                           ]

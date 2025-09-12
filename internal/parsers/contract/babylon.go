@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	astContract "github.com/baking-bad/bcdhub/internal/bcd/contract"
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/parsers"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	astContract "github.com/mavryk-network/bcdhub/internal/bcd/contract"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/parsers"
 	"github.com/pkg/errors"
 )
 

@@ -4,13 +4,13 @@ import (
 	"context"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
-	"github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/migration"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/stats"
-	"github.com/baking-bad/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/migration"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/stats"
+	"github.com/mavryk-network/bcdhub/internal/models/ticket"
 )
 
 type LastAction struct {

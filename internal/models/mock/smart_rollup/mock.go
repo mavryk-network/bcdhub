@@ -12,7 +12,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	smartrollup "github.com/baking-bad/bcdhub/internal/models/smart_rollup"
+	smartrollup "github.com/mavryk-network/bcdhub/internal/models/smart_rollup"
 	gomock "go.uber.org/mock/gomock"
 )
 

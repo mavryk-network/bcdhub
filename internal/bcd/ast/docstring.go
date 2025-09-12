@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
 )
 
 // docs constants
@@ -18,7 +18,7 @@ var simpleTypes = []string{
 	consts.BYTES,
 	consts.BOOL,
 	consts.NAT,
-	consts.MUTEZ,
+	consts.MUMAV,
 	consts.TIMESTAMP,
 	consts.ADDRESS,
 	consts.KEYHASH,

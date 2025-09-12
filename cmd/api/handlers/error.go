@@ -4,12 +4,12 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
-	"github.com/baking-bad/bcdhub/internal/models"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
 	sentrygin "github.com/getsentry/sentry-go/gin"
 	"github.com/gin-gonic/gin"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/models"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
 	"github.com/rs/zerolog/log"
 )
 

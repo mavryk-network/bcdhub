@@ -3,12 +3,12 @@ package contract
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 	"github.com/pkg/errors"
 )
 
@@ -70,7 +70,7 @@ func (storage *Storage) Script(ctx context.Context, address string, symLink stri
 	case bcd.SymLinkBabylon:
 		err := query.Relation("Babylon").Scan(ctx)
 		return c.Babylon, err
-	case bcd.SymLinkJakarta:
+	case bcd.SymLinkAtlas:
 		err := query.Relation("Jakarta").Scan(ctx)
 		return c.Jakarta, err
 	}
@@ -138,7 +138,7 @@ func (storage *Storage) ScriptPart(ctx context.Context, address string, symLink,
 		scriptIdQuery = scriptIdQuery.Column("alpha_id")
 	case bcd.SymLinkBabylon:
 		scriptIdQuery = scriptIdQuery.Column("babylon_id")
-	case bcd.SymLinkJakarta:
+	case bcd.SymLinkAtlas:
 		scriptIdQuery = scriptIdQuery.Column("jakarta_id")
 	default:
 		return nil, errors.Errorf("unknown protocol symbolic link: %s", symLink)

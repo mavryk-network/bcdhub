@@ -68,7 +68,7 @@
                 "prim": "pair",
                 "args": [
                   {
-                    "prim": "mutez"
+                    "prim": "mumav"
                   },
                   {
                     "prim": "address"
@@ -169,7 +169,7 @@
                                           "prim": "nat"
                                         },
                                         {
-                                          "prim": "mutez"
+                                          "prim": "mumav"
                                         }
                                       ]
                                     },
@@ -215,7 +215,7 @@
                                           "prim": "pair",
                                           "args": [
                                             {
-                                              "prim": "mutez"
+                                              "prim": "mumav"
                                             },
                                             {
                                               "prim": "timestamp"
@@ -390,7 +390,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -439,7 +439,7 @@
                         "prim": "pair",
                         "args": [
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           },
                           {
                             "prim": "timestamp"
@@ -509,7 +509,7 @@
                                 "prim": "nat"
                               },
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               }
                             ]
                           },
@@ -637,7 +637,7 @@
                                                 "prim": "nat"
                                               },
                                               {
-                                                "prim": "mutez"
+                                                "prim": "mumav"
                                               }
                                             ]
                                           },
@@ -683,7 +683,7 @@
                                                 "prim": "pair",
                                                 "args": [
                                                   {
-                                                    "prim": "mutez"
+                                                    "prim": "mumav"
                                                   },
                                                   {
                                                     "prim": "timestamp"

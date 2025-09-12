@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/base"
-	"github.com/baking-bad/bcdhub/internal/bcd/consts"
-	"github.com/baking-bad/bcdhub/internal/bcd/forge"
-	"github.com/baking-bad/bcdhub/internal/bcd/formatter"
-	"github.com/baking-bad/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/bcdhub/internal/bcd/base"
+	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/bcdhub/internal/bcd/forge"
+	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/bcdhub/internal/bcd/types"
 	"github.com/pkg/errors"
 )
 

@@ -12,7 +12,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	stats "github.com/baking-bad/bcdhub/internal/models/stats"
+	stats "github.com/mavryk-network/bcdhub/internal/models/stats"
 	gomock "go.uber.org/mock/gomock"
 )
 

@@ -3,8 +3,8 @@ package protocol
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 )
 
 // Storage -

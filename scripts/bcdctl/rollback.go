@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/postgres"
-	"github.com/baking-bad/bcdhub/internal/rollback"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/postgres"
+	"github.com/mavryk-network/bcdhub/internal/rollback"
 	"github.com/rs/zerolog/log"
 )
 

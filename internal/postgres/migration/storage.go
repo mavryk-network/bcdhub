@@ -3,8 +3,8 @@ package migration
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/migration"
-	"github.com/baking-bad/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/bcdhub/internal/models/migration"
+	"github.com/mavryk-network/bcdhub/internal/postgres/core"
 )
 
 // Storage -

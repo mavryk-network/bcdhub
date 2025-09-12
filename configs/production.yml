@@ -1,25 +1,25 @@
 rpc:
-  mainnet:
-    uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
-    timeout: 20
-    requests_per_second: 10
-  ghostnet:
-    uri: https://rpc.tzkt.io/ghostnet
-    timeout: 20
-    requests_per_second: 10
-  parisnet:
-    uri: https://rpc.tzkt.io/parisnet
+  # mainnet:
+  #   uri: https://rpc.tzkt.io/archive
+  #   timeout: 20
+  #   requests_per_second: 15
+  # ghostnet:
+  #   uri: https://rpc.tzkt.io/ghostnet
+  #   timeout: 20
+  #   requests_per_second: 10
+  boreasnet:
+    uri: https://boreasnet.rpc.mavryk.network
     timeout: 20
     requests_per_second: 20
 
 log_level: ${LOG_LEVEL:-info}
-  
+
 services:
   mainnet:
-    mempool: https://mempool.dipdup.net/v1/graphql
-  ghostnet:
-    mempool: https://mempool.test.dipdup.net/v1/graphql
-  parisnet:
+  #   mempool: https://mempool.dipdup.net/v1/graphql
+  # ghostnet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
+  boreasnet:
     mempool: https://mempool.test.dipdup.net/v1/graphql
 
 storage:
@@ -34,47 +34,44 @@ storage:
   log_queries: ${POSTGRES_LOG_QUERIES:-false}
 
 sentry:
-  environment: production
+  environment: development
   uri: ${SENTRY_DSN}
   front_uri: ${SENTRY_DSN_FRONT}
-  debug: false
+  debug: true
 
 share_path: /etc/bcd
 
-base_url: https://better-call.dev
-
-profiler:
-  server: ${PROFILER_SERVER_ADDRESS:-http://127.0.0.1:4040}
+base_url: https://better-call.mavryk.io
 
 api:
   project_name: api
   bind: ":14000"
-  cors_enabled: false
-  sentry_enabled: true
+  cors_enabled: true
+  sentry_enabled: false
   seed_enabled: false
   page_size: ${PAGE_SIZE:-10}
   frontend:
-    ga_enabled: true
+    ga_enabled: false
     mempool_enabled: true
     sandbox_mode: false
     rpc:
-      mainnet: https://rpc.tzkt.io/mainnet
-      ghostnet: https://rpc.tzkt.io/ghostnet
-      parisnet: https://rpc.tzkt.io/parisnet
+      # mainnet: https://rpc.tzkt.io/mainnet
+      # ghostnet: https://rpc.tzkt.io/ghostnet
+      boreasnet: https://boreasnet.rpc.mavryk.network
   networks:
-    - mainnet
-    - ghostnet
-    - parisnet
+    # - mainnet
+    # - ghostnet
+    - boreasnet
 
 indexer:
   project_name: indexer
   sentry_enabled: true
   networks:
-    mainnet:
-      receiver_threads: ${MAINNET_THREADS:-10}
-    ghostnet:
-      receiver_threads: ${TESTNET_THREADS:-10}
-    parisnet:
+    # mainnet:
+    #   receiver_threads: ${MAINNET_THREADS:-10}
+    # ghostnet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
+    boreasnet:
       receiver_threads: ${TESTNET_THREADS:-10}
 
 scripts:
@@ -84,6 +81,6 @@ scripts:
     access_key_id: ${AWS_ACCESS_KEY_ID}
     secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   networks:
-    - mainnet
-    - ghostnet
-    - parisnet
+    # - mainnet
+    # - ghostnet
+    - boreasnet

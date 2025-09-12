@@ -3,7 +3,7 @@ package ticket
 import (
 	"testing"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
 	"github.com/stretchr/testify/require"
 )
 

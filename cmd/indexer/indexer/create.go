@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/tezerrors"
-	"github.com/baking-bad/bcdhub/internal/config"
 	"github.com/dipdup-io/workerpool"
+	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/bcdhub/internal/config"
 	"github.com/rs/zerolog/log"
 )
 

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/baking-bad/bcdhub/internal/bcd/ast"
+	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
 )
 
 // Header is a header in a block returned by the Tezos RPC API.

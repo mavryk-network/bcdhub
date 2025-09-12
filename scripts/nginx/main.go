@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 	"github.com/rs/zerolog/log"
 )
 

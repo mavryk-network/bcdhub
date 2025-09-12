@@ -3,14 +3,14 @@ package protocols
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/bcd"
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models"
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
-	"github.com/baking-bad/bcdhub/internal/models/types"
-	"github.com/baking-bad/bcdhub/internal/noderpc"
-	"github.com/baking-bad/bcdhub/internal/parsers/migrations"
-	"github.com/baking-bad/bcdhub/internal/postgres/store"
+	"github.com/mavryk-network/bcdhub/internal/bcd"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/bcdhub/internal/parsers/migrations"
+	"github.com/mavryk-network/bcdhub/internal/postgres/store"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )
@@ -159,7 +159,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 	}
 
 	for i := range contracts {
-		if !specific.MigrationParser.IsMigratable(contracts[i].Account.Address) && newProtocol.SymLink == bcd.SymLinkJakarta {
+		if !specific.MigrationParser.IsMigratable(contracts[i].Account.Address) && newProtocol.SymLink == bcd.SymLinkAtlas {
 			if err := tx.JakartaVesting(ctx, &contracts[i]); err != nil {
 				return errors.Wrap(err, "jakarta vesting migration error")
 			}
@@ -181,7 +181,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 		switch newProtocol.SymLink {
 		case bcd.SymLinkBabylon:
 			err = tx.BabylonUpdateNonDelegator(ctx, &contracts[i])
-		case bcd.SymLinkJakarta:
+		case bcd.SymLinkAtlas:
 			err = tx.JakartaUpdateNonDelegator(ctx, &contracts[i])
 		}
 
@@ -195,7 +195,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 	switch newProtocol.SymLink {
 	case bcd.SymLinkBabylon:
 		err = tx.ToBabylon(ctx)
-	case bcd.SymLinkJakarta:
+	case bcd.SymLinkAtlas:
 		err = tx.ToJakarta(ctx)
 	}
 	return err

@@ -1,4 +1,4 @@
-parameter (or :_entries (pair %_Liq_entry_updateMaxDelay int string) (or (unit %_Liq_entry_ping) (or (pair %_Liq_entry_withdraw key_hash mutez) (or (unit %_Liq_entry_receiveProperty) (or (key_hash %_Liq_entry_setReceiper) (address %_Liq_entry_changeOwner))))));
+parameter (or :_entries (pair %_Liq_entry_updateMaxDelay int string) (or (unit %_Liq_entry_ping) (or (pair %_Liq_entry_withdraw key_hash mumav) (or (unit %_Liq_entry_receiveProperty) (or (key_hash %_Liq_entry_setReceiper) (address %_Liq_entry_changeOwner))))));
 storage (pair :storage (timestamp %last_ping) (pair (int %delay) (pair (address %owner) (key_hash %property_recipient))));
 code { DUP ;
        DIP { CDR @storage_slash_1 } ;

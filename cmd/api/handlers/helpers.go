@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/baking-bad/bcdhub/internal/config"
-	"github.com/baking-bad/bcdhub/internal/models/types"
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/bcdhub/internal/models/types"
 )
 
 // ContractsHelpers -

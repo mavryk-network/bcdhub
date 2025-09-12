@@ -27,7 +27,7 @@
                     "prim": "option",
                     "args": [
                       {
-                        "prim": "mutez"
+                        "prim": "mumav"
                       }
                     ],
                     "annots": [
@@ -44,7 +44,7 @@
                 "prim": "or",
                 "args": [
                   {
-                    "prim": "mutez",
+                    "prim": "mumav",
                     "annots": [
                       "%_Liq_entry_set_target_supply"
                     ]
@@ -65,7 +65,7 @@
                             "prim": "option",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               }
                             ],
                             "annots": [
@@ -113,13 +113,13 @@
                 "prim": "pair",
                 "args": [
                   {
-                    "prim": "mutez",
+                    "prim": "mumav",
                     "annots": [
                       "%balance"
                     ]
                   },
                   {
-                    "prim": "mutez",
+                    "prim": "mumav",
                     "annots": [
                       "%to_sell"
                     ]
@@ -138,7 +138,7 @@
             "prim": "pair",
             "args": [
               {
-                "prim": "mutez",
+                "prim": "mumav",
                 "annots": [
                   "%held_supply"
                 ]
@@ -147,7 +147,7 @@
                 "prim": "pair",
                 "args": [
                   {
-                    "prim": "mutez",
+                    "prim": "mumav",
                     "annots": [
                       "%target_supply"
                     ]
@@ -170,7 +170,7 @@
                         "prim": "pair",
                         "args": [
                           {
-                            "prim": "mutez",
+                            "prim": "mumav",
                             "annots": [
                               "%min_tx"
                             ]
@@ -886,7 +886,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -897,7 +897,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -1888,7 +1888,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -2034,7 +2034,7 @@
                             "prim": "PUSH",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "int": "0"
@@ -2045,7 +2045,7 @@
                             "prim": "PUSH",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "int": "0"
@@ -2307,7 +2307,7 @@
                       "prim": "PUSH",
                       "args": [
                         {
-                          "prim": "mutez"
+                          "prim": "mumav"
                         },
                         {
                           "int": "0"
@@ -2741,7 +2741,7 @@
                             "prim": "PUSH",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "int": "0"
@@ -2752,7 +2752,7 @@
                             "prim": "PUSH",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "int": "0"
@@ -3291,7 +3291,7 @@
                             "prim": "PUSH",
                             "args": [
                               {
-                                "prim": "mutez"
+                                "prim": "mumav"
                               },
                               {
                                 "int": "0"
@@ -3621,7 +3621,7 @@
                                   "prim": "PUSH",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     },
                                     {
                                       "int": "0"
@@ -3767,7 +3767,7 @@
                                         "prim": "PUSH",
                                         "args": [
                                           {
-                                            "prim": "mutez"
+                                            "prim": "mumav"
                                           },
                                           {
                                             "int": "0"
@@ -3778,7 +3778,7 @@
                                         "prim": "PUSH",
                                         "args": [
                                           {
-                                            "prim": "mutez"
+                                            "prim": "mumav"
                                           },
                                           {
                                             "int": "0"
@@ -4141,7 +4141,7 @@
                                   "prim": "PUSH",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     },
                                     {
                                       "int": "0"
@@ -4213,13 +4213,13 @@
                                             "prim": "pair",
                                             "args": [
                                               {
-                                                "prim": "mutez",
+                                                "prim": "mumav",
                                                 "annots": [
                                                   "%balance"
                                                 ]
                                               },
                                               {
-                                                "prim": "mutez",
+                                                "prim": "mumav",
                                                 "annots": [
                                                   "%to_sell"
                                                 ]
@@ -4694,7 +4694,7 @@
                                   "prim": "PUSH",
                                   "args": [
                                     {
-                                      "prim": "mutez"
+                                      "prim": "mumav"
                                     },
                                     {
                                       "int": "0"

@@ -50,7 +50,7 @@ code { DUP ;
                  IF_NONE { PUSH nat 0 }
                          { CAR } ;
                  RIGHT % % (pair address (contract (or (pair address (pair address nat)) address))) ;
-                 DIP { SENDER ; CONTRACT (or (pair address (contract (or (pair address (pair address nat)) address))) nat) ; IF_NONE { PUSH string "GetBalance: sender contract does not match the expected type, first try." ; FAILWITH } {} ; PUSH mutez 0 } ;
+                 DIP { SENDER ; CONTRACT (or (pair address (contract (or (pair address (pair address nat)) address))) nat) ; IF_NONE { PUSH string "GetBalance: sender contract does not match the expected type, first try." ; FAILWITH } {} ; PUSH mumav 0 } ;
                  TRANSFER_TOKENS ;
                  NIL operation ;
                  SWAP ;

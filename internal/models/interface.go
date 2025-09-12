@@ -3,17 +3,17 @@ package models
 import (
 	"context"
 
-	"github.com/baking-bad/bcdhub/internal/models/account"
-	"github.com/baking-bad/bcdhub/internal/models/bigmapaction"
-	"github.com/baking-bad/bcdhub/internal/models/bigmapdiff"
-	"github.com/baking-bad/bcdhub/internal/models/block"
-	"github.com/baking-bad/bcdhub/internal/models/contract"
-	"github.com/baking-bad/bcdhub/internal/models/migration"
-	"github.com/baking-bad/bcdhub/internal/models/operation"
-	"github.com/baking-bad/bcdhub/internal/models/protocol"
-	smartrollup "github.com/baking-bad/bcdhub/internal/models/smart_rollup"
-	"github.com/baking-bad/bcdhub/internal/models/stats"
-	"github.com/baking-bad/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/bcdhub/internal/models/account"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapaction"
+	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/bcdhub/internal/models/block"
+	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/bcdhub/internal/models/migration"
+	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/bcdhub/internal/models/protocol"
+	smartrollup "github.com/mavryk-network/bcdhub/internal/models/smart_rollup"
+	"github.com/mavryk-network/bcdhub/internal/models/stats"
+	"github.com/mavryk-network/bcdhub/internal/models/ticket"
 )
 
 //go:generate mockgen -source=$GOFILE -destination=mock/general.go -package=mock -typed

@@ -36,7 +36,7 @@
                             "prim": "int"
                           },
                           {
-                            "prim": "mutez"
+                            "prim": "mumav"
                           }
                         ]
                       }
@@ -124,7 +124,7 @@
                             ]
                           },
                           {
-                            "prim": "mutez",
+                            "prim": "mumav",
                             "annots": [
                               "%minimum"
                             ]
@@ -1374,7 +1374,7 @@
                                               ]
                                             },
                                             {
-                                              "prim": "mutez",
+                                              "prim": "mumav",
                                               "annots": [
                                                 "%minimum"
                                               ]
@@ -2157,7 +2157,7 @@
                                               ]
                                             },
                                             {
-                                              "prim": "mutez",
+                                              "prim": "mumav",
                                               "annots": [
                                                 "%minimum"
                                               ]
