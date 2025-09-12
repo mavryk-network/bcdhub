@@ -30,7 +30,7 @@ func Get(ctx *config.Context, protocol string) (*Specific, error) {
 		}, nil
 	case "ProtoALphaALphaALphaALphaALphaALphaALphaALphaDdp3zK",
 		"PtAtLasdzXg4XxeVNtWheo13nG4wHXP22qYMqFcT3fyBpWkFero",
-		"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT":
+		"PtBoreasK2KPuKbeYtXeEdudEHS7YcMFHE9amwheUc4kejTxgRi":
 		return &Specific{
 			StorageParser:         storage.NewLazyBabylon(ctx.BigMapDiffs, ctx.Operations, ctx.Accounts),
 			ContractParser:        contract.NewJakarta(ctx),
@@ -53,7 +53,7 @@ func NeedImplicitParsing(protocol string) bool {
 		return false
 	case "ProtoALphaALphaALphaALphaALphaALphaALphaALphaDdp3zK",
 		"PtAtLasdzXg4XxeVNtWheo13nG4wHXP22qYMqFcT3fyBpWkFero",
-		"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT":
+		"PtBoreasK2KPuKbeYtXeEdudEHS7YcMFHE9amwheUc4kejTxgRi":
 		return true
 	}
 	return false

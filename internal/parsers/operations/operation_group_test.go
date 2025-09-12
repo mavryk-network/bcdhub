@@ -1627,7 +1627,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			Timestamp: timestamp,
 		// 			Protocol:  "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
 		// 			Level:     381735,
-		// 			ChainID:   "NetXnHfVqm9iesp",
+		// 			ChainID:   "NetXmtMsNf69w1w",
 		// 		}),
 		// 		WithProtocol(&protocol.Protocol{
 		// 			Constants: &protocol.Constants{

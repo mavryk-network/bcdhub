@@ -4,7 +4,7 @@
   end_level: 1
   sym_link: alpha
   alias: PsUCFkqU
-  chain_id: NetXnHfVqm9iesp
+  chain_id: NetXmtMsNf69w1w
   cost_per_byte: 250
   hard_gas_limit_per_operation: 1040000
   hard_storage_limit_per_operation: 60000
@@ -15,7 +15,7 @@
   end_level: 0
   sym_link: babylon
   alias: PtHangz2
-  chain_id: NetXnHfVqm9iesp
+  chain_id: NetXmtMsNf69w1w
   cost_per_byte: 250
   hard_gas_limit_per_operation: 1040000
   hard_storage_limit_per_operation: 60000

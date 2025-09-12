@@ -15,7 +15,7 @@ func (s *StorageTestSuite) TestProtocolGet() {
 	s.Require().EqualValues(3, protocol.ID)
 	s.Require().EqualValues(2, protocol.StartLevel)
 	s.Require().EqualValues("PtHangz2aRngywmSRGGvrcTyMbbdpWdpFKuS4uMWxg2RaH9i1qx", protocol.Hash)
-	s.Require().EqualValues("NetXnHfVqm9iesp", protocol.ChainID)
+	s.Require().EqualValues("NetXmtMsNf69w1w", protocol.ChainID)
 }
 
 func (s *StorageTestSuite) TestProtocolGetByLevel() {
@@ -28,7 +28,7 @@ func (s *StorageTestSuite) TestProtocolGetByLevel() {
 	s.Require().EqualValues(3, protocol.ID)
 	s.Require().EqualValues(2, protocol.StartLevel)
 	s.Require().EqualValues("PtHangz2aRngywmSRGGvrcTyMbbdpWdpFKuS4uMWxg2RaH9i1qx", protocol.Hash)
-	s.Require().EqualValues("NetXnHfVqm9iesp", protocol.ChainID)
+	s.Require().EqualValues("NetXmtMsNf69w1w", protocol.ChainID)
 }
 
 func (s *StorageTestSuite) TestProtocolGetById() {
@@ -41,5 +41,5 @@ func (s *StorageTestSuite) TestProtocolGetById() {
 	s.Require().EqualValues(3, protocol.ID)
 	s.Require().EqualValues(2, protocol.StartLevel)
 	s.Require().EqualValues("PtHangz2aRngywmSRGGvrcTyMbbdpWdpFKuS4uMWxg2RaH9i1qx", protocol.Hash)
-	s.Require().EqualValues("NetXnHfVqm9iesp", protocol.ChainID)
+	s.Require().EqualValues("NetXmtMsNf69w1w", protocol.ChainID)
 }

@@ -12,7 +12,7 @@ var symLinks = map[string]string{
 	"ProtoDemoNoopsDemoNoopsDemoNoopsDemoNoopsDemo6XBoYp": SymLinkAlpha,
 	"PsUCFkqUrQ614xKsFEAf4AamoUXTAG4ygjMpFzsgEdKr3PGYreP": SymLinkAlpha,
 	"PtAtLasdzXg4XxeVNtWheo13nG4wHXP22qYMqFcT3fyBpWkFero": SymLinkAtlas, // Atlas
-	"PtBzwViMCC1gfm98y5TDKqz2e3vjBXPAUoWu7jfEcN6yj2ZhCyT": SymLinkAtlas, // Boreas
+	"PtBoreasK2KPuKbeYtXeEdudEHS7YcMFHE9amwheUc4kejTxgRi": SymLinkAtlas, // Boreas
 }
 
 // GetProtoSymLink -
@@ -42,6 +42,7 @@ const (
 
 var ChainID = map[string]string{
 	"NetXXAAR1wWQhhe": "mainnet",
+	"NetXUrNc8uioxP8": "basenet",
 	"NetXUrNc8uioxP8": "atlasnet",
 	"NetXR64bNAYkP4S": "boreasnet",
 }
