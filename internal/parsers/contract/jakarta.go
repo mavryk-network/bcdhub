@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
-	astContract "github.com/mavryk-network/nexushub/internal/bcd/contract"
-	bcdTypes "github.com/mavryk-network/nexushub/internal/bcd/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
+	bcdTypes "github.com/mavryk-network/nexushub/internal/nexus/types"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
@@ -67,7 +67,7 @@ func (p *Jakarta) computeMetrics(ctx context.Context, operation *operation.Opera
 		if !p.ctx.Storage.IsRecordNotFound(err) {
 			return err
 		}
-		var s bcd.RawScript
+		var s nexus.RawScript
 		if err := json.Unmarshal(script.CodeRaw, &s); err != nil {
 			return err
 		}

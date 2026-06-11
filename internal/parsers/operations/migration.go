@@ -3,7 +3,7 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/migration"
 	"github.com/mavryk-network/nexushub/internal/models/operation"

@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
-	"github.com/mavryk-network/nexushub/internal/bcd/formatter"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/models/block"
@@ -301,7 +301,7 @@ func getDeffattedStorage(c context.Context, ctx *config.Context, address string,
 		if err != nil {
 			return nil, err
 		}
-		currentSymLink, err := bcd.GetProtoSymLink(bcd.GetCurrentProtocol())
+		currentSymLink, err := nexus.GetProtoSymLink(nexus.GetCurrentProtocol())
 		if err != nil {
 			return nil, err
 		}

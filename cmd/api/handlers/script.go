@@ -3,8 +3,8 @@ package handlers
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/cache"
 	"github.com/mavryk-network/nexushub/internal/models/block"
 	"github.com/mavryk-network/nexushub/internal/models/contract"

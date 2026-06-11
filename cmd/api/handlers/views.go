@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
-	"github.com/mavryk-network/nexushub/internal/bcd/base"
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/base"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/block"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
@@ -269,7 +269,7 @@ func ExecuteView() gin.HandlerFunc {
 }
 
 func getViewForExecute(ctx context.Context, networkContext *config.Context, address string, req executeViewRequest) (views.View, []byte, error) {
-	symLink, err := bcd.SymLink()
+	symLink, err := nexus.SymLink()
 	if err != nil {
 		return nil, nil, err
 	}

@@ -26,7 +26,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-var errBcdQuit = errors.New("bcd-quit")
+var errBcdQuit = errors.New("nexus-quit")
 var errSameLevel = errors.New("Same level")
 
 // BlockchainIndexer -

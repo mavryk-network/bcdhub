@@ -3,7 +3,7 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
@@ -80,7 +80,7 @@ func NewParseParams(ctx context.Context, configContext *config.Context, opts ...
 	}
 
 	if params.protocol == nil {
-		proto, err := configContext.Protocols.Get(ctx, bcd.GetCurrentProtocol(), 0)
+		proto, err := configContext.Protocols.Get(ctx, nexus.GetCurrentProtocol(), 0)
 		if err != nil {
 			return nil, err
 		}

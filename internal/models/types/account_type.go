@@ -1,6 +1,6 @@
 package types
 
-import "github.com/mavryk-network/nexushub/internal/bcd"
+import "github.com/mavryk-network/nexushub/internal/nexus"
 
 // AccountType -
 type AccountType int
@@ -17,13 +17,13 @@ const (
 // NewAccountType -
 func NewAccountType(address string) AccountType {
 	switch {
-	case bcd.IsContract(address):
+	case nexus.IsContract(address):
 		return AccountTypeContract
-	case bcd.IsAddressLazy(address):
+	case nexus.IsAddressLazy(address):
 		return AccountTypeTz
-	case bcd.IsRollupAddressLazy(address):
+	case nexus.IsRollupAddressLazy(address):
 		return AccountTypeRollup
-	case bcd.IsSmartRollupAddressLazy(address):
+	case nexus.IsSmartRollupAddressLazy(address):
 		return AccountTypeSmartRollup
 	default:
 		return AccountTypeUnknown

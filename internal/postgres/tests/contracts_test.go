@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/models/types"
 )
 
@@ -41,7 +41,7 @@ func (s *StorageTestSuite) TestContractScript() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	script, err := s.contracts.Script(ctx, "KT1CMJQmuwwJopNnLhSDHXT3zQVUrNPLA8br", bcd.SymLinkBabylon)
+	script, err := s.contracts.Script(ctx, "KT1CMJQmuwwJopNnLhSDHXT3zQVUrNPLA8br", nexus.SymLinkBabylon)
 	s.Require().NoError(err)
 
 	s.Require().EqualValues(7, script.ID)
@@ -91,7 +91,7 @@ func (s *StorageTestSuite) TestContractScriptPart() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	data, err := s.contracts.ScriptPart(ctx, "KT1CMJQmuwwJopNnLhSDHXT3zQVUrNPLA8br", bcd.SymLinkBabylon, consts.STORAGE)
+	data, err := s.contracts.ScriptPart(ctx, "KT1CMJQmuwwJopNnLhSDHXT3zQVUrNPLA8br", nexus.SymLinkBabylon, consts.STORAGE)
 	s.Require().NoError(err)
 	s.Require().NotEmpty(data)
 }

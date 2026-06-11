@@ -68,7 +68,7 @@ func (s *StorageTestSuite) SetupSuite() {
 		Host:     s.psqlContainer.Config.Host,
 		Port:     s.psqlContainer.MappedPort().Int(),
 		SslMode:  "disable",
-	}, "public", "bcd")
+	}, "public", "nexus")
 	s.Require().NoError(err)
 	s.storage = strg
 

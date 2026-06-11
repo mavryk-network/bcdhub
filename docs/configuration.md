@@ -43,7 +43,7 @@ sentry:
 #### `share_path`
 Folder to store cached contract sources
 ```yml
-share_path: /etc/bcd
+share_path: /etc/nexus
 ```
 
 #### `services`

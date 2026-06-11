@@ -39,7 +39,7 @@ endif
 s3-db-restore:
 	echo "Database restore..."
 ifeq (,$(wildcard $(LATEST_DUMP)))
-	aws s3 cp --profile bcd s3://bcd-db-snaps/$(BACKUP) $(LATEST_DUMP)
+	aws s3 cp --profile nexus s3://nexus-db-snaps/$(BACKUP) $(LATEST_DUMP)
 endif
 
 	docker compose exec -T db dropdb -U $(POSTGRES_USER) --if-exists $(POSTGRES_DB)
@@ -49,11 +49,11 @@ endif
 s3-db-snapshot:
 	echo "Database snapshot..."
 	docker compose exec db pg_dump $(POSTGRES_DB) --create -U $(POSTGRES_USER) | gzip -c > $(LATEST_DUMP)	
-	aws s3 mv --profile bcd $(LATEST_DUMP) s3://bcd-db-snaps/dump_latest.gz
+	aws s3 mv --profile nexus $(LATEST_DUMP) s3://nexus-db-snaps/dump_latest.gz
 
 s3-list:
 	echo "Database snapshots"
-	aws s3 ls --profile bcd s3://bcd-db-snaps
+	aws s3 ls --profile nexus s3://nexus-db-snaps
 
 test:
 	go test ./...

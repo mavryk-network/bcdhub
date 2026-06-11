@@ -3,7 +3,7 @@ package storage
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"

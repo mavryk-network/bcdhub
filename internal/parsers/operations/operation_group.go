@@ -3,9 +3,9 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
-	"github.com/mavryk-network/nexushub/internal/bcd/encoding"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
 	"github.com/mavryk-network/nexushub/internal/helpers"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/mavryk-network/nexushub/internal/parsers"
@@ -64,7 +64,7 @@ func (Group) needParse(item noderpc.LightOperation) bool {
 	if item.Destination != nil {
 		destination = *item.Destination
 	}
-	prefixCondition := bcd.IsContract(item.Source) || bcd.IsContract(destination)
+	prefixCondition := nexus.IsContract(item.Source) || nexus.IsContract(destination)
 	transactionCondition := item.Kind == consts.Transaction && prefixCondition
 	originationCondition := (item.Kind == consts.Origination || item.Kind == consts.OriginationNew || item.Kind == consts.TxRollupOrigination)
 	registerGlobalConstantCondition := item.Kind == consts.RegisterGlobalConstant

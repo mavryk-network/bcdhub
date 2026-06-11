@@ -26,7 +26,7 @@ NEXUS uses `X.Y.Z` version format where:
 * `Z` bumped for every stable release candidate or hotfix
 
 ### Syncing with frontend
-NEXUS web interface developed at https://github.com/mavryk-network/bcd uses the same version scheme.  
+NEXUS web interface developed at https://github.com/mavryk-network/nexus uses the same version scheme.  
 `X.Y.*` versions of backend and frontent MUST BE compatible which means that for every change in API responses `Y` has to be increased.
 
 ### Publishing releases
@@ -97,8 +97,8 @@ There are several predefined configurations serving different purposes.
 
 #### Sandbox `bcdbox`
 * `/configs/sandbox.yml` file is used
-* Start via `COMPOSE_PROJECT_NAME=bcd-box docker-compose -f docker-compose.sandbox.yml up -d --build`
-* Stop via `COMPOSE_PROJECT_NAME=bcd-box docker-compose -f docker-compose.sandbox.yml down`
+* Start via `COMPOSE_PROJECT_NAME=nexus-box docker-compose -f docker-compose.sandbox.yml up -d --build`
+* Stop via `COMPOSE_PROJECT_NAME=nexus-box docker-compose -f docker-compose.sandbox.yml down`
 
 
 ## Running

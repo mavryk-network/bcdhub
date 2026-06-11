@@ -3,7 +3,7 @@ package migrations
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	contracts "github.com/mavryk-network/nexushub/internal/models/contract"

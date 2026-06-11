@@ -16,7 +16,7 @@ storage:
 
 log_level: ${LOG_LEVEL:-info}
 
-share_path: /etc/bcd
+share_path: /etc/nexus
 
 base_url: http://localhost:8000
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/noderpc"

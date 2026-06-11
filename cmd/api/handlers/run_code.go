@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
-	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
@@ -240,7 +240,7 @@ func parseAppliedRunCode(c context.Context, ctx *config.Context, response noderp
 		op.Level = main.Level
 		op.Internal = true
 
-		if bcd.IsContract(op.Destination) {
+		if nexus.IsContract(op.Destination) {
 			var s *ast.Script
 			if op.Destination == main.Destination || op.Destination == consts.NullContract {
 				s = script
@@ -320,7 +320,7 @@ func parseBigMapDiffs(c context.Context, ctx *config.Context, response noderpc.R
 }
 
 func setSimulateStorageDiff(c context.Context, ctx *config.Context, response noderpc.RunCodeResponse, proto protocol.Protocol, script *ast.Script, operation *Operation) error {
-	if len(response.Storage) == 0 || !bcd.IsContract(operation.Destination) || operation.Status != consts.Applied {
+	if len(response.Storage) == 0 || !nexus.IsContract(operation.Destination) || operation.Status != consts.Applied {
 		return nil
 	}
 	bmd, err := parseBigMapDiffs(c, ctx, response, script, operation, proto)

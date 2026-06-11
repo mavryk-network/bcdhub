@@ -11,7 +11,7 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - db:/var/lib/postgresql/data 
-    logging: &bcd-logging
+    logging: &nexus-logging
       options:
         max-size: 10m
         max-file: "5"
@@ -31,10 +31,10 @@ services:
     ports:
       - 127.0.0.1:14000:14000
     volumes:
-      - bcdshare:/etc/bcd
+      - bcdshare:/etc/nexus
     links:
       - "mavbox:sandbox"
-    logging: *bcd-logging
+    logging: *nexus-logging
 
   indexer:
     restart: always
@@ -50,8 +50,8 @@ services:
     links:
       - "mavbox:sandbox"
     volumes:
-      - bcdshare:/etc/bcd
-    logging: *bcd-logging
+      - bcdshare:/etc/nexus
+    logging: *nexus-logging
 
   mavbox:
     restart: always
@@ -64,7 +64,7 @@ services:
       - 127.0.0.1:20000:20000
     expose:
       - 20000/tcp
-    logging: *bcd-logging
+    logging: *nexus-logging
 
   gui:
     container_name: sandbox-gui
@@ -74,7 +74,7 @@ services:
       - api
     ports:
       - 127.0.0.1:8000:80
-    logging: *bcd-logging
+    logging: *nexus-logging
 
 volumes:
   bcdshare:

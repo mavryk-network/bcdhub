@@ -3,13 +3,13 @@ package protocols
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 func Create(ctx context.Context, rpc noderpc.INode, head noderpc.Header) (protocol protocol.Protocol, err error) {
-	protocol.SymLink, err = bcd.GetProtoSymLink(head.Protocol)
+	protocol.SymLink, err = nexus.GetProtoSymLink(head.Protocol)
 	if err != nil {
 		return
 	}

@@ -3,7 +3,7 @@ package config
 import (
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/postgres/account"
 	"github.com/mavryk-network/nexushub/internal/postgres/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/postgres/contract"

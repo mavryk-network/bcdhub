@@ -1,8 +1,8 @@
 package operations
 
 import (
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
-	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/types"

@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/karlseguin/ccache"
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
@@ -43,7 +43,7 @@ func NewCache(rpc noderpc.INode, accounts account.Repository, contracts contract
 
 // ContractTags -
 func (cache *Cache) ContractTags(ctx context.Context, address string) (types.Tags, error) {
-	if !bcd.IsContract(address) {
+	if !nexus.IsContract(address) {
 		return 0, nil
 	}
 
@@ -77,7 +77,7 @@ func (cache *Cache) TezosBalance(ctx context.Context, address string, level int6
 
 // StorageTypeBytes -
 func (cache *Cache) StorageTypeBytes(ctx context.Context, address, symLink string) ([]byte, error) {
-	if !bcd.IsContract(address) {
+	if !nexus.IsContract(address) {
 		return nil, nil
 	}
 

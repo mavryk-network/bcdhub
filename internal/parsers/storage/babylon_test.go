@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/models/operation"

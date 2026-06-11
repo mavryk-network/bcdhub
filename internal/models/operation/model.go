@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/ast"
-	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
@@ -141,7 +141,7 @@ func (o *Operation) IsApplied() bool {
 
 // IsCall -
 func (o *Operation) IsCall() bool {
-	return (bcd.IsContract(o.Destination.Address) || bcd.IsSmartRollupHash(o.Destination.Address)) && len(o.Parameters) > 0
+	return (nexus.IsContract(o.Destination.Address) || nexus.IsSmartRollupHash(o.Destination.Address)) && len(o.Parameters) > 0
 }
 
 func (o *Operation) CanHasStorageDiff() bool {

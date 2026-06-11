@@ -17,7 +17,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5    
-    logging: &bcd-logging
+    logging: &nexus-logging
       options:
         max-size: 10m
         max-file: "5"
@@ -39,8 +39,8 @@ services:
     ports:
       - 127.0.0.1:${NEXUS_API_PORT}:14000
     volumes:
-      - ${SHARE_PATH}:/etc/bcd
-    logging: *bcd-logging
+      - ${SHARE_PATH}:/etc/nexus
+    logging: *nexus-logging
 
   indexer:
     restart: always
@@ -51,8 +51,8 @@ services:
     env_file:
       - .env
     volumes:
-      - ${SHARE_PATH}:/etc/bcd
-    logging: *bcd-logging
+      - ${SHARE_PATH}:/etc/nexus
+    logging: *nexus-logging
 
 volumes:
   db:

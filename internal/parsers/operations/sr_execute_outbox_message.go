@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/hex"
 
-	"github.com/mavryk-network/nexushub/internal/bcd/encoding"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/types"

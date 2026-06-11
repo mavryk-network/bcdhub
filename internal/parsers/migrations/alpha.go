@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	"github.com/mavryk-network/nexushub/internal/bcd/contract"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/contract"
 	"github.com/mavryk-network/nexushub/internal/models"
 	modelsContract "github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/migration"
@@ -41,7 +41,7 @@ func (p *Alpha) Parse(ctx context.Context, script noderpc.Script, old *modelsCon
 		return err
 	}
 
-	var s bcd.RawScript
+	var s nexus.RawScript
 	if err := json.Unmarshal(buf.Bytes(), &s); err != nil {
 		return err
 	}

@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/mavryk-network/nexushub/internal/bcd"
-	astContract "github.com/mavryk-network/nexushub/internal/bcd/contract"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
@@ -58,7 +58,7 @@ func (p *Babylon) computeMetrics(ctx context.Context, operation *operation.Opera
 		if !p.ctx.Storage.IsRecordNotFound(err) {
 			return err
 		}
-		var s bcd.RawScript
+		var s nexus.RawScript
 		if err := json.Unmarshal(script.CodeRaw, &s); err != nil {
 			return err
 		}

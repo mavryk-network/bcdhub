@@ -196,7 +196,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      0,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -206,7 +206,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      1,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -216,7 +216,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PsddFKi32cMJ2qPjf43Qv5GDWLDPZb3T3bF6fLKiF5HtvHNU7aP", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsddFKi32cMJ2qPjf43Qv5GDWLDPZb3T3bF6fLKiF5HtvHNU7aP",
-	// 		SymLink: bcd.SymLinkAlpha,
+	// 		SymLink: nexus.SymLinkAlpha,
 	// 		ID:      2,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -226,7 +226,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PtEdo2ZkT9oKpimTah6x2embF25oss54njMuPzkJTEi5RqfdZFA", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtEdo2ZkT9oKpimTah6x2embF25oss54njMuPzkJTEi5RqfdZFA",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      3,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -236,7 +236,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      4,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -246,7 +246,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PtHangzHogokSuiMHemCuowEavgYTP8J5qQ9fQS793MHYFpCY3r", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtHangzHogokSuiMHemCuowEavgYTP8J5qQ9fQS793MHYFpCY3r",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      5,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -256,7 +256,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      6,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -266,7 +266,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	Get(gomock.Any(), "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf", int64(-1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf",
-	// 		SymLink: bcd.SymLinkAtlas,
+	// 		SymLink: nexus.SymLinkAtlas,
 	// 		ID:      7,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -276,7 +276,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(0)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 	}, nil).
 	// 	AnyTimes()
 
@@ -285,7 +285,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(1)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      1,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -295,7 +295,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(2)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsddFKi32cMJ2qPjf43Qv5GDWLDPZb3T3bF6fLKiF5HtvHNU7aP",
-	// 		SymLink: bcd.SymLinkAlpha,
+	// 		SymLink: nexus.SymLinkAlpha,
 	// 		ID:      2,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -305,7 +305,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(3)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtEdo2ZkT9oKpimTah6x2embF25oss54njMuPzkJTEi5RqfdZFA",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      3,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -315,7 +315,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(4)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      4,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -325,7 +325,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(5)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtHangzHogokSuiMHemCuowEavgYTP8J5qQ9fQS793MHYFpCY3r",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      5,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -335,7 +335,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(6)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
-	// 		SymLink: bcd.SymLinkBabylon,
+	// 		SymLink: nexus.SymLinkBabylon,
 	// 		ID:      6,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -345,7 +345,7 @@ func TestGroup_Parse(t *testing.T) {
 	// 	GetByID(gomock.Any(), int64(7)).
 	// 	Return(protocol.Protocol{
 	// 		Hash:    "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf",
-	// 		SymLink: bcd.SymLinkAtlas,
+	// 		SymLink: nexus.SymLinkAtlas,
 	// 		ID:      7,
 	// 	}, nil).
 	// 	AnyTimes()
@@ -412,7 +412,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 				TimeBetweenBlocks:            60,
 		// 			},
 		// 			Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	filename: "./data/rpc/opg/opToHHcqFhRTQWJv2oTGAtywucj9KM1nDnk5eHsEETYJyvJLsa5.json",
@@ -449,7 +449,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
 		// 			ID:      1,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	storage: map[string]int64{
@@ -660,7 +660,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
 		// 			ID:      1,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	storage: map[string]int64{
@@ -865,7 +865,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 				TimeBetweenBlocks:            30,
 		// 			},
 		// 			Hash:    "PsDELPH1Kxsxt8f9eWbxQeRxkjfbxoqM52jvs5Y5fBxWWh4ifpo",
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	storage: map[string]int64{
@@ -985,7 +985,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash: "PsddFKi32cMJ2qPjf43Qv5GDWLDPZb3T3bF6fLKiF5HtvHNU7aP",
 
-		// 			SymLink: bcd.SymLinkAlpha,
+		// 			SymLink: nexus.SymLinkAlpha,
 		// 			ID:      2,
 		// 		}),
 		// 	},
@@ -1096,7 +1096,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash: "PtEdo2ZkT9oKpimTah6x2embF25oss54njMuPzkJTEi5RqfdZFA",
 
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 			ID:      3,
 		// 		}),
 		// 	},
@@ -1306,7 +1306,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
 		// 			ID:      4,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	storage: map[string]int64{
@@ -1412,7 +1412,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			Hash: "PsFLorenaUUuikDWvMDr6fGBRG8kt3e3D3fHoXK1j1BFRxeSH4i",
 
 		// 			ID:      4,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	filename: "./data/rpc/opg/oocFt4vkkgQGfoRH54328cJUbDdWvj3x6KEs5Arm4XhqwwJmnJ8.json",
@@ -1560,7 +1560,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "PtHangzHogokSuiMHemCuowEavgYTP8J5qQ9fQS793MHYFpCY3r",
 		// 			ID:      5,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	filename: "./data/rpc/opg/ooffKPL6WmMgqzLGtRtLp2HdEbVL3K2fVzKQLyxsBFMC84wpjRt.json",
@@ -1638,7 +1638,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
 		// 			ID:      6,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	filename: "./data/rpc/opg/oozvzXiZmVW9QtYjKmDuYqoHNCEvt32FwM2cUgQee2S1SGWgumA.json",
@@ -2287,7 +2287,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "Psithaca2MLRFYargivpo7YvUr7wUDqyxrdhC5CQq78mRvimz6A",
 		// 			ID:      6,
-		// 			SymLink: bcd.SymLinkBabylon,
+		// 			SymLink: nexus.SymLinkBabylon,
 		// 		}),
 		// 	},
 		// 	storage: map[string]int64{
@@ -2406,7 +2406,7 @@ func TestGroup_Parse(t *testing.T) {
 		// 			},
 		// 			Hash:    "PtNairobiyssHuh87hEhfVBGCVrK3WnS8Z2FT4ymB5tAa4r1nQf",
 		// 			ID:      7,
-		// 			SymLink: bcd.SymLinkAtlas,
+		// 			SymLink: nexus.SymLinkAtlas,
 		// 		}),
 		// 	},
 		// 	storage:  map[string]int64{},
