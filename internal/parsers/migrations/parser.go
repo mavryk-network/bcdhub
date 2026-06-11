@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models"
-	modelsContract "github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/models"
+	modelsContract "github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // Parser -

@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/block"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )

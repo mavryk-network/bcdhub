@@ -3,17 +3,17 @@ package models
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/models/block"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/migration"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	smartrollup "github.com/mavryk-network/bcdhub/internal/models/smart_rollup"
-	"github.com/mavryk-network/bcdhub/internal/models/stats"
-	"github.com/mavryk-network/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/migration"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	smartrollup "github.com/mavryk-network/nexushub/internal/models/smart_rollup"
+	"github.com/mavryk-network/nexushub/internal/models/stats"
+	"github.com/mavryk-network/nexushub/internal/models/ticket"
 )
 
 //go:generate mockgen -source=$GOFILE -destination=mock/general.go -package=mock -typed

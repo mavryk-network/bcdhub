@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 )
 
 func (s *StorageTestSuite) TestMigrationGet() {

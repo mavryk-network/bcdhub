@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/base"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/nexushub/internal/bcd/base"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/bcd/formatter"
+	"github.com/mavryk-network/nexushub/internal/bcd/types"
 	"github.com/pkg/errors"
 )
 

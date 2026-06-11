@@ -3,13 +3,13 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/migration"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/migration"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )

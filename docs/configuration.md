@@ -1,5 +1,5 @@
 ## Configuration
-BCD configuration is stored in _yml_ files: you can **expand** environment variables.  
+NEXUS configuration is stored in _yml_ files: you can **expand** environment variables.  
 
 Each service has its very own section in the config file and also they share several common sections. There are predefined configs for _production_, _development_, _sandbox_ and _staging_ environments.
 
@@ -23,7 +23,7 @@ storage:
     host: ${DB_HOSTNAME:-db}
     port: 5432
     user: ${POSTGRES_USER}
-    dbname: ${POSTGRES_DB:-bcd}
+    dbname: ${POSTGRES_DB:-nexus}
     password: ${POSTGRES_PASSWORD}
     sslmode: disable
   timeout: 10
@@ -134,7 +134,7 @@ A typical problem is to access service running on the host machine from inside a
 About env files: https://docs.docker.com/compose/env-file/
 
 #### System config _required_
-* `BCD_ENV` e.g. _production_ or _sandbox_
+* `NEXUS_ENV` e.g. _production_ or _sandbox_
 * `COMPOSE_PROJECT_NAME` e.g. _bcd-prod_ or _bcd-box_
 * `GIN_MODE` _release_ for production, _debug_ otherwise
 
@@ -144,9 +144,9 @@ About env files: https://docs.docker.com/compose/env-file/
 * `POSTGRES_DB` e.g. _bcd_
 
 #### Services ports _required_
-* `BCD_API_PORT` e.g. _14000_
+* `NEXUS_API_PORT` e.g. _14000_
 * `POSTGRES_PORT` e.g. _5432_
-* `BCD_GUI_PORT` e.g. _8000_
+* `NEXUS_GUI_PORT` e.g. _8000_
 
 #### Sentry creds _required if `sentry_enabled: true`_
 * `SENTRY_DSN`

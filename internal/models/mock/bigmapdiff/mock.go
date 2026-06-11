@@ -12,7 +12,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	bigmapdiff "github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
+	bigmapdiff "github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	gomock "go.uber.org/mock/gomock"
 )
 

@@ -5,9 +5,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/forge"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/bcd/forge"
+	"github.com/mavryk-network/nexushub/internal/bcd/formatter"
 )
 
 // ChestKey -

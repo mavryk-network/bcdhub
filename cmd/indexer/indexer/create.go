@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"github.com/dipdup-io/workerpool"
-	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
-	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/rs/zerolog/log"
 )
 

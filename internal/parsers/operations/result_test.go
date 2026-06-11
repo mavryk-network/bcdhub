@@ -3,12 +3,12 @@ package operations
 import (
 	"testing"
 
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/ticket"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/ticket"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/stretchr/testify/require"
 )
 

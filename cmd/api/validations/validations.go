@@ -6,10 +6,10 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/go-playground/validator/v10"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
 )
 
 const (

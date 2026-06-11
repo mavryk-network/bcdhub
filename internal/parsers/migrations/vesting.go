@@ -3,15 +3,15 @@ package migrations
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/migration"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
-	"github.com/mavryk-network/bcdhub/internal/parsers/contract"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/migration"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/parsers/contract"
 )
 
 // VestingParser -

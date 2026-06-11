@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
-	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/bcd/encoding"
+	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/pkg/errors"
 )
 
@@ -143,7 +143,7 @@ func GetImplicitOperation() gin.HandlerFunc {
 // @Tags operations
 // @ID get-operation-error-location
 // @Param network path string true "Network"
-// @Param id path integer true "Internal BCD operation ID"
+// @Param id path integer true "Internal NEXUS operation ID"
 // @Accept  json
 // @Produce  json
 // @Success 200 {object} GetErrorLocationResponse
@@ -183,7 +183,7 @@ func GetOperationErrorLocation() gin.HandlerFunc {
 // @Tags operations
 // @ID get-operation-diff
 // @Param network path string true "Network"
-// @Param id path integer true "Internal BCD operation ID"
+// @Param id path integer true "Internal NEXUS operation ID"
 // @Accept  json
 // @Produce  json
 // @Success 200 {object} ast.MiguelNode

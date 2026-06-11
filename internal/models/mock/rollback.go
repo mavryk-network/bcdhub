@@ -12,14 +12,14 @@ import (
 	context "context"
 	reflect "reflect"
 
-	models "github.com/mavryk-network/bcdhub/internal/models"
-	account "github.com/mavryk-network/bcdhub/internal/models/account"
-	bigmapdiff "github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	contract "github.com/mavryk-network/bcdhub/internal/models/contract"
-	migration "github.com/mavryk-network/bcdhub/internal/models/migration"
-	operation "github.com/mavryk-network/bcdhub/internal/models/operation"
-	stats "github.com/mavryk-network/bcdhub/internal/models/stats"
-	ticket "github.com/mavryk-network/bcdhub/internal/models/ticket"
+	models "github.com/mavryk-network/nexushub/internal/models"
+	account "github.com/mavryk-network/nexushub/internal/models/account"
+	bigmapdiff "github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	contract "github.com/mavryk-network/nexushub/internal/models/contract"
+	migration "github.com/mavryk-network/nexushub/internal/models/migration"
+	operation "github.com/mavryk-network/nexushub/internal/models/operation"
+	stats "github.com/mavryk-network/nexushub/internal/models/stats"
+	ticket "github.com/mavryk-network/nexushub/internal/models/ticket"
 	gomock "go.uber.org/mock/gomock"
 )
 

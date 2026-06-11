@@ -3,14 +3,14 @@ package protocols
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers/migrations"
-	"github.com/mavryk-network/bcdhub/internal/postgres/store"
+	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers/migrations"
+	"github.com/mavryk-network/nexushub/internal/postgres/store"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )

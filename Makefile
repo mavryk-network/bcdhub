@@ -15,7 +15,7 @@ indexer:
 	cd cmd/indexer && go run .
 
 seo:
-ifeq ($(BCD_ENV), development)
+ifeq ($(NEXUS_ENV), development)
 	cd scripts/nginx && go run .
 else
 	docker compose exec api seo
@@ -23,14 +23,14 @@ else
 endif
 
 migration:
-ifeq ($(BCD_ENV), development)
+ifeq ($(NEXUS_ENV), development)
 	cd scripts/migration && go run .
 else
 	docker compose exec api migration
 endif
 
 rollback:
-ifeq ($(BCD_ENV), development)
+ifeq ($(NEXUS_ENV), development)
 	cd scripts/bcdctl && go run . rollback -n $(NETWORK) -l $(LEVEL)
 else
 	docker compose exec api bcdctl rollback -n $(NETWORK) -l $(LEVEL)
@@ -79,16 +79,16 @@ ps:
 	docker ps --format "table {{.Names}}\t{{.RunningFor}}\t{{.Status}}\t{{.Ports}}"
 
 sandbox-pull:
-	TAG=4.7.6 docker compose -f docker compose.flextesa.yml pull
+	TAG=4.7.6 docker compose -f docker compose.mavbox.yml pull
 
-flextesa-sandbox:
-	COMPOSE_PROJECT_NAME=bcdbox TAG=4.7.6 docker compose -f docker compose.flextesa.yml up -d
+mavbox-sandbox:
+	COMPOSE_PROJECT_NAME=bcdbox TAG=4.7.6 docker compose -f docker compose.mavbox.yml up -d
 
 sandbox-down:
-	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.flextesa.yml down
+	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.mavbox.yml down
 
 sandbox-clear:
-	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.flextesa.yml down -v
+	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.mavbox.yml down -v
 
 generate:
 	go generate ./...

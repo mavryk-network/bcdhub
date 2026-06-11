@@ -7,7 +7,7 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=bcd
+      - POSTGRES_DB=nexus
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - db:/var/lib/postgresql/data 
@@ -18,9 +18,9 @@ services:
 
   api:
     restart: always
-    image: ghcr.io/mavryk-network/bcdhub-api:${TAG}
+    image: ghcr.io/mavryk-network/nexushub-api:${TAG}
     environment:
-      - BCD_ENV=sandbox
+      - NEXUS_ENV=sandbox
       - GIN_MODE=debug
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
@@ -33,14 +33,14 @@ services:
     volumes:
       - bcdshare:/etc/bcd
     links:
-      - "flextesa:sandbox"
+      - "mavbox:sandbox"
     logging: *bcd-logging
 
   indexer:
     restart: always
-    image: ghcr.io/mavryk-network/bcdhub-indexer:${TAG}
+    image: ghcr.io/mavryk-network/nexushub-indexer:${TAG}
     environment:
-      - BCD_ENV=sandbox
+      - NEXUS_ENV=sandbox
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
       - SANDBOX_NODE_URI=http://sandbox:20000
@@ -48,18 +48,18 @@ services:
     depends_on:
       - db
     links:
-      - "flextesa:sandbox"
+      - "mavbox:sandbox"
     volumes:
       - bcdshare:/etc/bcd
     logging: *bcd-logging
 
-  flextesa:
+  mavbox:
     restart: always
-    image: oxheadalpha/flextesa:test-multi-arch-00
+    image: registry.gitlab.com/mavryk-network/mavbox:master-run
     command: hangzbox start
     environment:
       - block_time=4
-      - flextesa_node_cors_origin=*
+      - mavbox_node_cors_origin=*
     ports:
       - 127.0.0.1:20000:20000
     expose:
@@ -69,7 +69,7 @@ services:
   gui:
     container_name: sandbox-gui
     restart: always
-    image: ghcr.io/mavryk-network/bcdhub-gui:${TAG}
+    image: ghcr.io/mavryk-network/nexushub-gui:${TAG}
     depends_on:
       - api
     ports:

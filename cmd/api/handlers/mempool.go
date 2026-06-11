@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
-	"github.com/mavryk-network/bcdhub/internal/services/mempool"
+	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/bcd/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/bcd/types"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/services/mempool"
 )
 
 // GetMempool godoc

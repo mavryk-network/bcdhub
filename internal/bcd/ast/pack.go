@@ -3,9 +3,9 @@ package ast
 import (
 	"fmt"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/base"
-	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
-	"github.com/mavryk-network/bcdhub/internal/bcd/forge"
+	"github.com/mavryk-network/nexushub/internal/bcd/base"
+	"github.com/mavryk-network/nexushub/internal/bcd/encoding"
+	"github.com/mavryk-network/nexushub/internal/bcd/forge"
 	"golang.org/x/crypto/blake2b"
 )
 

@@ -3,12 +3,12 @@ package indexer
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/migration"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/ticket"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/migration"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/ticket"
 	"github.com/rs/zerolog/log"
 )
 

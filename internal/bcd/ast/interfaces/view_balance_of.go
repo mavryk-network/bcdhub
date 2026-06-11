@@ -1,6 +1,6 @@
 package interfaces
 
-import "github.com/mavryk-network/bcdhub/internal/bcd/consts"
+import "github.com/mavryk-network/nexushub/internal/bcd/consts"
 
 // ViewBalanceOf -
 type ViewBalanceOf struct{}

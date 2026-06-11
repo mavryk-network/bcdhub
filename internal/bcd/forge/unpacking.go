@@ -6,8 +6,8 @@ import (
 	"unicode"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/mavryk-network/bcdhub/internal/bcd/base"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
+	"github.com/mavryk-network/nexushub/internal/bcd/base"
+	"github.com/mavryk-network/nexushub/internal/bcd/formatter"
 )
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary

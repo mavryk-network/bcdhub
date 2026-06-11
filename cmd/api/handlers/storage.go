@@ -5,14 +5,14 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/models/block"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/bcd/formatter"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 )
 
 // GetContractStorage godoc

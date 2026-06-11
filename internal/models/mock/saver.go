@@ -13,9 +13,9 @@ import (
 	reflect "reflect"
 	time "time"
 
-	models "github.com/mavryk-network/bcdhub/internal/models"
-	bigmapdiff "github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	operation "github.com/mavryk-network/bcdhub/internal/models/operation"
+	models "github.com/mavryk-network/nexushub/internal/models"
+	bigmapdiff "github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	operation "github.com/mavryk-network/nexushub/internal/models/operation"
 	gomock "go.uber.org/mock/gomock"
 )
 

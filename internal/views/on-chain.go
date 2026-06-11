@@ -5,8 +5,8 @@ import (
 	"context"
 	stdJSON "encoding/json"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/pkg/errors"
 )
 

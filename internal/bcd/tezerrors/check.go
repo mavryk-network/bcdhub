@@ -1,7 +1,7 @@
 package tezerrors
 
 import (
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
 )
 
 // HasParametersError -

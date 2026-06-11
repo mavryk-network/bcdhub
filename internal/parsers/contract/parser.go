@@ -3,8 +3,8 @@ package contract
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 )
 
 // Parser -

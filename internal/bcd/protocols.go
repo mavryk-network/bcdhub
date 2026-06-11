@@ -4,7 +4,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-// This is the list of protocols BCD supports
+// This is the list of protocols NEXUS supports
 // Every time new protocol is proposed we determine if everything works fine or implement a custom handler otherwise
 // After that we append protocol to this list with a corresponding handler id (aka symlink)
 var symLinks = map[string]string{

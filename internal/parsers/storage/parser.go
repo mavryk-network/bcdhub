@@ -4,9 +4,9 @@ import (
 	"context"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 )
 
 var json = jsoniter.ConfigCompatibleWithStandardLibrary

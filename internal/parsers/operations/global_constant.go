@@ -1,9 +1,9 @@
 package operations
 
 import (
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // GlobalConstant -

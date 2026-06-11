@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/rs/zerolog/log"
 )
 

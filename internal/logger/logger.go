@@ -18,7 +18,7 @@ type Loggable interface {
 func New(level string) {
 	consoleWriter := zerolog.ConsoleWriter{Out: os.Stderr}
 
-	switch os.Getenv("BCD_ENV") {
+	switch os.Getenv("NEXUS_ENV") {
 	case "development":
 		consoleWriter.TimeFormat = "2006-01-02 15:04:05"
 	default:

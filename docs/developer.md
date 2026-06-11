@@ -1,5 +1,5 @@
 ## Overview
-BCDHub is a set of microservices written in Golang:
+NEXUSHub is a set of microservices written in Golang:
 
 * `indexer`  
 Loads and decodes operations related to smart contracts and also keeps track of the blockchain and handles protocol updates.
@@ -11,7 +11,7 @@ Those microservices are sharing access to databases and communicating via databa
 * `PostgreSQL` database for storing compilations and user data.
 
 ### Third-party services
-BCDHub also depends on several API endpoints exposed by [TzKT](https://github.com/mavryk-network/tzkt) although they are optional:
+NEXUSHub also depends on several API endpoints exposed by [TzKT](https://github.com/mavryk-network/tzkt) although they are optional:
 
 * List of blocks containing smart contract operations, used for boosting the indexing process (allows to skip blocks with no contract calls)
 * Mempool operations
@@ -20,13 +20,13 @@ BCDHub also depends on several API endpoints exposed by [TzKT](https://github.co
 Those services obviously make sense for public networks only and not used for sandbox or other private environments.
 
 ## Versioning
-BCD uses `X.Y.Z` version format where:
+NEXUS uses `X.Y.Z` version format where:
 * `X` changes every 3-5 months along with a big release with a significant addition of functionality  
 * `Y` increasing signals about a possibly non-compatible update that requires reindexing (or restoring from snapshot) or syncing with frontend
 * `Z` bumped for every stable release candidate or hotfix
 
 ### Syncing with frontend
-BCD web interface developed at https://github.com/mavryk-network/bcd uses the same version scheme.  
+NEXUS web interface developed at https://github.com/mavryk-network/bcd uses the same version scheme.  
 `X.Y.*` versions of backend and frontent MUST BE compatible which means that for every change in API responses `Y` has to be increased.
 
 ### Publishing releases
@@ -41,9 +41,9 @@ git push --tags
 ```
 
 ## Docker images
-Although you can install and run each part of BCD Hub independently, as system services for instance, the simplest approach is to use dockerized versions orchestrated by _docker-compose_.  
+Although you can install and run each part of NEXUS Hub independently, as system services for instance, the simplest approach is to use dockerized versions orchestrated by _docker-compose_.  
 
-BCDHub docker images are being built on [dockerhub](https://hub.docker.com/u/bakingbad). Tags for stable releases have format `X.Y`.
+NEXUSHub docker images are being built on [dockerhub](https://hub.docker.com/u/bakingbad). Tags for stable releases have format `X.Y`.
 
 ### Linking with Git tags
 Docker tags are essentially produced from Git tags using the following rules:
@@ -72,8 +72,8 @@ You will also need several ports to be not busy:
 ### Get ready
 1. Clone this repo
 ```bash
-git clone https://github.com/mavryk-network/bcdhub.git
-cd bcdhub
+git clone https://github.com/mavryk-network/nexushub.git
+cd nexushub
 ```
 
 2. Create and fill `.env` file (see _Configuration_)
@@ -105,7 +105,7 @@ There are several predefined configurations serving different purposes.
 
 ### Startup
 It takes around 20-30 seconds to initialize all services, API endpoints might return errors until then.  
-**NOTE** that if you specified local RPC node that's not running, BCDHub will wait for it indefinitely.
+**NOTE** that if you specified local RPC node that's not running, NEXUSHub will wait for it indefinitely.
 
 ## Snapshots
 Full indexing process requires about 2 hours, however there are cases when you cannot afford that
@@ -187,12 +187,12 @@ Select your script.
 
 
 ### Upgrade from snapshot
-In case you need to reindex from scratch you can set up a secondary BCDHub instance, fill the index, make a snapshot, and then apply it to the production instance.
+In case you need to reindex from scratch you can set up a secondary NEXUSHub instance, fill the index, make a snapshot, and then apply it to the production instance.
 
 #### 0. Make a snapshot
 Typically you'd use staging for that.
 
-#### 1. Stop BCDHub and clear indexed data
+#### 1. Stop NEXUSHub and clear indexed data
 ```
 make upgrade
 ```

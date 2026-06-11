@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models"
-	"github.com/mavryk-network/bcdhub/internal/models/block"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/rs/zerolog/log"
 	"github.com/uptrace/bun"
 )

@@ -1,7 +1,7 @@
 package domains
 
 import (
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
 )
 
 // Same -

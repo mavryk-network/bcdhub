@@ -1,4 +1,4 @@
-module github.com/mavryk-network/bcdhub
+module github.com/mavryk-network/nexushub
 
 go 1.22.4
 

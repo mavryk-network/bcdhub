@@ -3,8 +3,8 @@ package migration
 import (
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/uptrace/bun"
 )
 

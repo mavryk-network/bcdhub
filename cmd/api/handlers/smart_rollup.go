@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/config"
 )
 
 // GetSmartRollup godoc

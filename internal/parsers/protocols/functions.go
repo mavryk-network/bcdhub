@@ -3,9 +3,9 @@ package protocols
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/bcd"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 func Create(ctx context.Context, rpc noderpc.INode, head noderpc.Header) (protocol protocol.Protocol, err error) {

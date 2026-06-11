@@ -11,7 +11,7 @@ storage:
     host: ${DB_HOSTNAME:-127.0.0.1}
     port: 5432
     user: ${POSTGRES_USER}
-    dbname: ${POSTGRES_DB:-bcd}
+    dbname: ${POSTGRES_DB:-nexus}
     password: ${POSTGRES_PASSWORD}
     sslmode: disable
   timeout: 10

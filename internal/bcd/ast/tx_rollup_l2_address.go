@@ -3,8 +3,8 @@ package ast
 import (
 	"strings"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/forge"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/bcd/forge"
 )
 
 // TxRollupL2Address -

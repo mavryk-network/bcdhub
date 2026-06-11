@@ -1,6 +1,6 @@
 package types
 
-import "github.com/mavryk-network/bcdhub/internal/bcd"
+import "github.com/mavryk-network/nexushub/internal/bcd"
 
 // AccountType -
 type AccountType int

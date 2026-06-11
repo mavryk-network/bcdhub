@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/testsuite"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/testsuite"
 )
 
 func (s *StorageTestSuite) TestOperationsLast() {

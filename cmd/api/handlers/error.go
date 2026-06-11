@@ -7,9 +7,9 @@ import (
 	sentrygin "github.com/getsentry/sentry-go/gin"
 	"github.com/gin-gonic/gin"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/models"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/bcd/ast"
+	"github.com/mavryk-network/nexushub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/rs/zerolog/log"
 )
 

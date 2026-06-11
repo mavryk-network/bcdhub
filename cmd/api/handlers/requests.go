@@ -3,8 +3,8 @@ package handlers
 import (
 	"strings"
 
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 )
 
 type getAccountRequest struct {

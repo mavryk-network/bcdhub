@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
+	"github.com/mavryk-network/nexushub/internal/bcd/types"
 	"github.com/pkg/errors"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 )
 
 //go:generate mockgen -source=$GOFILE -destination=../mock/contract/mock.go -package=contract -typed

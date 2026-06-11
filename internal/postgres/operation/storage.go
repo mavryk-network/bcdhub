@@ -5,11 +5,11 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 	"github.com/uptrace/bun"
 )
 

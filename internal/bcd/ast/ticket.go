@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/base"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
+	"github.com/mavryk-network/nexushub/internal/bcd/base"
+	"github.com/mavryk-network/nexushub/internal/bcd/consts"
 )
 
 // Ticket -

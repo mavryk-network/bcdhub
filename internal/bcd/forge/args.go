@@ -1,6 +1,6 @@
 package forge
 
-import "github.com/mavryk-network/bcdhub/internal/bcd/base"
+import "github.com/mavryk-network/nexushub/internal/bcd/base"
 
 type args struct {
 	Args []*base.Node

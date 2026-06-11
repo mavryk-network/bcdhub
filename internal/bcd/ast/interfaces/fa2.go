@@ -1,6 +1,6 @@
 package interfaces
 
-import "github.com/mavryk-network/bcdhub/internal/bcd/consts"
+import "github.com/mavryk-network/nexushub/internal/bcd/consts"
 
 // Fa2 -
 type Fa2 struct{}
