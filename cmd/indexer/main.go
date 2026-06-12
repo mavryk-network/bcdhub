@@ -8,11 +8,11 @@ import (
 
 	"github.com/dipdup-io/workerpool"
 	"github.com/grafana/pyroscope-go"
-	"github.com/mavryk-network/bcdhub/cmd/indexer/indexer"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
-	"github.com/mavryk-network/bcdhub/internal/logger"
-	"github.com/mavryk-network/bcdhub/internal/profiler"
+	"github.com/mavryk-network/nexushub/cmd/indexer/indexer"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/logger"
+	"github.com/mavryk-network/nexushub/internal/profiler"
 	"github.com/rs/zerolog/log"
 )
 

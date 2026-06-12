@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/uptrace/bun"
 )
 

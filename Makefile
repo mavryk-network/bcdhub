@@ -15,7 +15,7 @@ indexer:
 	cd cmd/indexer && go run .
 
 seo:
-ifeq ($(BCD_ENV), development)
+ifeq ($(NEXUS_ENV), development)
 	cd scripts/nginx && go run .
 else
 	docker compose exec api seo
@@ -23,23 +23,23 @@ else
 endif
 
 migration:
-ifeq ($(BCD_ENV), development)
+ifeq ($(NEXUS_ENV), development)
 	cd scripts/migration && go run .
 else
 	docker compose exec api migration
 endif
 
 rollback:
-ifeq ($(BCD_ENV), development)
-	cd scripts/bcdctl && go run . rollback -n $(NETWORK) -l $(LEVEL)
+ifeq ($(NEXUS_ENV), development)
+	cd scripts/nexusctl && go run . rollback -n $(NETWORK) -l $(LEVEL)
 else
-	docker compose exec api bcdctl rollback -n $(NETWORK) -l $(LEVEL)
+	docker compose exec api nexusctl rollback -n $(NETWORK) -l $(LEVEL)
 endif
 
 s3-db-restore:
 	echo "Database restore..."
 ifeq (,$(wildcard $(LATEST_DUMP)))
-	aws s3 cp --profile bcd s3://bcd-db-snaps/$(BACKUP) $(LATEST_DUMP)
+	aws s3 cp --profile nexus s3://nexus-db-snaps/$(BACKUP) $(LATEST_DUMP)
 endif
 
 	docker compose exec -T db dropdb -U $(POSTGRES_USER) --if-exists $(POSTGRES_DB)
@@ -49,11 +49,11 @@ endif
 s3-db-snapshot:
 	echo "Database snapshot..."
 	docker compose exec db pg_dump $(POSTGRES_DB) --create -U $(POSTGRES_USER) | gzip -c > $(LATEST_DUMP)	
-	aws s3 mv --profile bcd $(LATEST_DUMP) s3://bcd-db-snaps/dump_latest.gz
+	aws s3 mv --profile nexus $(LATEST_DUMP) s3://nexus-db-snaps/dump_latest.gz
 
 s3-list:
 	echo "Database snapshots"
-	aws s3 ls --profile bcd s3://bcd-db-snaps
+	aws s3 ls --profile nexus s3://nexus-db-snaps
 
 test:
 	go test ./...
@@ -79,16 +79,16 @@ ps:
 	docker ps --format "table {{.Names}}\t{{.RunningFor}}\t{{.Status}}\t{{.Ports}}"
 
 sandbox-pull:
-	TAG=4.7.6 docker compose -f docker compose.flextesa.yml pull
+	TAG=4.7.6 docker compose -f docker compose.mavbox.yml pull
 
-flextesa-sandbox:
-	COMPOSE_PROJECT_NAME=bcdbox TAG=4.7.6 docker compose -f docker compose.flextesa.yml up -d
+mavbox-sandbox:
+	COMPOSE_PROJECT_NAME=nexusbox TAG=4.7.6 docker compose -f docker compose.mavbox.yml up -d
 
 sandbox-down:
-	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.flextesa.yml down
+	COMPOSE_PROJECT_NAME=nexusbox docker compose -f docker compose.mavbox.yml down
 
 sandbox-clear:
-	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.flextesa.yml down -v
+	COMPOSE_PROJECT_NAME=nexusbox docker compose -f docker compose.mavbox.yml down -v
 
 generate:
 	go generate ./...

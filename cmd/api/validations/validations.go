@@ -6,10 +6,10 @@ import (
 
 	"github.com/btcsuite/btcutil/base58"
 	"github.com/go-playground/validator/v10"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 )
 
 const (
@@ -54,7 +54,7 @@ func Register(v *validator.Validate, cfg config.APIConfig) error {
 		return err
 	}
 
-	if err := v.RegisterValidation("bcd_max_size", maxSizeValidator(cfg.PageSize)); err != nil {
+	if err := v.RegisterValidation("nexus_max_size", maxSizeValidator(cfg.PageSize)); err != nil {
 		return err
 	}
 
@@ -71,19 +71,19 @@ func Register(v *validator.Validate, cfg config.APIConfig) error {
 
 func addressValidator() validator.Func {
 	return func(fl validator.FieldLevel) bool {
-		return bcd.IsAddress(fl.Field().String())
+		return nexus.IsAddress(fl.Field().String())
 	}
 }
 
 func smartRollupValidator() validator.Func {
 	return func(fl validator.FieldLevel) bool {
-		return bcd.IsSmartRollupHash(fl.Field().String())
+		return nexus.IsSmartRollupHash(fl.Field().String())
 	}
 }
 
 func contractValidator() validator.Func {
 	return func(fl validator.FieldLevel) bool {
-		return bcd.IsContract(fl.Field().String())
+		return nexus.IsContract(fl.Field().String())
 	}
 }
 

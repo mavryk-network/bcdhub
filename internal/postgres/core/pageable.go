@@ -1,6 +1,6 @@
 package core
 
-import "github.com/mavryk-network/bcdhub/internal/postgres/consts"
+import "github.com/mavryk-network/nexushub/internal/postgres/consts"
 
 // GetPageSize - validate and return page size
 func (pg *Postgres) GetPageSize(size int64) int {

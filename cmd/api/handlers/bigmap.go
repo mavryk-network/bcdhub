@@ -6,14 +6,14 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/pkg/errors"
 )
 
@@ -81,7 +81,7 @@ func GetBigMap() gin.HandlerFunc {
 			}
 
 			var deffatedStorage []byte
-			if proto.SymLink == bcd.SymLinkAlpha {
+			if proto.SymLink == nexus.SymLinkAlpha {
 				deffatedStorage, err = ctx.RPC.GetScriptStorageRaw(c, res.Address, 0)
 				if handleError(c, ctx.Storage, err, 0) {
 					return

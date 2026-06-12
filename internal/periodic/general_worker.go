@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/teztnets"
+	"github.com/mavryk-network/nexushub/internal/teztnets"
 	"github.com/robfig/cron/v3"
 	"github.com/rs/zerolog/log"
 )

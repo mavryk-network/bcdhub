@@ -12,8 +12,8 @@ import (
 	context "context"
 	reflect "reflect"
 
-	contract "github.com/mavryk-network/bcdhub/internal/models/contract"
-	domains "github.com/mavryk-network/bcdhub/internal/models/domains"
+	contract "github.com/mavryk-network/nexushub/internal/models/contract"
+	domains "github.com/mavryk-network/nexushub/internal/models/domains"
 	gomock "go.uber.org/mock/gomock"
 )
 

@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
-	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 )
@@ -67,7 +67,7 @@ func GetContractCode() gin.HandlerFunc {
 }
 
 func getContractCodeJSON(c context.Context, ctx *config.Context, address string, protocol string) (res gjson.Result, err error) {
-	symLink, err := bcd.GetProtoSymLink(protocol)
+	symLink, err := nexus.GetProtoSymLink(protocol)
 	if err != nil {
 		return res, err
 	}

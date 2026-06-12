@@ -5,14 +5,14 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/mavryk-network/bcdhub/internal/periodic"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/periodic"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 	"gopkg.in/yaml.v3"
 )
 
 // Environments
 const (
-	EnvironmentVar      = "BCD_ENV"
+	EnvironmentVar      = "NEXUS_ENV"
 	EnvironmentDev      = "development"
 	EnvironmentProd     = "production"
 	EnvironmentBox      = "sandbox"

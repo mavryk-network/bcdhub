@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/postgres/consts"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/postgres/consts"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 	"github.com/uptrace/bun"
 )
 

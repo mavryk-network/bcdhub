@@ -1,10 +1,10 @@
 package protocols
 
 import (
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/parsers/contract"
-	"github.com/mavryk-network/bcdhub/internal/parsers/migrations"
-	"github.com/mavryk-network/bcdhub/internal/parsers/storage"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/parsers/contract"
+	"github.com/mavryk-network/nexushub/internal/parsers/migrations"
+	"github.com/mavryk-network/nexushub/internal/parsers/storage"
 	"github.com/pkg/errors"
 )
 

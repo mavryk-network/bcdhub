@@ -5,22 +5,22 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
-	formattererror "github.com/mavryk-network/bcdhub/internal/bcd/formatter/error"
-	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	modelTypes "github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/parsers/storage"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	modelTypes "github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
+	formattererror "github.com/mavryk-network/nexushub/internal/nexus/formatter/error"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/nexus/types"
+	"github.com/mavryk-network/nexushub/internal/parsers/storage"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 )
@@ -111,7 +111,7 @@ func prepareTransaction(ctx context.Context, cfgCtx *config.Context, operation o
 
 	if operation.IsCall() && !tezerrors.HasParametersError(response.Errors) {
 		switch {
-		case bcd.IsContract(response.Destination):
+		case nexus.IsContract(response.Destination):
 			parameterType, err := getParameterType(ctx, cfgCtx.Contracts, response.Destination, proto.SymLink)
 			if err != nil {
 				return response, err
@@ -119,7 +119,7 @@ func prepareTransaction(ctx context.Context, cfgCtx *config.Context, operation o
 			if err := setParameters(operation.Parameters, parameterType, &response); err != nil {
 				return response, err
 			}
-		case bcd.IsSmartRollupHash(response.Destination):
+		case nexus.IsSmartRollupHash(response.Destination):
 			rollup, err := cfgCtx.SmartRollups.Get(ctx, response.Destination)
 			if err != nil {
 				return response, err

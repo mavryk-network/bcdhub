@@ -3,8 +3,8 @@ package bigmapaction
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 )
 
 // Storage -

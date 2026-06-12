@@ -1,33 +1,33 @@
 rpc:
-  # mainnet:
-  #   uri: https://rpc.tzkt.io/archive
-  #   timeout: 20
-  #   requests_per_second: 15
+  mainnet:
+    uri: ${MAINNET_NODE_URI:-https://mainnet.rpc.mavryk.network}
+    timeout: 20
+    requests_per_second: 15
   # ghostnet:
   #   uri: https://rpc.tzkt.io/ghostnet
   #   timeout: 20
   #   requests_per_second: 10
-  boreasnet:
-    uri: https://boreasnet.rpc.mavryk.network
-    timeout: 20
-    requests_per_second: 20
+  # boreasnet:
+  #   uri: https://boreasnet.rpc.mavryk.network
+  #   timeout: 20
+  #   requests_per_second: 20
 
 log_level: ${LOG_LEVEL:-info}
 
 services:
   mainnet:
-  #   mempool: https://mempool.dipdup.net/v1/graphql
+    mempool: https://mempool.dipdup.net/v1/graphql
   # ghostnet:
   #   mempool: https://mempool.test.dipdup.net/v1/graphql
-  boreasnet:
-    mempool: https://mempool.test.dipdup.net/v1/graphql
+  # boreasnet:
+  #   mempool: https://mempool.test.dipdup.net/v1/graphql
 
 storage:
   pg: 
     host: ${DB_HOSTNAME:-db}
     port: 5432
     user: ${POSTGRES_USER}
-    dbname: ${POSTGRES_DB:-bcd}
+    dbname: ${POSTGRES_DB:-nexus}
     password: ${POSTGRES_PASSWORD}
     sslmode: disable
   timeout: 10
@@ -39,9 +39,9 @@ sentry:
   front_uri: ${SENTRY_DSN_FRONT}
   debug: true
 
-share_path: /etc/bcd
+share_path: /etc/nexus
 
-base_url: https://better-call.mavryk.io
+base_url: https://nexus.mavryk.org/explorer
 
 api:
   project_name: api
@@ -55,32 +55,32 @@ api:
     mempool_enabled: true
     sandbox_mode: false
     rpc:
-      # mainnet: https://rpc.tzkt.io/mainnet
+      mainnet: ${MAINNET_NODE_URI:-https://mainnet.rpc.mavryk.network}
       # ghostnet: https://rpc.tzkt.io/ghostnet
-      boreasnet: https://boreasnet.rpc.mavryk.network
+      # boreasnet: https://boreasnet.rpc.mavryk.network
   networks:
-    # - mainnet
+    - mainnet
     # - ghostnet
-    - boreasnet
+    # - boreasnet
 
 indexer:
   project_name: indexer
   sentry_enabled: true
   networks:
-    # mainnet:
-    #   receiver_threads: ${MAINNET_THREADS:-10}
+    mainnet:
+      receiver_threads: ${MAINNET_THREADS:-10}
     # ghostnet:
     #   receiver_threads: ${TESTNET_THREADS:-10}
-    boreasnet:
-      receiver_threads: ${TESTNET_THREADS:-10}
+    # boreasnet:
+    #   receiver_threads: ${TESTNET_THREADS:-10}
 
 scripts:
   aws:
-    bucket_name: bcd-elastic-snapshots
+    bucket_name: nexus-elastic-snapshots
     region: eu-central-1
     access_key_id: ${AWS_ACCESS_KEY_ID}
     secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   networks:
-    # - mainnet
+    - mainnet
     # - ghostnet
-    - boreasnet
+    # - boreasnet

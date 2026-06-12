@@ -3,7 +3,7 @@ package domains
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
 )
 
 //go:generate mockgen -source=$GOFILE -destination=../mock/domains/mock.go -package=domains -typed

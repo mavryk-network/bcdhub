@@ -12,7 +12,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	operation "github.com/mavryk-network/bcdhub/internal/models/operation"
+	operation "github.com/mavryk-network/nexushub/internal/models/operation"
 	gomock "go.uber.org/mock/gomock"
 )
 

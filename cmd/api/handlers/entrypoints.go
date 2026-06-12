@@ -5,14 +5,14 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/bcd/encoding"
-	"github.com/mavryk-network/bcdhub/internal/bcd/formatter"
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	modelTypes "github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	modelTypes "github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
+	"github.com/mavryk-network/nexushub/internal/nexus/types"
 	"github.com/pkg/errors"
 )
 
@@ -217,7 +217,7 @@ func GetEntrypointSchema() gin.HandlerFunc {
 				}
 				usingOperation = op
 			case "operation":
-				if !bcd.IsOperationHash(esReq.Hash) || esReq.Counter == nil {
+				if !nexus.IsOperationHash(esReq.Hash) || esReq.Counter == nil {
 					handleError(c, ctx.Storage, errors.Errorf("invalid hash or counter for 'operation' type: hash=%s counter=%v", esReq.Hash, esReq.Counter), http.StatusBadRequest)
 					return
 				}

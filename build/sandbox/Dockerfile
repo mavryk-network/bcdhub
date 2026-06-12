@@ -1,12 +1,12 @@
 FROM node:16 AS build
 
 ARG TAG
-RUN git clone --depth=1 --branch ${TAG} https://github.com/mavryk-network/bcd.git /bcd
+RUN git clone --depth=1 --branch ${TAG} https://github.com/mavryk-network/nexus.git /nexus
 
-WORKDIR /bcd
+WORKDIR /nexus
 RUN npm i
 
-COPY build/sandbox/env.production /bcd/.env.production
+COPY build/sandbox/env.production /nexus/.env.production
 RUN export NODE_OPTIONS=--openssl-legacy-provider
 RUN npm run build
 
@@ -15,5 +15,5 @@ COPY build/sandbox/default.conf /etc/nginx/conf.d/default.conf
 COPY build/sandbox/entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 WORKDIR /usr/share/nginx/html/
-COPY --from=build /bcd/dist ./
+COPY --from=build /nexus/dist ./
 ENTRYPOINT [ "/entrypoint.sh" ]

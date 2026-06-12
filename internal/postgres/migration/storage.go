@@ -3,8 +3,8 @@ package migration
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/migration"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/models/migration"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 )
 
 // Storage -

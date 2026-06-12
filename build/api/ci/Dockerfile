@@ -10,16 +10,16 @@ ENV GOOS=linux
 RUN apk --no-cache add ca-certificates
 RUN apk add --update git
 
-RUN mkdir -p $GOPATH/src/github.com/mavryk-network/bcdhub/
+RUN mkdir -p $GOPATH/src/github.com/mavryk-network/nexushub/
 
-COPY ./go.* $GOPATH/src/github.com/mavryk-network/bcdhub/
-WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub
+COPY ./go.* $GOPATH/src/github.com/mavryk-network/nexushub/
+WORKDIR $GOPATH/src/github.com/mavryk-network/nexushub
 RUN go mod download
 
 COPY cmd/api cmd/api
 COPY internal internal
 
-WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub/cmd/api/
+WORKDIR $GOPATH/src/github.com/mavryk-network/nexushub/cmd/api/
 RUN go build -a -installsuffix cgo -o /go/bin/api .
 
 # ---------------------------------------------------------------------

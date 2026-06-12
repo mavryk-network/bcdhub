@@ -3,25 +3,25 @@ package config
 import (
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
-	"github.com/mavryk-network/bcdhub/internal/postgres/account"
-	"github.com/mavryk-network/bcdhub/internal/postgres/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/postgres/contract"
-	"github.com/mavryk-network/bcdhub/internal/postgres/domains"
-	"github.com/mavryk-network/bcdhub/internal/postgres/global_constant"
-	"github.com/mavryk-network/bcdhub/internal/postgres/migration"
-	"github.com/mavryk-network/bcdhub/internal/postgres/operation"
-	"github.com/mavryk-network/bcdhub/internal/postgres/protocol"
-	smartrollup "github.com/mavryk-network/bcdhub/internal/postgres/smart_rollup"
-	"github.com/mavryk-network/bcdhub/internal/postgres/stats"
-	"github.com/mavryk-network/bcdhub/internal/postgres/ticket"
-	"github.com/mavryk-network/bcdhub/internal/services/mempool"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/postgres/account"
+	"github.com/mavryk-network/nexushub/internal/postgres/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/postgres/contract"
+	"github.com/mavryk-network/nexushub/internal/postgres/domains"
+	"github.com/mavryk-network/nexushub/internal/postgres/global_constant"
+	"github.com/mavryk-network/nexushub/internal/postgres/migration"
+	"github.com/mavryk-network/nexushub/internal/postgres/operation"
+	"github.com/mavryk-network/nexushub/internal/postgres/protocol"
+	smartrollup "github.com/mavryk-network/nexushub/internal/postgres/smart_rollup"
+	"github.com/mavryk-network/nexushub/internal/postgres/stats"
+	"github.com/mavryk-network/nexushub/internal/postgres/ticket"
+	"github.com/mavryk-network/nexushub/internal/services/mempool"
 
-	"github.com/mavryk-network/bcdhub/internal/postgres/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/postgres/block"
-	pgCore "github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/postgres/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/postgres/block"
+	pgCore "github.com/mavryk-network/nexushub/internal/postgres/core"
 
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // ContextOption -

@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/tezerrors"
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
-	"github.com/mavryk-network/bcdhub/internal/services/mempool"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
+	"github.com/mavryk-network/nexushub/internal/nexus/types"
+	"github.com/mavryk-network/nexushub/internal/services/mempool"
 )
 
 // GetMempool godoc
@@ -108,7 +108,7 @@ func prepareMempoolTransaction(c context.Context, ctx *config.Context, tx mempoo
 	}
 	op.Errors = errs
 
-	if bcd.IsContract(op.Destination) && op.Protocol != "" && op.Status == consts.Pending {
+	if nexus.IsContract(op.Destination) && op.Protocol != "" && op.Status == consts.Pending {
 		if len(tx.Parameters) > 0 {
 			_ = buildMempoolOperationParameters(c, ctx, tx.Parameters, &op)
 		} else {

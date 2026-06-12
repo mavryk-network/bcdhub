@@ -3,12 +3,12 @@ package contract
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 	"github.com/pkg/errors"
 )
 
@@ -64,13 +64,13 @@ func (storage *Storage) Script(ctx context.Context, address string, symLink stri
 	var c contract.Contract
 	query := storage.DB.NewSelect().Model(&c).Where("account_id = ?", accountID)
 	switch symLink {
-	case bcd.SymLinkAlpha:
+	case nexus.SymLinkAlpha:
 		err := query.Relation("Alpha").Scan(ctx)
 		return c.Alpha, err
-	case bcd.SymLinkBabylon:
+	case nexus.SymLinkBabylon:
 		err := query.Relation("Babylon").Scan(ctx)
 		return c.Babylon, err
-	case bcd.SymLinkAtlas:
+	case nexus.SymLinkAtlas:
 		err := query.Relation("Jakarta").Scan(ctx)
 		return c.Jakarta, err
 	}
@@ -134,11 +134,11 @@ func (storage *Storage) ScriptPart(ctx context.Context, address string, symLink,
 		Where("account_id = ?", accountID)
 
 	switch symLink {
-	case bcd.SymLinkAlpha:
+	case nexus.SymLinkAlpha:
 		scriptIdQuery = scriptIdQuery.Column("alpha_id")
-	case bcd.SymLinkBabylon:
+	case nexus.SymLinkBabylon:
 		scriptIdQuery = scriptIdQuery.Column("babylon_id")
-	case bcd.SymLinkAtlas:
+	case nexus.SymLinkAtlas:
 		scriptIdQuery = scriptIdQuery.Column("jakarta_id")
 	default:
 		return nil, errors.Errorf("unknown protocol symbolic link: %s", symLink)

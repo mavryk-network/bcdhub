@@ -1,8 +1,8 @@
 rpc:
-  # mainnet:
-  #   uri: ${MAINNET_RPC_URI:-https://rpc.tzkt.io/mainnet}
-  #   timeout: 20
-  #   requests_per_second: 15
+  mainnet:
+    uri: ${MAINNET_RPC_URI:-https://mainnet.rpc.mavryk.network}
+    timeout: 20
+    requests_per_second: 15
   # ghostnet:
   #   uri: https://rpc.tzkt.io/ghostnet
   #   timeout: 20
@@ -15,8 +15,8 @@ rpc:
 log_level: ${LOG_LEVEL:-info}
 
 services:
-  # mainnet:
-  #   mempool: https://mempool.dipdup.net/v1/graphql
+  mainnet:
+    mempool: https://mempool.dipdup.net/v1/graphql
   # ghostnet:
   #   mempool: https://mempool.test.dipdup.net/v1/graphql
   boreasnet:
@@ -27,7 +27,7 @@ storage:
     host: ${DB_HOSTNAME:-127.0.0.1}
     port: 5432
     user: ${POSTGRES_USER}
-    dbname: ${POSTGRES_DB:-bcd}
+    dbname: ${POSTGRES_DB:-nexus}
     password: ${POSTGRES_PASSWORD}
     sslmode: disable
   timeout: 10
@@ -39,7 +39,7 @@ sentry:
   front_uri: ${SENTRY_DSN_FRONT}
   debug: true
 
-share_path: /etc/bcd
+share_path: /etc/nexus
 
 base_url: http://localhost:8080
 
@@ -55,11 +55,11 @@ api:
     mempool_enabled: true
     sandbox_mode: false
     rpc:
-      # mainnet: https://rpc.tzkt.io/mainnet
+      mainnet: https://mainnet.rpc.mavryk.network
       # ghostnet: https://rpc.tzkt.io/ghostnet
-      boreasnet: https://boreasnet.rpc.mavryk.network       
+      boreasnet: https://boreasnet.rpc.mavryk.network
   networks:
-    # - mainnet
+    - mainnet
     # - ghostnet
     - boreasnet
 
@@ -67,8 +67,8 @@ indexer:
   project_name: indexer
   sentry_enabled: false
   networks:
-    # mainnet:
-    #   receiver_threads: 5
+    mainnet:
+      receiver_threads: 5
     # ghostnet:
     #   receiver_threads: 5
     boreasnet:
@@ -76,6 +76,6 @@ indexer:
 
 scripts:
   networks:
-    # - mainnet
+    - mainnet
     # - ghostnet
     - boreasnet

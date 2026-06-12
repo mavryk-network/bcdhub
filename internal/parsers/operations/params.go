@@ -3,14 +3,14 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers/protocols"
-	"github.com/mavryk-network/bcdhub/internal/parsers/stacktrace"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers/protocols"
+	"github.com/mavryk-network/nexushub/internal/parsers/stacktrace"
 )
 
 // ParseParams -
@@ -80,7 +80,7 @@ func NewParseParams(ctx context.Context, configContext *config.Context, opts ...
 	}
 
 	if params.protocol == nil {
-		proto, err := configContext.Protocols.Get(ctx, bcd.GetCurrentProtocol(), 0)
+		proto, err := configContext.Protocols.Get(ctx, nexus.GetCurrentProtocol(), 0)
 		if err != nil {
 			return nil, err
 		}

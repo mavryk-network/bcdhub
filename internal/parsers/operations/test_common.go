@@ -8,18 +8,18 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	astContract "github.com/mavryk-network/bcdhub/internal/bcd/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/models/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/ticket"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/ticket"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )
@@ -56,7 +56,7 @@ func readRPCScript(_ context.Context, address string, _ int64) (noderpc.Script, 
 }
 
 func readTestScriptModel(_ context.Context, address, symLink string) (contract.Script, error) {
-	data, err := readTestScript(address, bcd.SymLinkBabylon)
+	data, err := readTestScript(address, nexus.SymLinkBabylon)
 	if err != nil {
 		return contract.Script{}, err
 	}
@@ -71,7 +71,7 @@ func readTestScriptModel(_ context.Context, address, symLink string) (contract.S
 	if err := script.Parse(); err != nil {
 		return contract.Script{}, err
 	}
-	var s bcd.RawScript
+	var s nexus.RawScript
 	if err := json.Unmarshal(data, &s); err != nil {
 		return contract.Script{}, err
 	}
@@ -88,11 +88,11 @@ func readTestScriptModel(_ context.Context, address, symLink string) (contract.S
 }
 
 func readTestScriptPart(_ context.Context, address, symLink, part string) ([]byte, error) {
-	data, err := readTestScript(address, bcd.SymLinkBabylon)
+	data, err := readTestScript(address, nexus.SymLinkBabylon)
 	if err != nil {
 		return nil, err
 	}
-	var s bcd.RawScript
+	var s nexus.RawScript
 	if err := json.Unmarshal(data, &s); err != nil {
 		return nil, err
 	}

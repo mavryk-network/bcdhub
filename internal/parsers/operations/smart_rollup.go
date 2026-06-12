@@ -4,11 +4,11 @@ import (
 	"encoding/hex"
 	"strconv"
 
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	smartrollup "github.com/mavryk-network/bcdhub/internal/models/smart_rollup"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	smartrollup "github.com/mavryk-network/nexushub/internal/models/smart_rollup"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // SmartRolupParser -

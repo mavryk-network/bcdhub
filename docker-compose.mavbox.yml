@@ -1,0 +1,82 @@
+version: "3.6"
+services:
+  db:
+    image: timescale/timescaledb:latest-pg15
+    shm_size: 1g
+    restart: always
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=nexus
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - db:/var/lib/postgresql/data 
+    logging: &nexus-logging
+      options:
+        max-size: 10m
+        max-file: "5"
+
+  api:
+    restart: always
+    image: ghcr.io/mavryk-network/nexushub-api:${TAG}
+    environment:
+      - NEXUS_ENV=sandbox
+      - GIN_MODE=debug
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - SANDBOX_NODE_URI=http://sandbox:20000
+      - SANDBOX_IPFS_GATEWAY=https://cloudflare-ipfs.com
+    depends_on:
+      - db
+    ports:
+      - 127.0.0.1:14000:14000
+    volumes:
+      - nexusshare:/etc/nexus
+    links:
+      - "mavbox:sandbox"
+    logging: *nexus-logging
+
+  indexer:
+    restart: always
+    image: ghcr.io/mavryk-network/nexushub-indexer:${TAG}
+    environment:
+      - NEXUS_ENV=sandbox
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - SANDBOX_NODE_URI=http://sandbox:20000
+      - SANDBOX_IPFS_GATEWAY=https://cloudflare-ipfs.com
+    depends_on:
+      - db
+    links:
+      - "mavbox:sandbox"
+    volumes:
+      - nexusshare:/etc/nexus
+    logging: *nexus-logging
+
+  mavbox:
+    restart: always
+    image: registry.gitlab.com/mavryk-network/mavbox:master-run
+    command: hangzbox start
+    environment:
+      - block_time=4
+      - mavbox_node_cors_origin=*
+    ports:
+      - 127.0.0.1:20000:20000
+    expose:
+      - 20000/tcp
+    logging: *nexus-logging
+
+  gui:
+    container_name: sandbox-gui
+    restart: always
+    image: ghcr.io/mavryk-network/nexushub-gui:${TAG}
+    depends_on:
+      - api
+    ports:
+      - 127.0.0.1:8000:80
+    logging: *nexus-logging
+
+volumes:
+  nexusshare:
+  db:
+    driver: local

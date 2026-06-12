@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/rs/zerolog/log"
 )
 
@@ -26,9 +26,9 @@ func main() {
 	outputDir := fmt.Sprintf("%s/nginx", cfg.SharePath)
 	_ = os.Mkdir(outputDir, os.ModePerm)
 
-	env := os.Getenv("BCD_ENV")
+	env := os.Getenv("NEXUS_ENV")
 	if env == "" {
-		log.Error().Msg("BCD_ENV env var is empty")
+		log.Error().Msg("NEXUS_ENV env var is empty")
 		return
 	}
 

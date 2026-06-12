@@ -10,16 +10,16 @@ ENV GOOS=linux
 RUN apk --no-cache add ca-certificates
 RUN apk add --update git
 
-RUN mkdir -p $GOPATH/src/github.com/mavryk-network/bcdhub/
+RUN mkdir -p $GOPATH/src/github.com/mavryk-network/nexushub/
 
-COPY ./go.* $GOPATH/src/github.com/mavryk-network/bcdhub/
-WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub
+COPY ./go.* $GOPATH/src/github.com/mavryk-network/nexushub/
+WORKDIR $GOPATH/src/github.com/mavryk-network/nexushub
 RUN go mod download
 
 COPY cmd/indexer cmd/indexer
 COPY internal internal
 
-WORKDIR $GOPATH/src/github.com/mavryk-network/bcdhub/cmd/indexer/
+WORKDIR $GOPATH/src/github.com/mavryk-network/nexushub/cmd/indexer/
 RUN go build -a -installsuffix cgo -o /go/bin/indexer .
 
 # ---------------------------------------------------------------------

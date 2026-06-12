@@ -12,11 +12,11 @@ func New(server, service string) (*pyroscope.Profiler, error) {
 		return nil, nil
 	}
 	return pyroscope.Start(pyroscope.Config{
-		ApplicationName: fmt.Sprintf("bcdhub.%s", service),
+		ApplicationName: fmt.Sprintf("nexushub.%s", service),
 		ServerAddress:   server,
 		Tags: map[string]string{
-			"hostname": os.Getenv("BCDHUB_SERVICE"),
-			"project":  "bcdhub",
+			"hostname": os.Getenv("NEXUSHUB_SERVICE"),
+			"project":  "nexushub",
 			"service":  service,
 		},
 

@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // MichelsonStorageView -

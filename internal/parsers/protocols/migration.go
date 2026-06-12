@@ -3,14 +3,14 @@ package protocols
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers/migrations"
-	"github.com/mavryk-network/bcdhub/internal/postgres/store"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers/migrations"
+	"github.com/mavryk-network/nexushub/internal/postgres/store"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )
@@ -127,7 +127,7 @@ func (m Migration) vestingMigration(ctx context.Context, _ models.Transaction, h
 	store := store.NewStore(m.ctx.StorageDB.DB, m.ctx.Stats)
 
 	for _, address := range addresses {
-		if !bcd.IsContract(address) {
+		if !nexus.IsContract(address) {
 			continue
 		}
 
@@ -159,7 +159,7 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 	}
 
 	for i := range contracts {
-		if !specific.MigrationParser.IsMigratable(contracts[i].Account.Address) && newProtocol.SymLink == bcd.SymLinkAtlas {
+		if !specific.MigrationParser.IsMigratable(contracts[i].Account.Address) && newProtocol.SymLink == nexus.SymLinkAtlas {
 			if err := tx.JakartaVesting(ctx, &contracts[i]); err != nil {
 				return errors.Wrap(err, "jakarta vesting migration error")
 			}
@@ -179,9 +179,9 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 		}
 
 		switch newProtocol.SymLink {
-		case bcd.SymLinkBabylon:
+		case nexus.SymLinkBabylon:
 			err = tx.BabylonUpdateNonDelegator(ctx, &contracts[i])
-		case bcd.SymLinkAtlas:
+		case nexus.SymLinkAtlas:
 			err = tx.JakartaUpdateNonDelegator(ctx, &contracts[i])
 		}
 
@@ -193,9 +193,9 @@ func (m Migration) standartMigration(ctx context.Context, currentProtocol, newPr
 
 	// only delegator contracts
 	switch newProtocol.SymLink {
-	case bcd.SymLinkBabylon:
+	case nexus.SymLinkBabylon:
 		err = tx.ToBabylon(ctx)
-	case bcd.SymLinkAtlas:
+	case nexus.SymLinkAtlas:
 		err = tx.ToJakarta(ctx)
 	}
 	return err

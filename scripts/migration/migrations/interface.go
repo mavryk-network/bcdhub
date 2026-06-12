@@ -1,6 +1,6 @@
 package migrations
 
-import "github.com/mavryk-network/bcdhub/internal/config"
+import "github.com/mavryk-network/nexushub/internal/config"
 
 // Migration - intreface need to realize for migrate
 type Migration interface {

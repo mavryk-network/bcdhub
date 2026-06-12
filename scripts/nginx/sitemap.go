@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/scripts/nginx/pkg/sitemap"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/scripts/nginx/pkg/sitemap"
 	"github.com/rs/zerolog/log"
 )
 

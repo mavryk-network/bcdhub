@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/models"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 	"github.com/uptrace/bun"

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/helpers"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/time/rate"
@@ -51,8 +51,8 @@ func NewNodeRPC(baseURL string, opts ...NodeOption) *NodeRPC {
 		userAgent: userAgent,
 	}
 
-	if bcdUserAgent := os.Getenv("BCD_USER_AGENT"); bcdUserAgent != "" {
-		node.userAgent = bcdUserAgent
+	if nexusUserAgent := os.Getenv("NEXUS_USER_AGENT"); nexusUserAgent != "" {
+		node.userAgent = nexusUserAgent
 	}
 
 	for _, opt := range opts {

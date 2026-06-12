@@ -3,7 +3,7 @@ package core
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/models"
 )
 
 // GetByID -

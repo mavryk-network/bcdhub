@@ -17,7 +17,7 @@
 
 cmd/api/train.csv
 docker-compose.local.yml
-scripts/bcdctl/bcdctl
+scripts/nexusctl/nexusctl
 scripts/migration/data/events
 scripts/migration/data/*.yml
 *.csv

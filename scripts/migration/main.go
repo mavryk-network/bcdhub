@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/scripts/migration/migrations"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/scripts/migration/migrations"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )

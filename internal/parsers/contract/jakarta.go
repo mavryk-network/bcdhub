@@ -6,15 +6,15 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	astContract "github.com/mavryk-network/bcdhub/internal/bcd/contract"
-	bcdTypes "github.com/mavryk-network/bcdhub/internal/bcd/types"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
+	nexusTypes "github.com/mavryk-network/nexushub/internal/nexus/types"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"
 )
 
@@ -67,7 +67,7 @@ func (p *Jakarta) computeMetrics(ctx context.Context, operation *operation.Opera
 		if !p.ctx.Storage.IsRecordNotFound(err) {
 			return err
 		}
-		var s bcd.RawScript
+		var s nexus.RawScript
 		if err := json.Unmarshal(script.CodeRaw, &s); err != nil {
 			return err
 		}
@@ -133,7 +133,7 @@ func getGlobalConstants(ctx context.Context, repo contract.ConstantRepository, o
 		return nil, err
 	}
 
-	globalConstants := make(bcdTypes.Set)
+	globalConstants := make(nexusTypes.Set)
 	globalContantsModels := make([]contract.GlobalConstant, 0)
 
 	for len(constants) > 0 {

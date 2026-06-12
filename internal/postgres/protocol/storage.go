@@ -3,8 +3,8 @@ package protocol
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 )
 
 // Storage -

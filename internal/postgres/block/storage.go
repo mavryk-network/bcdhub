@@ -3,8 +3,8 @@ package block
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/models/block"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
 )
 
 // Storage -

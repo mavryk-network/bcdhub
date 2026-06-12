@@ -7,26 +7,26 @@ import (
 	"time"
 
 	"github.com/dipdup-io/workerpool"
-	"github.com/mavryk-network/bcdhub/internal/config"
-	"github.com/mavryk-network/bcdhub/internal/helpers"
-	"github.com/mavryk-network/bcdhub/internal/models/block"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/models/stats"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
-	"github.com/mavryk-network/bcdhub/internal/parsers/migrations"
-	"github.com/mavryk-network/bcdhub/internal/parsers/operations"
-	"github.com/mavryk-network/bcdhub/internal/parsers/protocols"
-	"github.com/mavryk-network/bcdhub/internal/postgres"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
-	"github.com/mavryk-network/bcdhub/internal/postgres/store"
-	"github.com/mavryk-network/bcdhub/internal/rollback"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/models/stats"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/parsers/migrations"
+	"github.com/mavryk-network/nexushub/internal/parsers/operations"
+	"github.com/mavryk-network/nexushub/internal/parsers/protocols"
+	"github.com/mavryk-network/nexushub/internal/postgres"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/postgres/store"
+	"github.com/mavryk-network/nexushub/internal/rollback"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 )
 
-var errBcdQuit = errors.New("bcd-quit")
+var errNexusQuit = errors.New("nexus-quit")
 var errSameLevel = errors.New("Same level")
 
 // BlockchainIndexer -
@@ -257,7 +257,7 @@ func (bi *BlockchainIndexer) Index(ctx context.Context, head noderpc.Header) err
 
 		select {
 		case <-ctx.Done():
-			return errBcdQuit
+			return errNexusQuit
 		default:
 			bi.receiver.AddTask(level)
 		}
@@ -420,7 +420,7 @@ func (bi *BlockchainIndexer) process(ctx context.Context) error {
 	switch {
 	case head.Level > bi.state.Level:
 		if err := bi.Index(ctx, head); err != nil {
-			if errors.Is(err, errBcdQuit) {
+			if errors.Is(err, errNexusQuit) {
 				return nil
 			}
 			return err

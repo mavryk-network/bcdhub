@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/rs/zerolog/log"
 )
 
@@ -39,7 +39,7 @@ func GetInfo() gin.HandlerFunc {
 		}
 
 		var balance int64
-		if !(bcd.IsRollupAddressLazy(acc.Address) || bcd.IsSmartRollupAddressLazy(acc.Address)) {
+		if !(nexus.IsRollupAddressLazy(acc.Address) || nexus.IsSmartRollupAddressLazy(acc.Address)) {
 			block, err := ctx.Blocks.Last(c.Request.Context())
 			if handleError(c, ctx.Storage, err, 0) {
 				return

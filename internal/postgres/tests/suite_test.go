@@ -8,20 +8,20 @@ import (
 
 	"github.com/dipdup-net/go-lib/database"
 	"github.com/go-testfixtures/testfixtures/v3"
-	"github.com/mavryk-network/bcdhub/internal/postgres/account"
-	"github.com/mavryk-network/bcdhub/internal/postgres/bigmapaction"
-	"github.com/mavryk-network/bcdhub/internal/postgres/bigmapdiff"
-	"github.com/mavryk-network/bcdhub/internal/postgres/block"
-	"github.com/mavryk-network/bcdhub/internal/postgres/contract"
-	"github.com/mavryk-network/bcdhub/internal/postgres/core"
-	"github.com/mavryk-network/bcdhub/internal/postgres/domains"
-	"github.com/mavryk-network/bcdhub/internal/postgres/global_constant"
-	"github.com/mavryk-network/bcdhub/internal/postgres/migration"
-	"github.com/mavryk-network/bcdhub/internal/postgres/operation"
-	"github.com/mavryk-network/bcdhub/internal/postgres/protocol"
-	smartrollup "github.com/mavryk-network/bcdhub/internal/postgres/smart_rollup"
-	"github.com/mavryk-network/bcdhub/internal/postgres/stats"
-	"github.com/mavryk-network/bcdhub/internal/postgres/ticket"
+	"github.com/mavryk-network/nexushub/internal/postgres/account"
+	"github.com/mavryk-network/nexushub/internal/postgres/bigmapaction"
+	"github.com/mavryk-network/nexushub/internal/postgres/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/postgres/block"
+	"github.com/mavryk-network/nexushub/internal/postgres/contract"
+	"github.com/mavryk-network/nexushub/internal/postgres/core"
+	"github.com/mavryk-network/nexushub/internal/postgres/domains"
+	"github.com/mavryk-network/nexushub/internal/postgres/global_constant"
+	"github.com/mavryk-network/nexushub/internal/postgres/migration"
+	"github.com/mavryk-network/nexushub/internal/postgres/operation"
+	"github.com/mavryk-network/nexushub/internal/postgres/protocol"
+	smartrollup "github.com/mavryk-network/nexushub/internal/postgres/smart_rollup"
+	"github.com/mavryk-network/nexushub/internal/postgres/stats"
+	"github.com/mavryk-network/nexushub/internal/postgres/ticket"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -68,7 +68,7 @@ func (s *StorageTestSuite) SetupSuite() {
 		Host:     s.psqlContainer.Config.Host,
 		Port:     s.psqlContainer.MappedPort().Int(),
 		SslMode:  "disable",
-	}, "public", "bcd")
+	}, "public", "nexus")
 	s.Require().NoError(err)
 	s.storage = strg
 

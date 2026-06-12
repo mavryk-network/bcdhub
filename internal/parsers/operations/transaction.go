@@ -3,15 +3,15 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/ast"
-	"github.com/mavryk-network/bcdhub/internal/bcd/consts"
-	"github.com/mavryk-network/bcdhub/internal/bcd/types"
-	"github.com/mavryk-network/bcdhub/internal/models/account"
-	"github.com/mavryk-network/bcdhub/internal/models/operation"
-	modelsTypes "github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
-	"github.com/mavryk-network/bcdhub/internal/parsers"
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	modelsTypes "github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/types"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"
 
 	jsoniter "github.com/json-iterator/go"
@@ -122,17 +122,17 @@ func (p Transaction) parseContractParams(ctx context.Context, data noderpc.Opera
 		for i := range contracts {
 			if tx.Destination.Address == contracts[i].Account.Address {
 				switch p.protocol.SymLink {
-				case bcd.SymLinkAlpha:
+				case nexus.SymLinkAlpha:
 					tx.Script, err = contracts[i].Alpha.Full()
 					if err != nil {
 						return err
 					}
-				case bcd.SymLinkBabylon:
+				case nexus.SymLinkBabylon:
 					tx.Script, err = contracts[i].Babylon.Full()
 					if err != nil {
 						return err
 					}
-				case bcd.SymLinkAtlas:
+				case nexus.SymLinkAtlas:
 					tx.Script, err = contracts[i].Jakarta.Full()
 					if err != nil {
 						return err

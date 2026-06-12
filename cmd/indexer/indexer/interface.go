@@ -3,7 +3,7 @@ package indexer
 import (
 	"context"
 
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // Indexer -

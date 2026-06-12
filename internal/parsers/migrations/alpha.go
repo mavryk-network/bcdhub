@@ -6,14 +6,14 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/mavryk-network/bcdhub/internal/bcd"
-	"github.com/mavryk-network/bcdhub/internal/bcd/contract"
-	"github.com/mavryk-network/bcdhub/internal/models"
-	modelsContract "github.com/mavryk-network/bcdhub/internal/models/contract"
-	"github.com/mavryk-network/bcdhub/internal/models/migration"
-	"github.com/mavryk-network/bcdhub/internal/models/protocol"
-	"github.com/mavryk-network/bcdhub/internal/models/types"
-	"github.com/mavryk-network/bcdhub/internal/noderpc"
+	"github.com/mavryk-network/nexushub/internal/models"
+	modelsContract "github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/models/migration"
+	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/contract"
+	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 
 // Alpha -
@@ -41,7 +41,7 @@ func (p *Alpha) Parse(ctx context.Context, script noderpc.Script, old *modelsCon
 		return err
 	}
 
-	var s bcd.RawScript
+	var s nexus.RawScript
 	if err := json.Unmarshal(buf.Bytes(), &s); err != nil {
 		return err
 	}
