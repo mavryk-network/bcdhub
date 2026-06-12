@@ -31,9 +31,9 @@ endif
 
 rollback:
 ifeq ($(NEXUS_ENV), development)
-	cd scripts/bcdctl && go run . rollback -n $(NETWORK) -l $(LEVEL)
+	cd scripts/nexusctl && go run . rollback -n $(NETWORK) -l $(LEVEL)
 else
-	docker compose exec api bcdctl rollback -n $(NETWORK) -l $(LEVEL)
+	docker compose exec api nexusctl rollback -n $(NETWORK) -l $(LEVEL)
 endif
 
 s3-db-restore:
@@ -82,13 +82,13 @@ sandbox-pull:
 	TAG=4.7.6 docker compose -f docker compose.mavbox.yml pull
 
 mavbox-sandbox:
-	COMPOSE_PROJECT_NAME=bcdbox TAG=4.7.6 docker compose -f docker compose.mavbox.yml up -d
+	COMPOSE_PROJECT_NAME=nexusbox TAG=4.7.6 docker compose -f docker compose.mavbox.yml up -d
 
 sandbox-down:
-	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.mavbox.yml down
+	COMPOSE_PROJECT_NAME=nexusbox docker compose -f docker compose.mavbox.yml down
 
 sandbox-clear:
-	COMPOSE_PROJECT_NAME=bcdbox docker compose -f docker compose.mavbox.yml down -v
+	COMPOSE_PROJECT_NAME=nexusbox docker compose -f docker compose.mavbox.yml down -v
 
 generate:
 	go generate ./...

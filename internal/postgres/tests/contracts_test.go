@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
+	"github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/consts"
-	"github.com/mavryk-network/nexushub/internal/models/types"
 )
 
 func (s *StorageTestSuite) TestContractGet() {

@@ -26,7 +26,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-var errBcdQuit = errors.New("nexus-quit")
+var errNexusQuit = errors.New("nexus-quit")
 var errSameLevel = errors.New("Same level")
 
 // BlockchainIndexer -
@@ -257,7 +257,7 @@ func (bi *BlockchainIndexer) Index(ctx context.Context, head noderpc.Header) err
 
 		select {
 		case <-ctx.Done():
-			return errBcdQuit
+			return errNexusQuit
 		default:
 			bi.receiver.AddTask(level)
 		}
@@ -420,7 +420,7 @@ func (bi *BlockchainIndexer) process(ctx context.Context) error {
 	switch {
 	case head.Level > bi.state.Level:
 		if err := bi.Index(ctx, head); err != nil {
-			if errors.Is(err, errBcdQuit) {
+			if errors.Is(err, errNexusQuit) {
 				return nil
 			}
 			return err

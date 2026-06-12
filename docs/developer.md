@@ -95,7 +95,7 @@ There are several predefined configurations serving different purposes.
 * You can spawn local instances of databases or _ssh_ to staging host with port forwarding
 * Run services `make {service}` (where service is one of `api` `indexer`)
 
-#### Sandbox `bcdbox`
+#### Sandbox `nexusbox`
 * `/configs/sandbox.yml` file is used
 * Start via `COMPOSE_PROJECT_NAME=nexus-box docker-compose -f docker-compose.sandbox.yml up -d --build`
 * Stop via `COMPOSE_PROJECT_NAME=nexus-box docker-compose -f docker-compose.sandbox.yml down`

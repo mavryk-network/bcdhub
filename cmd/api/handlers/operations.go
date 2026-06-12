@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
-	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/pkg/errors"
 )
 

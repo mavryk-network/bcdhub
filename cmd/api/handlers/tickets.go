@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/ticket"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
 )
 
 // GetContractTicketUpdates godoc

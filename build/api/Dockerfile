@@ -26,7 +26,7 @@ WORKDIR $GOPATH/src/github.com/mavryk-network/nexushub
 COPY scripts scripts
 
 WORKDIR $GOPATH/src/github.com/mavryk-network/nexushub/scripts/
-RUN cd bcdctl && go build -a -installsuffix cgo -o /go/bin/bcdctl .
+RUN cd nexusctl && go build -a -installsuffix cgo -o /go/bin/nexusctl .
 RUN cd migration && go build -a -installsuffix cgo -o /go/bin/migration .
 RUN cd nginx && go build -a -installsuffix cgo -o /go/bin/seo .
 
@@ -44,7 +44,7 @@ COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=builder /go/bin/api /go/bin/api
 COPY configs/*.yml /app/api/
 
-COPY --from=builder /go/bin/bcdctl /go/bin/bcdctl
+COPY --from=builder /go/bin/nexusctl /go/bin/nexusctl
 COPY --from=builder /go/bin/migration /go/bin/migration
 COPY --from=builder /go/bin/seo /go/bin/seo
 

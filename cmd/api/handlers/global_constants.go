@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/tidwall/gjson"
 )
 

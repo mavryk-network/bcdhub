@@ -31,7 +31,7 @@ services:
     ports:
       - 127.0.0.1:14000:14000
     volumes:
-      - bcdshare:/etc/nexus
+      - nexusshare:/etc/nexus
     logging: *nexus-logging
 
   indexer:
@@ -46,7 +46,7 @@ services:
     depends_on:
       - db
     volumes:
-      - bcdshare:/etc/nexus
+      - nexusshare:/etc/nexus
     logging: *nexus-logging
 
   gui:
@@ -60,6 +60,6 @@ services:
     logging: *nexus-logging
 
 volumes:
-  bcdshare:
+  nexusshare:
   db:
     driver: local

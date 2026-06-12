@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
-	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
 	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"
 )

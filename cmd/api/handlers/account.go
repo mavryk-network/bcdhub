@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/rs/zerolog/log"
 )
 

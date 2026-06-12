@@ -1,9 +1,9 @@
 package storage
 
 import (
+	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/nexus/types"
-	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 )
 
 func prepareBigMapDiffsToEnrich(bmd []bigmapdiff.BigMapDiff, skipEmpty bool) []*types.BigMapDiff {

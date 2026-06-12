@@ -4,15 +4,15 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
-	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
 	"github.com/mavryk-network/nexushub/internal/models/ticket"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/uptrace/bun"
 )
 

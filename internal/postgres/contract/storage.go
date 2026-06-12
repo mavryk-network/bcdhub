@@ -3,11 +3,11 @@ package contract
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
-	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/postgres/core"
 	"github.com/pkg/errors"
 )

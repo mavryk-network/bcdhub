@@ -5,10 +5,6 @@ import (
 	stdJSON "encoding/json"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
-	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
-	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
-	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	"github.com/mavryk-network/nexushub/internal/models/block"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
@@ -18,6 +14,10 @@ import (
 	"github.com/mavryk-network/nexushub/internal/models/stats"
 	"github.com/mavryk-network/nexushub/internal/models/ticket"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
+	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 )
 
 // Error -

@@ -3,11 +3,11 @@ package storage
 import (
 	"context"
 
+	"github.com/mavryk-network/nexushub/internal/models"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/nexus/consts"
-	"github.com/mavryk-network/nexushub/internal/models"
-	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/pkg/errors"
 )

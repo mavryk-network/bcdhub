@@ -1,8 +1,8 @@
 package storage
 
 import (
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/pkg/errors"
 )
 

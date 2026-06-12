@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/helpers"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/nexus/tezerrors"
 	"github.com/mavryk-network/nexushub/internal/nexus/types"
-	"github.com/mavryk-network/nexushub/internal/config"
-	"github.com/mavryk-network/nexushub/internal/helpers"
 	"github.com/mavryk-network/nexushub/internal/services/mempool"
 )
 

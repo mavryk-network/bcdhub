@@ -3,7 +3,6 @@ package migrations
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/account"
 	contracts "github.com/mavryk-network/nexushub/internal/models/contract"
@@ -11,6 +10,7 @@ import (
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/mavryk-network/nexushub/internal/parsers/contract"

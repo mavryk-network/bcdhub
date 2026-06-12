@@ -3,11 +3,11 @@ package operations
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/migration"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"

@@ -51,8 +51,8 @@ func NewNodeRPC(baseURL string, opts ...NodeOption) *NodeRPC {
 		userAgent: userAgent,
 	}
 
-	if bcdUserAgent := os.Getenv("NEXUS_USER_AGENT"); bcdUserAgent != "" {
-		node.userAgent = bcdUserAgent
+	if nexusUserAgent := os.Getenv("NEXUS_USER_AGENT"); nexusUserAgent != "" {
+		node.userAgent = nexusUserAgent
 	}
 
 	for _, opt := range opts {

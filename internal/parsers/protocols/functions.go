@@ -3,8 +3,8 @@ package protocols
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
+	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 

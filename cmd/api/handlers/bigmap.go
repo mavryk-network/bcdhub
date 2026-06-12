@@ -6,14 +6,14 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mavryk-network/nexushub/internal/nexus"
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
-	"github.com/mavryk-network/nexushub/internal/nexus/consts"
-	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapaction"
 	"github.com/mavryk-network/nexushub/internal/models/bigmapdiff"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
+	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/pkg/errors"
 )
 

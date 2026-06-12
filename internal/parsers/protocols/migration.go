@@ -3,11 +3,11 @@ package protocols
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/mavryk-network/nexushub/internal/parsers/migrations"
 	"github.com/mavryk-network/nexushub/internal/postgres/store"

@@ -6,13 +6,13 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
-	"github.com/mavryk-network/nexushub/internal/nexus/contract"
 	"github.com/mavryk-network/nexushub/internal/models"
 	modelsContract "github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/migration"
 	"github.com/mavryk-network/nexushub/internal/models/protocol"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/contract"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 )
 

@@ -5,14 +5,14 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	modelTypes "github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/nexus/encoding"
 	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
 	"github.com/mavryk-network/nexushub/internal/nexus/types"
-	"github.com/mavryk-network/nexushub/internal/config"
-	"github.com/mavryk-network/nexushub/internal/models/operation"
-	modelTypes "github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/pkg/errors"
 )
 

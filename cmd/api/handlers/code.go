@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/formatter"
-	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/pkg/errors"
 	"github.com/tidwall/gjson"
 )

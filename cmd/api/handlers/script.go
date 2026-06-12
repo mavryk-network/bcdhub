@@ -3,11 +3,11 @@ package handlers
 import (
 	"context"
 
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
-	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/cache"
 	"github.com/mavryk-network/nexushub/internal/models/block"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 )
 
 func getScript(ctx context.Context, cache *cache.Cache, address, symLink string) (*ast.Script, error) {

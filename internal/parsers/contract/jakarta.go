@@ -6,14 +6,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/mavryk-network/nexushub/internal/nexus"
-	"github.com/mavryk-network/nexushub/internal/nexus/ast"
-	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
-	bcdTypes "github.com/mavryk-network/nexushub/internal/nexus/types"
 	"github.com/mavryk-network/nexushub/internal/config"
 	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/models/operation"
 	"github.com/mavryk-network/nexushub/internal/models/types"
+	"github.com/mavryk-network/nexushub/internal/nexus"
+	"github.com/mavryk-network/nexushub/internal/nexus/ast"
+	astContract "github.com/mavryk-network/nexushub/internal/nexus/contract"
+	nexusTypes "github.com/mavryk-network/nexushub/internal/nexus/types"
 	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"
 )
@@ -133,7 +133,7 @@ func getGlobalConstants(ctx context.Context, repo contract.ConstantRepository, o
 		return nil, err
 	}
 
-	globalConstants := make(bcdTypes.Set)
+	globalConstants := make(nexusTypes.Set)
 	globalContantsModels := make([]contract.GlobalConstant, 0)
 
 	for len(constants) > 0 {

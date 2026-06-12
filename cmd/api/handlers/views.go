@@ -7,13 +7,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/mavryk-network/nexushub/internal/config"
+	"github.com/mavryk-network/nexushub/internal/models/block"
+	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/nexus/base"
 	"github.com/mavryk-network/nexushub/internal/nexus/consts"
-	"github.com/mavryk-network/nexushub/internal/config"
-	"github.com/mavryk-network/nexushub/internal/models/block"
-	"github.com/mavryk-network/nexushub/internal/models/contract"
 	"github.com/mavryk-network/nexushub/internal/views"
 	"github.com/pkg/errors"
 )

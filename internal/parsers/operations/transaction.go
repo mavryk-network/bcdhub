@@ -3,13 +3,13 @@ package operations
 import (
 	"context"
 
+	"github.com/mavryk-network/nexushub/internal/models/account"
+	"github.com/mavryk-network/nexushub/internal/models/operation"
+	modelsTypes "github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/mavryk-network/nexushub/internal/nexus"
 	"github.com/mavryk-network/nexushub/internal/nexus/ast"
 	"github.com/mavryk-network/nexushub/internal/nexus/consts"
 	"github.com/mavryk-network/nexushub/internal/nexus/types"
-	"github.com/mavryk-network/nexushub/internal/models/account"
-	"github.com/mavryk-network/nexushub/internal/models/operation"
-	modelsTypes "github.com/mavryk-network/nexushub/internal/models/types"
 	"github.com/mavryk-network/nexushub/internal/noderpc"
 	"github.com/mavryk-network/nexushub/internal/parsers"
 	"github.com/pkg/errors"

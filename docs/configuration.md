@@ -135,13 +135,13 @@ About env files: https://docs.docker.com/compose/env-file/
 
 #### System config _required_
 * `NEXUS_ENV` e.g. _production_ or _sandbox_
-* `COMPOSE_PROJECT_NAME` e.g. _bcd-prod_ or _bcd-box_
+* `COMPOSE_PROJECT_NAME` e.g. _nexus-prod_ or _nexus-box_
 * `GIN_MODE` _release_ for production, _debug_ otherwise
 
 #### Credentials _required_
 * `POSTGRES_USER` e.g. _root_
 * `POSTGRES_PASSWORD` e.g. _root_
-* `POSTGRES_DB` e.g. _bcd_
+* `POSTGRES_DB` e.g. _nexus_
 
 #### Services ports _required_
 * `NEXUS_API_PORT` e.g. _14000_
